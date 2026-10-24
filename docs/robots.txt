@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lyullee.github.io/sitemap.xml
