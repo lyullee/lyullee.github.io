@@ -15,7 +15,7 @@ for(const lang of Object.keys(locales)){
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(new Set(ids).size,ids.length,`${lang}: unique IDs`);
  for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)){
-  const target=match[1];
+  const target=match[1].split('?')[0];
   if(target.startsWith('#')){assert.ok(ids.includes(target.slice(1)),`${lang}: ${target}`);continue;}
   if(!target.startsWith('/'))continue;
   const location=path.join(output,target.endsWith('/')?`${target}index.html`:target);

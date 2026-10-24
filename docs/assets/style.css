@@ -4,4 +4,4 @@
 
 .contact-links .email-label{font-size:12px;color:var(--muted);margin:0}.contact-links .email{padding-top:6px}.contact-links .secondary-email{font-size:13px;max-width:none;margin:17px 0 23px}.contact-links .secondary-email a{border-bottom:1px solid var(--line)}
 
-.brand-alias{display:block;font-size:12px;font-weight:400;line-height:1.4;color:var(--muted);letter-spacing:.2px}
+.brand-alias{font-size:.85em;font-weight:400;color:var(--muted)}
