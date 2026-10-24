@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [主要邮箱](mailto:lyullee@gmail.com) · [备用邮箱](mailto:lyullee@kgs.or.kr)
 
 ## 关于我
 
@@ -98,6 +98,6 @@ SLAB重气扩散模型的Python重实现，支持蒸发池、水平/上升射流
 
 ## 联系与研究使用
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**主要邮箱: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · 备用邮箱: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 欢迎就科研合作、氢安全建模和科学软件联系我。使用前请查阅各仓库的许可证、引用信息/DOI、数据政策与验证范围。本简介不对安全相关结果作独立认证。

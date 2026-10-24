@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Primäre E-Mail](mailto:lyullee@gmail.com) · [Zweite E-Mail](mailto:lyullee@kgs.or.kr)
 
 ## Über mich
 
@@ -98,6 +98,6 @@ Untersucht Wechselwirkungen, Probenform und Modellunsicherheit von Na₂BaCo(PO�
 
 ## Kontakt und wissenschaftliche Nutzung
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**Primäre E-Mail: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · Zweite E-Mail: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 Kontakt für Forschung, Wasserstoffsicherheitsmodelle und wissenschaftliche Software ist willkommen. Vor einer Nutzung bitte Lizenz, Zitationsangaben/DOI, Datenrichtlinien und Validierungsbereich jedes Repositories prüfen. Dieses Profil zertifiziert sicherheitsbezogene Ergebnisse nicht unabhängig.

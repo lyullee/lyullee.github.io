@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Correo principal](mailto:lyullee@gmail.com) · [Correo secundario](mailto:lyullee@kgs.or.kr)
 
 ## Sobre mí
 
@@ -98,6 +98,6 @@ Estudia interacciones, forma de muestra e incertidumbre de Na₂BaCo(PO₄)₂ p
 
 ## Contacto y uso científico
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**Correo principal: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · Correo secundario: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 Para colaborar en investigación, modelado de seguridad del hidrógeno o software científico, puede contactarme. Antes de reutilizar, revise la licencia, las citas/DOI, la política de datos y el alcance de validación de cada repositorio. Este perfil no certifica de forma independiente los resultados de seguridad.

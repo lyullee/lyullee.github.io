@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [主メール](mailto:lyullee@gmail.com) · [補助メール](mailto:lyullee@kgs.or.kr)
 
 ## 自己紹介
 
@@ -98,6 +98,6 @@ Na₂BaCo(PO₄)₂の相互作用、試料形状、モデル不確実性が極�
 
 ## 連絡先と研究利用
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**主メール: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · 補助メール: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 研究協力、水素安全モデル、科学ソフトウェアに関するご連絡を歓迎します。利用前に各リポジトリのライセンス、引用情報・DOI、データ方針と検証範囲をご確認ください。この紹介は安全上の結果を独立に認証するものではありません。

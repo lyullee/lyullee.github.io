@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [मुख्य ईमेल](mailto:lyullee@gmail.com) · [वैकल्पिक ईमेल](mailto:lyullee@kgs.or.kr)
 
 ## मेरे बारे में
 
@@ -98,6 +98,6 @@ Na₂BaCo(PO₄)₂ की अंतःक्रियाएँ, नमूना
 
 ## संपर्क और शोध में उपयोग
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**मुख्य ईमेल: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · वैकल्पिक ईमेल: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 शोध सहयोग, हाइड्रोजन सुरक्षा मॉडल और वैज्ञानिक सॉफ़्टवेयर के लिए संपर्क करें। उपयोग से पहले हर रिपॉज़िटरी का लाइसेंस, उद्धरण/DOI, डेटा नीति और मान्यता का दायरा देखें। यह प्रोफ़ाइल सुरक्षा परिणामों का स्वतंत्र प्रमाणन नहीं करती।

@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [E-mail principal](mailto:lyullee@gmail.com) · [E-mail secondaire](mailto:lyullee@kgs.or.kr)
 
 ## À propos
 
@@ -98,6 +98,6 @@ Relie PSA/membranes hydrogène, cohérence des pressions et réserve de régén�
 
 ## Contact et utilisation scientifique
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**E-mail principal: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · E-mail secondaire: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 Pour échanger sur la recherche, la modélisation de la sécurité hydrogène ou les logiciels scientifiques, contactez-moi. Avant réutilisation, consultez la licence, les références/DOI, la politique de données et le domaine de validation de chaque dépôt. Ce profil ne certifie pas indépendamment les résultats de sécurité.

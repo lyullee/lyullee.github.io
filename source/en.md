@@ -6,7 +6,7 @@
 
 [English](README.md) · [Korean](docs/i18n/README.ko.md) · [简体中文](docs/i18n/README.zh-CN.md) · [日本語](docs/i18n/README.ja.md) · [Français](docs/i18n/README.fr.md) · [Deutsch](docs/i18n/README.de.md) · [Español](docs/i18n/README.es.md) · [हिन्दी](docs/i18n/README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Primary email](mailto:lyullee@gmail.com) · [Secondary email](mailto:lyullee@kgs.or.kr)
 
 ## About me
 
@@ -246,7 +246,7 @@ Magnetic refrigeration ─── nbcp-magnetocaloric-quantum-spectral-flow
 
 ## Contact and research use
 
-For research collaboration, hydrogen-safety modelling or scientific-software discussions: **[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)**. See [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) for the linked research profile.
+For research collaboration, hydrogen-safety modelling or scientific-software discussions: **Primary email: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · Secondary email: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr). See [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) for the linked research profile.
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 

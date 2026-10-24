@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Email](mailto:lyullee@kgs.or.kr)
+[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [주 이메일](mailto:lyullee@gmail.com) · [보조 이메일](mailto:lyullee@kgs.or.kr)
 
 ## 소개
 
@@ -98,6 +98,6 @@ Na₂BaCo(PO₄)₂ 자기냉각 소재의 상호작용·시료 형상·모델 �
 
 ## 연락 및 연구 활용
 
-**[lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr)** · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
+**주 이메일: [lyullee@gmail.com](mailto:lyullee@gmail.com)** · 보조 이메일: [lyullee@kgs.or.kr](mailto:lyullee@kgs.or.kr) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ)
 
 연구 협업 및 과학 소프트웨어 관련 연락을 환영합니다. 재사용 전 각 저장소의 라이선스, 인용 정보/DOI, 데이터 정책과 검증 범위를 확인해 주세요. 연구용 안전 결과를 독립적으로 인증하는 프로필은 아닙니다.
