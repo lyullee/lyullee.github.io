@@ -21,7 +21,7 @@ node build.mjs
 node verify.mjs
 ```
 
-Review the generated changes, then commit and push `source/` and `docs/`. Updating the profile repository alone does not automatically change this site. The sync command is manual; no recurring task has been configured.
+Review the generated changes, then commit and push `source/` and `docs/`. An hourly Codex heartbeat in the originating chat now reviews public-repository changes, updates the profile and all language snapshots, rebuilds and verifies the site, then publishes reviewed changes. It requires the local computer and desktop app to be running. See [MAINTENANCE.md](MAINTENANCE.md) for scope, identity, recovery and verification rules. The sync command by itself remains a manual source-copy step, not a semantic review.
 
 `source/en.md` and `source/<language>.md` contain the README snapshots. `source/ui.json` contains localized navigation, headings and section descriptions. `assets/` contains the stylesheet, client-side search/filter controls and favicon. `build.mjs` generates static HTML, alternate-language metadata, sitemap and the 404 page into `docs/`.
 

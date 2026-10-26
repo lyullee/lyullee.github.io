@@ -14,7 +14,7 @@ También trabajo en cribado de suministro de amoníaco, separación dinámica PS
 
 Mis herramientas incluyen también monitoreo de procesos, fiabilidad humana, inspección basada en riesgo y TEA/contabilidad ambiental parcial del biometano.
 
-> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 24 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-10-26; no se repitieron de forma independiente los cálculos de validación para esta actualización.
+> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 25 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-10-26; no se repitieron de forma independiente los cálculos de validación para esta actualización.
 
 ## Proyectos
 
@@ -50,6 +50,8 @@ Marco Python componible que convierte señales de proceso en puntuaciones de ano
 
 Modelos Python que conectan tareas, evidencia humana, errores/tiempos de respuesta y riesgo: DAG, actualización bayesiana de conteos, referencias SPAR-H/HEART/CREAM/IDHEAS, recuperación, dependencia y FTA/ETA. Los 1.334 registros de siete fuentes incluyen conteos, componentes y factores, no 1.334 mediciones independientes. SACADA procede de simuladores nucleares; no se afirma calibración HEP química de campo ni frecuencias anuales observadas.
 
+La versión 0.5.0 añade formularios de campo, conciliación independiente de denominadores, evaluación de pronósticos HEP congelados y doce extensiones operativas. Las 5.617 oportunidades clínicas forman un agregado separado de éxito/no conformidad, sin atribución humana industrial; se conserva un resultado temporal de calibración desfavorable.
+
 ### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
 
 Implementación Python independiente y no oficial de inspección basada en riesgo API-RP-581. Paquete api581-engine/import api581 con daño, frecuencia, inspección, liberación, consecuencias, riesgo y planificación; SLABx opcional y API 520 separado. Los 509 cálculos y 861 referencias son evidencia de software, no certificación externa. Sin respaldo API ni redistribución de normas; contenido original Apache-2.0.
@@ -57,6 +59,10 @@ Implementación Python independiente y no oficial de inspección basada en riesg
 ### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
 
 Archivo ejecutable de investigación ADM1 de biometano a partir de ensilado de hierba y purín bovino. Integra 34 estados, TEA reconstruida, balance parcial de GEI y análisis de malla finita/Pareto, robustez y sensibilidad. Cinco pruebas ligeras y una pequeña demostración no validan experimentos ni reproducción histórica completa. No es ACV completa ni huella verificada; el crédito de fertilizante puede sobreestimarse.
+
+### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
+
+Herramienta independiente de cribado de consecuencias e investigación de gases densos. Sus 23 cálculos tipados cubren fuentes, dispersión pasiva, fuego/explosión, exposición y riesgo condicional, con Python/CLI/HTTP opcional y recibos trazables. Los historiales SLABx y la capa 1D isotérmica de ancho fijo y mezcla vertical son rutas separadas. PyPI y SLABx 1.0.8 están pendientes; dense no se instala solo con PyPI. Apache-2.0, sin respaldo CCPS/AIChE ni certificación de campo.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

@@ -1,0 +1,231 @@
+{
+  "schema": "lyullee-portfolio-upstream/v1",
+  "owner": "lyullee",
+  "repositories": [
+    {
+      "name": "adm1-tea-lca",
+      "description": "Recorded ADM1 biomethane simulation, reconstructed TEA/LCA, finite-grid optimization and sensitivity workflow.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-24T03:21:35Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "a7bf2bd1db21d07bbafa2e164604d06e9c2369937a73e77a78adeb5a286b7eb8"
+    },
+    {
+      "name": "ammonia-supply-risk",
+      "description": "Python screening utilities for ammonia supply systems: material damage proxies, conditional multipliers, and mutually exclusive protection-path frequencies.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-22T07:54:29Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "55cbe8a172fdd57596e4300f7fdc4a6a0b70b8260e9fa77d9476e412aba53762"
+    },
+    {
+      "name": "api581-risk-analysis",
+      "description": "Unofficial, independently authored Python calculations and workflows for API-RP-581 risk-based inspection; original code only, standards excluded.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-26T04:43:19Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "d5247dd774c935923dbc0a0af5e9bdd6568976da0122a0246328dca3166a89c9"
+    },
+    {
+      "name": "degadisx",
+      "description": "Python reimplementation of EPA DEGADIS 2.1",
+      "defaultBranch": "main",
+      "pushedAt": "2026-09-12T14:42:43Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "82e5d9bb26d0a67dc2db7632fec10ad4a4ac99f97c7e96c7f9bec3ded877442f"
+    },
+    {
+      "name": "degali",
+      "description": "DEGALI (Dense Gas Dispersion for Liquid Hydrogen) is a research-grade Python model for cryogenic hydrogen release and atmospheric dispersion analysis.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-22T07:51:49Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "d6d1c4fc33fe32ce46d5932ef2ef543df30580f99f22be26e23787183018258b"
+    },
+    {
+      "name": "DynamicLH2PoolX",
+      "description": "Dynamic, evidence-qualified liquid-hydrogen pool source-term model for declared ground inflow.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-09T08:18:25Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "b3cbac206ee6b3e67ceb78ddc8ba7cfd7ddd87bf50c160986f29f3bfe97a810d"
+    },
+    {
+      "name": "human-reliability-toolkit",
+      "description": "Composable, evidence-qualified human reliability and process-risk research models with source-qualified numeric data and Python APIs.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-26T07:18:17Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "3fd4d57a1bbbd9b45bd6dc45b5f86231e2f7094d47f3b86b18836df12f29fd85"
+    },
+    {
+      "name": "hydrogen-local-energetics",
+      "description": "Reproducibility data and code for local hydrogen energetics and lattice-controlled mobility",
+      "defaultBranch": "main",
+      "pushedAt": "2026-08-25T05:28:28Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "286303586ca5f5f15ed7ee9d3b4148f25028fa34f7ce1ba0796eff044e53e573"
+    },
+    {
+      "name": "hydrogen-station-sim",
+      "description": "Physics-based hydrogen refueling station digital twin with sensor HAZOP and 3D monitoring.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-22T07:51:56Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "4bb388a63d871c361cca15741a92b33b286bcdd5cb6c50fca921ab38aa2f777a"
+    },
+    {
+      "name": "lh2-psv-tno-risk",
+      "description": "Research record for LH2 tank self-pressurization, PSV release, and TNO conditional-risk analysis",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-02T15:08:53Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "f22f03fb6c1488d89f444214ee106f0a0b888b0e8778bc9dfca96bf9684c272d"
+    },
+    {
+      "name": "lh2dt_models",
+      "description": "First-principles liquid-hydrogen component and network models",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-22T07:51:51Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "6a1ee4f59bc060ca467ab605079600c6b0b7f494cb1f004ddc146d94e8280507"
+    },
+    {
+      "name": "lh2poolx",
+      "description": "Evidence-qualified liquid-hydrogen pool source terms for dispersion models",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-09T08:18:23Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "2498d8a10eb74e88abe575beb98a0f0fd48d23d4785f159d4c0ffa3200a8f26f"
+    },
+    {
+      "name": "nbcp-magnetocaloric-quantum-spectral-flow",
+      "description": "Reproducible Cryogenics study with N=18 model-transfer gates and a complete IBM Kingston QPU benchmark.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-12T20:33:13Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "83b9701a0ab0d33480979acaa0b14823ad68a5d138a9ade0448d0d54a24cffbe"
+    },
+    {
+      "name": "pifira",
+      "description": "Pressure-based inverse fire heat-flux and effective-area analysis for LPG and LH2 tanks",
+      "defaultBranch": "main",
+      "pushedAt": "2026-09-04T03:24:51Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "2523cfd0f4ba4f89ca14a6969d3b17b05e9de8d2e4fcb3f3dc2fc940e2e56261"
+    },
+    {
+      "name": "prism",
+      "description": "PRISM — Process Risk Integration and Scenario Modeling; optional LH2 analysis, auditable model coupling and literature-based frequencies.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-18T14:15:36Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "df2d824932f66cb6189baba3255d7cae0bdc6efa35037963417aad35f1149eb5"
+    },
+    {
+      "name": "prism-dynasense",
+      "description": "Local hydrogen release and thermal-exposure screening with PRISM dose/probit functions, direct-model Sobol sensitivity analysis, and an offline results dashboard.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-22T07:51:53Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "f6503922f5751ca9d170a173450e63e5c55ec45158e099822d9e96758a496ab3"
+    },
+    {
+      "name": "process-monitoring-toolkit",
+      "description": "Composable Python toolkit for process-signal anomaly detection, fault monitoring, CoolProp residuals, and reproducible research.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-25T14:42:30Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "756bcc61832633f7f2bb8e680bd8b5d24bb95eae84ac0bb86e92cca11ad31e8e"
+    },
+    {
+      "name": "process-risk-consequence-toolkit",
+      "description": "Independent consequence screening and dense-gas research toolkit. Apache-2.0. Not affiliated with CCPS or AIChE.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-26T08:22:28Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "52afd298d7cb3a875dab03b6d7372808bbd86610b2d2c0b517dcf4d44dfe7a06"
+    },
+    {
+      "name": "psa-dyna",
+      "description": "Physics-based non-isothermal dynamic PSA/VPSA model with explicit validation and guarded DWSIM coupling.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-24T03:10:31Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "d3cc68be104558d607ddcbb8dea88a31cb26177221189d63f9105f650358d7d1"
+    },
+    {
+      "name": "psa-qae-resource-audit",
+      "description": "Reproducibility archive for pressure-consistent hydrogen PSA/membrane operation, probability-event oracle resources, and a two-bit IBM QPU probe.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-22T07:51:57Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "26c25b5ea01ef39ba6e4ae03c6172df963125ef943400751f1a5934b4e9f07b7"
+    },
+    {
+      "name": "qsafety-qae",
+      "description": "Quantum amplitude-estimation research for finite-mixture safety and reliability models, with classical baselines, Qiskit circuit checks, and opt-in IBM QPU execution.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-09T14:44:17Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "ef396c55e3ec42fefc525dc8cee7589e6592ed610c0597f955cb9ba57a2c0d20"
+    },
+    {
+      "name": "saga-py",
+      "description": "Python/FastAPI gas-safety knowledge assistant with document-grounded Korean/English chat, HAZOP retrieval, and digital-twin explanation APIs.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-11T23:29:08Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "fa9deca2c78788bac5532b8060f0d8a1f56d89fe1aeff24732eb3793a23b8247"
+    },
+    {
+      "name": "saga-sts",
+      "description": "Earlier Java/Spring Tool Suite edition of SAGA, preserved separately from saga-py.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-01T14:55:29Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "cb43a0d9f7c22ca3a53fe31d7bc4b667e9f68854f1006cb83f2c1e642dee417f"
+    },
+    {
+      "name": "slabx",
+      "description": "Python reimplementation of the SLAB dense-gas dispersion model",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-01T14:15:25Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "0c0e190e7a861aa08699de7d292babed0cc25dc5e44692e864c88cd1348febfd"
+    },
+    {
+      "name": "slabx-lh2",
+      "description": "Liquid hydrogen extensions and an applicability criterion for the SLAB dense-gas dispersion model",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-06T13:53:10Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "82203019e0581ead7fa5a95e22bde4fa23a3401690761d7e02a068032ffcabc1"
+    }
+  ]
+}

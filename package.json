@@ -2,6 +2,13 @@
   "name": "lyullee-research-homepage",
   "private": true,
   "type": "module",
-  "scripts": {"build":"node build.mjs", "check":"node verify.mjs", "sync":"node sync.mjs"},
-  "engines": {"node": ">=20"}
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node verify.mjs",
+    "sync": "node sync.mjs",
+    "inspect": "node inspect-upstream.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }

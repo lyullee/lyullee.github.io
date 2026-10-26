@@ -1,14 +1,47 @@
 {
   "reviewDate": "2026-10-26",
   "categories": [
-    ["hydrogen-station-sim", "lh2dt_models", "prism", "prism-dynasense", "psa-dyna", "process-monitoring-toolkit"],
-    ["saga-py", "saga-sts"],
-    ["slabx", "slabx-lh2", "degadisx", "degali", "lh2poolx", "DynamicLH2PoolX"],
-    ["pifira", "lh2-psv-tno-risk"],
-    ["ammonia-supply-risk"],
-    ["hydrogen-local-energetics", "qsafety-qae", "psa-qae-resource-audit", "nbcp-magnetocaloric-quantum-spectral-flow"],
-    ["human-reliability-toolkit", "api581-risk-analysis"],
-    ["adm1-tea-lca"]
+    [
+      "hydrogen-station-sim",
+      "lh2dt_models",
+      "prism",
+      "prism-dynasense",
+      "psa-dyna",
+      "process-monitoring-toolkit",
+      "process-risk-consequence-toolkit"
+    ],
+    [
+      "saga-py",
+      "saga-sts"
+    ],
+    [
+      "slabx",
+      "slabx-lh2",
+      "degadisx",
+      "degali",
+      "lh2poolx",
+      "DynamicLH2PoolX"
+    ],
+    [
+      "pifira",
+      "lh2-psv-tno-risk"
+    ],
+    [
+      "ammonia-supply-risk"
+    ],
+    [
+      "hydrogen-local-energetics",
+      "qsafety-qae",
+      "psa-qae-resource-audit",
+      "nbcp-magnetocaloric-quantum-spectral-flow"
+    ],
+    [
+      "human-reliability-toolkit",
+      "api581-risk-analysis"
+    ],
+    [
+      "adm1-tea-lca"
+    ]
   ],
   "names": {
     "hydrogen-station-sim": "Hydrogen Station Simulator",
@@ -34,6 +67,7 @@
     "nbcp-magnetocaloric-quantum-spectral-flow": "NBCP Quantum Spectral Flow",
     "human-reliability-toolkit": "Human Reliability Toolkit",
     "api581-risk-analysis": "API RP 581 Risk Analysis",
-    "adm1-tea-lca": "ADM1–TEA–LCA"
+    "adm1-tea-lca": "ADM1–TEA–LCA",
+    "process-risk-consequence-toolkit": "Process Risk Consequence Toolkit"
   }
 }

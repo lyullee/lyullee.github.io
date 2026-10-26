@@ -18,11 +18,11 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **24 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 26 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **25 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 27 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit |
+| Process simulation and risk integration | hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
@@ -82,6 +82,15 @@ A composable Python research framework for turning process signals into anomaly 
 - **Capabilities:** rules, statistical and subspace methods, classical machine learning, temporal/graph/neural models and CoolProp residuals share an explicit signal contract. Causal windows, independent threshold calibration, validity masks and elapsed-time alarm policies preserve the meaning of an output.
 - **Evidence:** the release documents 72 named configurations, six official UCI archives, 117 passing local tests and 31 exploratory benchmark runs. Configurations are not 72 independently invented algorithms, and dataset-specific scores are not a universal detector ranking. See the [benchmark results](https://github.com/lyullee/process-monitoring-toolkit/blob/main/docs/BENCHMARK_RESULTS.md).
 - **Integration and limits:** adapters cover station, LH2DT, PRISM, SAGA and PSA boundaries, with actual object checks and pinned schemas distinguished from live-service tests. Invalid observations are not healthy operation; an anomaly is not a proven root cause or a calibrated accident frequency. [Integration evidence](https://github.com/lyullee/process-monitoring-toolkit/blob/main/docs/INTEGRATION.md) records scope and known mismatches.
+
+### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
+
+An independent, typed consequence-screening and dense-gas research toolkit with dependency-traced workflows, Python/CLI contracts and optional HTTP interfaces.
+
+- **Scope:** 23 registered calculations cover source/inventory screening, passive Gaussian dispersion, fire/explosion effects, exposure/dose/probit and conditional risk. Optional native SLABx histories and a shared coupled 1D layer are separate routes; the latter is isothermal, fixed-width and vertically mixed, not a validated thermal or two-layer replacement.
+- **Reproducibility:** calculation receipts preserve context, evidence, source hashes and dependency traces. Synthetic examples and [validation records](https://github.com/lyullee/process-risk-consequence-toolkit/blob/main/verification/VALIDATION.md) separate software conservation/refinement checks from field validation. See the [manual](https://github.com/lyullee/process-risk-consequence-toolkit/blob/main/docs/MANUAL.md).
+- **Availability:** Zenodo 0.1.0 is documented, while PyPI publication is pending. The pinned optional SLABx 1.0.8 engine is not currently available from PyPI; the dense extra cannot be installed from PyPI alone. Native-engine skips in public CI do not reproduce the local native tests.
+- **Independence and rights:** original work is Apache-2.0. This is not an official or endorsed CCPS/AIChE product; the legacy `ccps_consequence` import is a compatibility identifier. Purchased standards, books and external engine sources are excluded.
 
 ## Safety knowledge systems
 
@@ -186,7 +195,9 @@ A compact Python package publishing the reproducible core screening examples fro
 Composable Python models linking task context, human-performance evidence, error/response-time estimates and process-risk calculations. The offline core separates observed counts, method references and application-specific assumptions.
 
 - **Capabilities:** task DAGs, Bayesian observed-count updates, SPAR-H/HEART/CREAM/IDHEAS-ECA references, censored response models, recovery/dependency, repeated-event-safe FTA, conditional ETA, small Bayesian networks, bounded Petri nets and optional sensitivity tools.
-- **Evidence:** version 0.2.0 provides 1,334 catalog records from seven numeric sources, including 578 observed context-group count records. The total includes method components, multipliers, intervals and rules; it is not 1,334 independent measurements or complete human-error probabilities. See the [evidence guide](https://github.com/lyullee/human-reliability-toolkit/blob/main/docs/HUMAN_ERROR_DATA.md).
+- **Evidence:** the retained evidence catalog provides 1,334 records from seven numeric sources, including 578 observed context-group count records. The total includes method components, multipliers, intervals and rules; it is not 1,334 independent measurements or complete human-error probabilities. See the [evidence guide](https://github.com/lyullee/human-reliability-toolkit/blob/main/docs/HUMAN_ERROR_DATA.md).
+- **Version 0.5.0:** adds original field-collection forms, independent demand-register reconciliation, unknown outcomes and frozen HEP forecasts with group-leakage and calibration checks. Twelve operational extensions cover executable actions, communication/permits, causal/risk workflows, coupled dynamics, progress/deadlines and assurance lifecycle. See the [field collection manual](https://github.com/lyullee/human-reliability-toolkit/blob/main/docs/FIELD_COLLECTION.md) and [operational guide](https://github.com/lyullee/human-reliability-toolkit/blob/main/docs/OPERATIONAL_EXTENSIONS.md).
+- **Additional benchmark:** 5,617 measured clinical specimen opportunities are a separate success/nonconformance aggregate, not additions to the HEP catalog. Individual human attribution and industrial transfer remain unqualified, and an unfavorable temporal calibration result is retained in the [denominator validation record](https://github.com/lyullee/human-reliability-toolkit/blob/main/docs/DENOMINATOR_VALIDATION.md).
 - **Application boundary:** SACADA evidence concerns nuclear training simulators. Chemical-plant field HEP calibration and observed annual error-frequency series are not claimed; calendar frequencies need compatible exposure and explicit transfer review. Integration traces do not establish that every receiving application has been implemented. Software is MIT; catalog evidence retains source-specific terms.
 
 ### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
@@ -264,6 +275,7 @@ Scenarios + frequencies + consequences ── PRISM
 Time-dependent release + sensitivity ──── PRISM-DynaSense
 Ammonia material/path screening ───────── ammonia-supply-risk
 
+Consequence workflows ──── process-risk-consequence-toolkit
 Process monitoring ─────── process-monitoring-toolkit
 Human reliability ──────── human-reliability-toolkit
 Risk-based inspection ──── api581-risk-analysis
@@ -294,4 +306,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-10-26 · 24 research projects + profile and website repositories (26 public repositories).</sub>
+<sub>Public-repository review: 2026-10-26 · 25 research projects + profile and website repositories (27 public repositories).</sub>

@@ -14,7 +14,7 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 24 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-10-26; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 25 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-10-26; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
 
@@ -50,6 +50,8 @@ Komponierbares Python-Forschungsframework für Anomaliescores, Fehlerbelege und 
 
 Python-Modelle für Aufgaben, menschliche Leistungsdaten, Fehler/Antwortzeiten und Prozessrisiko: DAGs, Bayes-Zählupdates, SPAR-H/HEART/CREAM/IDHEAS, Erholung, Abhängigkeit und FTA/ETA. Die 1.334 Katalogeinträge aus sieben Zahlenquellen enthalten Zählungen, Komponenten und Faktoren, keine 1.334 unabhängigen Messungen. SACADA stammt aus nuklearen Trainingssimulatoren; chemische Feld-HEP und beobachtete Jahresfrequenzen sind nicht kalibriert.
 
+Version 0.5.0 ergänzt Erhebungsformulare, unabhängigen Aufgaben-Nennerabgleich, eingefrorene HEP-Prognosebewertung und zwölf operative Erweiterungen. 5.617 klinische Probengelegenheiten sind ein getrenntes Erfolgs-/Abweichungsaggregat, keine industriellen menschlichen Fehlermessungen; ungünstige zeitliche Kalibrierung bleibt dokumentiert.
+
 ### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
 
 Unabhängige, inoffizielle Python-Implementierung risikobasierter API-RP-581-Inspektion. api581-engine/import api581 umfasst Schäden, Häufigkeit, Inspektion, Freisetzung, Folgen, Risiko und Planung; SLABx ist optional, API 520 separat. 509 registrierte Berechnungen und 861 Quellenabschnitte sind Softwarebelege, keine Fremdzertifizierung. Keine API-Unterstützung, keine Normtexte; Originalarbeit unter Apache-2.0.
@@ -57,6 +59,10 @@ Unabhängige, inoffizielle Python-Implementierung risikobasierter API-RP-581-Ins
 ### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
 
 Ausführbares Archiv früherer ADM1-Biomethanforschung zu Grassilage/Rindergülle. 34-Zustands-Integration, rekonstruierte TEA, partielle Treibhausgasbilanz und endliche Gitter-/Pareto-, Robustheits- und Sensitivitätsanalysen. Fünf leichte Tests und ein kleines Beispiel sind keine experimentelle oder vollständige historische Reproduktion. Keine vollständige Ökobilanz oder geprüfter Produktfußabdruck; Düngergutschriften können überschätzt sein.
+
+### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
+
+Unabhängiges Toolkit für Folgenscreening und Dichtgasforschung. 23 typisierte Berechnungen decken Quellen, passive Ausbreitung, Brand/Explosion, Exposition und bedingtes Risiko ab, mit Python/CLI/optionalem HTTP und nachvollziehbaren Belegen. SLABx-Verläufe und die isotherme, vertikal gemischte 1D-Schicht fester Breite sind getrennte Pfade. PyPI und SLABx 1.0.8 stehen aus; dense lässt sich nicht allein aus PyPI installieren. Apache-2.0, ohne CCPS/AIChE-Unterstützung oder Feldzertifizierung.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 
