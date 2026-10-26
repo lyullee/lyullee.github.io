@@ -62,7 +62,7 @@ PSA-Dyna是一维非等温多组分PSA/VPSA动态模型，包含有限体积床�
 
 ### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
 
-独立编写的后果筛查与重气研究工具。23项类型化计算覆盖源项、被动扩散、火灾/爆炸、暴露和条件风险，提供Python/CLI/可选HTTP及证据收据。SLABx历程与等温、固定宽度、垂直混合的一维耦合层是独立路径。PyPI及可选SLABx 1.0.8发布待定，不能仅靠PyPI安装dense功能。原创内容为Apache-2.0，无CCPS/AIChE背书或现场认证。
+独立编写的后果筛查与重气研究工具。23项类型化计算覆盖源项、被动扩散、火灾/爆炸、暴露和条件风险，提供Python/CLI/可选HTTP及证据收据。SLABx历程与等温、固定宽度、垂直混合的一维耦合层是独立路径。基础包0.1.0已在PyPI发布，上游记录包含新环境安装检查；可选SLABx 1.0.8仍未上架，dense不能仅靠PyPI安装。原创内容为Apache-2.0，无CCPS/AIChE背书或现场认证。
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

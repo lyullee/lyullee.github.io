@@ -62,7 +62,7 @@ Archive exécutable d’une étude ADM1 de biométhane sur ensilage/herbe et lis
 
 ### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
 
-Outil indépendant de présélection des conséquences et de recherche sur les gaz denses. Les 23 calculs typés couvrent sources, dispersion passive, incendie/explosion, exposition et risque conditionnel, avec Python/CLI/HTTP optionnel et reçus traçables. Historiques SLABx et couche 1D isotherme, de largeur fixe et mélangée verticalement sont distincts. PyPI et SLABx 1.0.8 restent en attente ; l’extra dense ne s’installe pas depuis PyPI seul. Apache-2.0, sans aval CCPS/AIChE ni certification de terrain.
+Outil indépendant de présélection des conséquences et de recherche sur les gaz denses. Les 23 calculs typés couvrent sources, dispersion passive, incendie/explosion, exposition et risque conditionnel, avec Python/CLI/HTTP optionnel et reçus traçables. Historiques SLABx et couche 1D isotherme, de largeur fixe et mélangée verticalement sont distincts. Le paquet de base 0.1.0 est publié sur PyPI, avec des contrôles d’installation en environnement neuf documentés en amont. SLABx 1.0.8 reste absent de PyPI ; l’extra dense ne s’y installe pas seul. Apache-2.0, sans aval CCPS/AIChE ni certification de terrain.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

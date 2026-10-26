@@ -62,7 +62,7 @@ API-RP-581 기반 위험기반검사 계산과 워크플로를 독립 작성한 
 
 ### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
 
-독립 작성된 영향평가 스크리닝·고밀도 가스 연구 도구입니다. 23개 형식화 계산이 누출원·수동 확산·화재/폭발·노출·조건부 위험을 다루며 Python/CLI/선택적 HTTP와 근거 추적 영수증을 제공합니다. SLABx 이력과 등온·고정폭·수직혼합 1D 결합층은 별도 경로입니다. PyPI와 선택적 SLABx 1.0.8 배포가 대기 중이므로 PyPI만으로 dense 기능 설치를 보장하지 않습니다. Apache-2.0의 비공식 구현으로 CCPS/AIChE 승인·현장 인증을 주장하지 않습니다.
+독립 작성된 영향평가 스크리닝·고밀도 가스 연구 도구입니다. 23개 형식화 계산이 누출원·수동 확산·화재/폭발·노출·조건부 위험을 다루며 Python/CLI/선택적 HTTP와 근거 추적 영수증을 제공합니다. SLABx 이력과 등온·고정폭·수직혼합 1D 결합층은 별도 경로입니다. 기본 패키지 0.1.0은 PyPI에 공개되었으며 원 저장소에 새 환경 설치 점검이 기록되어 있습니다. 선택적 SLABx 1.0.8은 아직 PyPI에 없어 dense 기능은 PyPI만으로 설치할 수 없습니다. Apache-2.0의 비공식 구현으로 CCPS/AIChE 승인·현장 인증을 주장하지 않습니다.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

@@ -62,7 +62,7 @@ Ausführbares Archiv früherer ADM1-Biomethanforschung zu Grassilage/Rindergüll
 
 ### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
 
-Unabhängiges Toolkit für Folgenscreening und Dichtgasforschung. 23 typisierte Berechnungen decken Quellen, passive Ausbreitung, Brand/Explosion, Exposition und bedingtes Risiko ab, mit Python/CLI/optionalem HTTP und nachvollziehbaren Belegen. SLABx-Verläufe und die isotherme, vertikal gemischte 1D-Schicht fester Breite sind getrennte Pfade. PyPI und SLABx 1.0.8 stehen aus; dense lässt sich nicht allein aus PyPI installieren. Apache-2.0, ohne CCPS/AIChE-Unterstützung oder Feldzertifizierung.
+Unabhängiges Toolkit für Folgenscreening und Dichtgasforschung. 23 typisierte Berechnungen decken Quellen, passive Ausbreitung, Brand/Explosion, Exposition und bedingtes Risiko ab, mit Python/CLI/optionalem HTTP und nachvollziehbaren Belegen. SLABx-Verläufe und die isotherme, vertikal gemischte 1D-Schicht fester Breite sind getrennte Pfade. Das Basispaket 0.1.0 ist auf PyPI veröffentlicht; frische Installationsprüfungen sind im Ursprungsprojekt dokumentiert. SLABx 1.0.8 fehlt weiterhin auf PyPI; dense lässt sich dort nicht allein installieren. Apache-2.0, ohne CCPS/AIChE-Unterstützung oder Feldzertifizierung.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

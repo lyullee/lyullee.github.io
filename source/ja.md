@@ -62,7 +62,7 @@ API-RP-581リスクベース検査計算を独立作成した非公式Python実�
 
 ### [process-risk-consequence-toolkit](https://github.com/lyullee/process-risk-consequence-toolkit)
 
-独立作成の影響スクリーニング・重ガス研究ツールです。23の型付き計算でソース、受動拡散、火災/爆発、曝露、条件付きリスクを扱い、Python/CLI/任意HTTPと根拠レシートを提供します。SLABx履歴と等温・固定幅・鉛直混合1D結合層は別経路です。PyPIと任意SLABx 1.0.8は公開待ちでdenseをPyPIだけでは導入できません。独自部分はApache-2.0でCCPS/AIChE承認・現場認証はありません。
+独立作成の影響スクリーニング・重ガス研究ツールです。23の型付き計算でソース、受動拡散、火災/爆発、曝露、条件付きリスクを扱い、Python/CLI/任意HTTPと根拠レシートを提供します。SLABx履歴と等温・固定幅・鉛直混合1D結合層は別経路です。基本パッケージ0.1.0はPyPI公開済みで、上流に新環境の導入確認を記録しています。任意SLABx 1.0.8は未公開のためdenseはPyPIだけでは導入できません。独自部分はApache-2.0でCCPS/AIChE承認・現場認証はありません。
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 
