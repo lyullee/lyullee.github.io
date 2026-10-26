@@ -25,7 +25,7 @@ Review the generated changes, then commit and push `source/` and `docs/`. Updati
 
 `source/en.md` and `source/<language>.md` contain the README snapshots. `source/ui.json` contains localized navigation, headings and section descriptions. `assets/` contains the stylesheet, client-side search/filter controls and favicon. `build.mjs` generates static HTML, alternate-language metadata, sitemap and the 404 page into `docs/`.
 
-The generator expects 20 project descriptions and known project categories. When adding a project, update its category/display name in `build.mjs`, the coverage check in `verify.mjs`, and localized counts/copy in `source/ui.json`. Build and review before publishing.
+`source/catalog.json` is the project/category/display-name inventory. The generator and verification script derive project counts and exact coverage from it. When adding a project, update the catalog, all eight README snapshots, and localized category labels/copy in `source/ui.json`. `{count}` in localized project introductions is replaced at build time. Build and review before publishing.
 
 ## Local preview
 

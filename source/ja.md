@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [主メール](mailto:lyullee@gmail.com) · [補助メール](mailto:lyullee@kgs.or.kr)
+[研究ホームページ](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [主メール](mailto:lyullee@gmail.com) · [補助メール](mailto:lyullee@kgs.or.kr)
 
 ## 自己紹介
 
@@ -12,7 +12,9 @@
 
 アンモニア供給スクリーニング、動的PSA/VPSA分離、時系列の熱曝露・感度解析にも研究を広げています。
 
-> 英語版メインREADMEをもとにした各言語向けガイドです。20プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-10-24。今回の更新では検証計算を独立に再実行していません。
+プロセス異常監視、人間信頼性、リスクベース検査、バイオメタンTEAと部分環境会計にも研究を拡張しています。
+
+> 英語版メインREADMEをもとにした各言語向けガイドです。24プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-10-26。今回の更新では検証計算を独立に再実行していません。
 
 ## プロジェクト
 
@@ -39,6 +41,22 @@ PRISM-DynaSenseは加圧水素放出、遅延着火、上流隔離、下流残�
 ### [psa-dyna](https://github.com/lyullee/psa-dyna)
 
 PSA-Dynaは1次元非等温多成分PSA/VPSA動的モデルです。有限体積吸着床、Ergun流動、競争吸着/LDF、気固壁エネルギー、圧縮性弁、多塔多段、チェックポイント/CSSを備えます。Wang単塔破過曲線の図レベル比較は規定ゲートを通過しましたが循環VPSA・産業設計の検証は別です。DWSIM平均FEED/PRODUCT/TAIL契約は実装済みで自動出力承認は閉じています。
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+プロセス信号を異常スコア・故障根拠・監視イベントへ変換するPython研究基盤です。規則、統計、機械学習、時系列・グラフモデル、CoolProp残差を共通信号契約、独立校正、有効性マスク、警報方針で統合します。72構成、117ローカル試験、31探索ベンチマークを区別し、異常を根本原因や事故頻度、他施設での有効性と同一視しません。
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+タスク文脈、人間の遂行根拠、エラー・応答時間とプロセスリスクを結ぶPythonモデルです。タスクDAG、ベイズ計数更新、SPAR-H/HEART/CREAM/IDHEAS参照、回復・依存性、FTA/ETAを提供します。7数値源の1,334記録には観測数・方法成分・係数が含まれ、独立測定1,334件ではありません。SACADAは原子力訓練シミュレータの根拠で、化学プラントHEPや年間頻度の検証ではありません。
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+API-RP-581リスクベース検査計算を独立作成した非公式Python実装です。配布api581-engine、import api581で損傷・頻度・検査・放出・影響・リスク・計画を型付けし、任意SLABxと別API 520機能を備えます。509計算登録と861出典区間のソフトウェア検証は第三者認証ではありません。APIの提携・承認はなく規格原文を除外し、独自部分はApache-2.0です。
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+草サイレージ・牛スラリーのバイオメタンADM1研究を実行可能な記録として保存します。34状態積分、再構成TEA、部分GHG会計、有限格子/Pareto・頑健性・感度を接続します。5軽量試験と小規模実行は実験検証や歴史的完全再現ではなく、環境出力も完全LCAや検証済み製品フットプリントではありません。肥料クレジット過大評価の可能性を明示します。
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

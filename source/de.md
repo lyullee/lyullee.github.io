@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Primäre E-Mail](mailto:lyullee@gmail.com) · [Zweite E-Mail](mailto:lyullee@kgs.or.kr)
+[Forschungswebsite](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Primäre E-Mail](mailto:lyullee@gmail.com) · [Zweite E-Mail](mailto:lyullee@kgs.or.kr)
 
 ## Über mich
 
@@ -12,7 +12,9 @@ Ich bin Ugwiyeon Lee (이우귀연, Lyul Lee), tätig bei der Korea Gas Safety C
 
 Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeitabhängige Wärmeexposition und Sensitivitätsanalyse.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 20 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-10-24; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
+
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 24 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-10-26; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
 
@@ -39,6 +41,22 @@ Python-Screening für Ammoniakversorgung: unsichere Schadensindikatoren für zeh
 ### [psa-dyna](https://github.com/lyullee/psa-dyna)
 
 PSA-Dyna ist ein eindimensionales, nichtisothermes Mehrkomponentenmodell für dynamische PSA/VPSA: finite Volumina, Ergun-Strömung, kompetitive Adsorption/LDF, Gas-Feststoff-Wand-Energie, kompressible Ventile, mehrere Betten/Schritte sowie Neustart/CSS. Wangs Einzelbett-Durchbruchvergleich auf Abbildungsebene besteht die festgelegten Prüfungen, validiert aber weder zyklische VPSA noch Industrieauslegung. DWSIM-Mittelströme FEED/PRODUCT/TAIL sind vertraglich implementiert; automatische Übergabe bleibt gesperrt.
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+Komponierbares Python-Forschungsframework für Anomaliescores, Fehlerbelege und Überwachungsereignisse aus Prozesssignalen. Regeln, Statistik, Lernverfahren, Zeit-/Graphmodelle und CoolProp-Residuen teilen Signalverträge, unabhängige Kalibrierung und Gültigkeitsmasken. 72 Konfigurationen, 117 lokale Tests und 31 explorative Läufe belegen weder physische Ursache noch Unfallhäufigkeit oder standortübergreifende Leistung.
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+Python-Modelle für Aufgaben, menschliche Leistungsdaten, Fehler/Antwortzeiten und Prozessrisiko: DAGs, Bayes-Zählupdates, SPAR-H/HEART/CREAM/IDHEAS, Erholung, Abhängigkeit und FTA/ETA. Die 1.334 Katalogeinträge aus sieben Zahlenquellen enthalten Zählungen, Komponenten und Faktoren, keine 1.334 unabhängigen Messungen. SACADA stammt aus nuklearen Trainingssimulatoren; chemische Feld-HEP und beobachtete Jahresfrequenzen sind nicht kalibriert.
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+Unabhängige, inoffizielle Python-Implementierung risikobasierter API-RP-581-Inspektion. api581-engine/import api581 umfasst Schäden, Häufigkeit, Inspektion, Freisetzung, Folgen, Risiko und Planung; SLABx ist optional, API 520 separat. 509 registrierte Berechnungen und 861 Quellenabschnitte sind Softwarebelege, keine Fremdzertifizierung. Keine API-Unterstützung, keine Normtexte; Originalarbeit unter Apache-2.0.
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+Ausführbares Archiv früherer ADM1-Biomethanforschung zu Grassilage/Rindergülle. 34-Zustands-Integration, rekonstruierte TEA, partielle Treibhausgasbilanz und endliche Gitter-/Pareto-, Robustheits- und Sensitivitätsanalysen. Fünf leichte Tests und ein kleines Beispiel sind keine experimentelle oder vollständige historische Reproduktion. Keine vollständige Ökobilanz oder geprüfter Produktfußabdruck; Düngergutschriften können überschätzt sein.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

@@ -5,13 +5,18 @@ import {fileURLToPath} from 'node:url';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const output=path.join(root,'docs');
 const locales=JSON.parse(fs.readFileSync(path.join(root,'source/ui.json'),'utf8'));
+const catalog=JSON.parse(fs.readFileSync(path.join(root,'source/catalog.json'),'utf8'));
+const expectedIds=catalog.categories.flat();
+const projectCount=expectedIds.length;
 for(const lang of Object.keys(locales)){
  const file=path.join(output,lang==='en'?'index.html':`${lang}/index.html`);
  const html=fs.readFileSync(file,'utf8');
- assert.equal((html.match(/<article class="project"/g)||[]).length,20,`${lang}: project count`);
+ assert.equal((html.match(/<article class="project"/g)||[]).length,projectCount,`${lang}: project count`);
  assert.ok(html.includes(`<html lang="${lang}">`),`${lang}: language`);
  assert.ok(!html.includes('\uFFFD'),`${lang}: text encoding`);
- if(lang==='en')assert.equal((html.match(/<details><summary>/g)||[]).length,20,'English project detail count');
+ if(lang==='en')assert.equal((html.match(/<details><summary>/g)||[]).length,projectCount,'English project detail count');
+ const projectIds=[...html.matchAll(/<article class="project" id="project-([^"]+)"/g)].map(m=>m[1]);
+ assert.deepEqual([...projectIds].sort(),[...expectedIds].sort(),`${lang}: exact project coverage`);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(new Set(ids).size,ids.length,`${lang}: unique IDs`);
  for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)){
@@ -21,6 +26,6 @@ for(const lang of Object.keys(locales)){
   const location=path.join(output,target.endsWith('/')?`${target}index.html`:target);
   assert.ok(fs.existsSync(location),`${lang}: missing ${target}`);
  }
- console.log(`${lang}: 20 projects, language/asset/anchor links, encoding and IDs pass`);
+ console.log(`${lang}: ${projectCount} projects, language/asset/anchor links, encoding and IDs pass`);
 }
 console.log('All static-site checks passed.');

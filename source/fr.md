@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [E-mail principal](mailto:lyullee@gmail.com) · [E-mail secondaire](mailto:lyullee@kgs.or.kr)
+[Site de recherche](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [E-mail principal](mailto:lyullee@gmail.com) · [E-mail secondaire](mailto:lyullee@kgs.or.kr)
 
 ## À propos
 
@@ -12,7 +12,9 @@ Je suis Ugwiyeon Lee (이우귀연, Lyul Lee), affilié à Korea Gas Safety Corp
 
 Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la séparation dynamique PSA/VPSA et l’exposition thermique transitoire avec analyse de sensibilité.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 20 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-10-24 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
+
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 24 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-10-26 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
 
@@ -39,6 +41,22 @@ Outils Python de présélection pour systèmes d’ammoniac : indicateurs incert
 ### [psa-dyna](https://github.com/lyullee/psa-dyna)
 
 PSA-Dyna est un modèle dynamique PSA/VPSA 1D, non isotherme et multicomposant : volumes finis, écoulement Ergun, adsorption compétitive/LDF, bilans gaz-solide-paroi, vannes compressibles, lits/étapes multiples et reprise/CSS. La comparaison graphique de percée sur lit unique de Wang satisfait les critères déclarés, sans valider le cycle VPSA ni le dimensionnement industriel. Le contrat DWSIM FEED/PRODUCT/TAIL moyen est implémenté, mais son autorisation de transfert automatique reste fermée.
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+Cadre Python composable transformant les signaux de procédé en scores d’anomalie, preuves de défaut et événements. Règles, statistiques, apprentissage, modèles temporels/graphes et résidus CoolProp partagent contrats, calibration indépendante et masques de validité. Les 72 configurations, 117 tests locaux et 31 essais exploratoires ne prouvent ni cause physique, ni fréquence d’accident, ni performance intersites.
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+Modèles Python reliant tâches, preuves de performance humaine, erreurs/temps de réponse et risque : DAG, mises à jour bayésiennes, références SPAR-H/HEART/CREAM/IDHEAS, récupération, dépendance et FTA/ETA. Les 1 334 entrées de sept sources incluent comptes, composants et multiplicateurs, pas autant de mesures indépendantes. SACADA provient de simulateurs nucléaires ; aucune calibration HEP chimique de terrain ni série annuelle observée n’est revendiquée.
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+Implémentation Python indépendante et non officielle de calculs d’inspection fondée sur le risque API-RP-581. Paquet api581-engine/import api581, domaines dommage, fréquence, inspection, rejet, conséquences, risque et planification, avec SLABx optionnel et API 520 séparé. Les 509 calculs et 861 références de section sont vérifiés au niveau logiciel, sans certification tierce. Aucun aval API ; normes exclues et code original Apache-2.0.
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+Archive exécutable d’une étude ADM1 de biométhane sur ensilage/herbe et lisier bovin. Intégration à 34 états, TEA reconstruite, comptabilité GES partielle et analyses sur grille finie/Pareto, robustesse et sensibilité. Cinq tests légers et une petite démonstration ne constituent ni validation expérimentale ni reproduction historique complète. Les sorties environnementales ne sont pas une ACV complète ; le crédit fertilisant peut être surestimé.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

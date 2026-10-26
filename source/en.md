@@ -6,27 +6,29 @@
 
 [English](README.md) · [Korean](docs/i18n/README.ko.md) · [简体中文](docs/i18n/README.zh-CN.md) · [日本語](docs/i18n/README.ja.md) · [Français](docs/i18n/README.fr.md) · [Deutsch](docs/i18n/README.de.md) · [Español](docs/i18n/README.es.md) · [हिन्दी](docs/i18n/README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Primary email](mailto:lyullee@gmail.com) · [Secondary email](mailto:lyullee@kgs.or.kr)
+[Research website](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Primary email](mailto:lyullee@gmail.com) · [Secondary email](mailto:lyullee@kgs.or.kr)
 
 ## About me
 
 I am **Ugwiyeon Lee (Lyul Lee)**, affiliated with **Korea Gas Safety Corporation** in the Republic of Korea. I develop scientific software at the intersection of chemical engineering, process safety, and computational research. My work turns physical models and research evidence into tools whose assumptions, inputs, and limitations can be inspected.
 
-My public portfolio spans several scales: dynamic hydrogen-refuelling equipment, liquid-hydrogen networks and PSA/VPSA separation; ammonia supply-system screening; release, pool, dispersion, and fire analysis; document-grounded safety assistants; atomistic hydrogen energetics; and quantum-computing methods for probability estimation and cryogenic-materials research. I connect these areas through explicit model contracts and reproducibility records rather than treating a calculated number as a complete engineering conclusion.
+My public portfolio spans several scales: dynamic hydrogen-refuelling equipment, liquid-hydrogen networks and PSA/VPSA separation; ammonia supply-system screening; process-signal monitoring, human reliability and risk-based inspection; biomethane techno-economic and partial environmental analysis; release, pool, dispersion, and fire analysis; document-grounded safety assistants; atomistic hydrogen energetics; and quantum-computing methods for probability estimation and cryogenic-materials research. I connect these areas through explicit model contracts and reproducibility records rather than treating a calculated number as a complete engineering conclusion.
 
 I focus on **traceable scientific computing**: mass and energy accounting, numerical convergence, comparison with reference implementations, independent experimental checks, and versioned data provenance. I distinguish software verification from physical validation, historical model reproduction from new extensions, and simulator results from real-device measurements. Where the evidence is incomplete, I aim to make that boundary visible.
 
 ## Project guide
 
-This profile covers **20 public projects**, grouped by purpose. The profile repository itself is the twenty-first public repository at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **24 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 26 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna |
+| Process simulation and risk integration | hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
 | Ammonia supply-system screening | ammonia-supply-risk |
+| Human reliability and risk-based inspection | human-reliability-toolkit · api581-risk-analysis |
+| Bioenergy and sustainability | adm1-tea-lca |
 | Materials and quantum methods | hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
 
 ## Process simulation and risk integration
@@ -70,7 +72,16 @@ A local research application for time-dependent hydrogen-release and thermal-exp
 - **Physics and numerics:** finite-volume packed beds, Ergun pressure-flow closure, competitive dual-site Langmuir equilibrium and LDF kinetics, gas/solid/wall energy balances, compressible valves, and optional Peng–Robinson properties. Multiple beds and cycle schedules, stiff integration, sparse Jacobian structure and checkpoint/restart support numerical research.
 - **Evidence:** the [public validation summary](https://github.com/lyullee/psa-dyna/blob/main/validation/validation_summary.json) reports that the Wang single-bed breakthrough figure comparison passes the declared composition, temperature, mesh, time-step and conservation gates. This does not validate cyclic four-bed VPSA or an industrial PSA design; the S-015 candidate remains a numerical design screen, and the Boer biogas cycle track remains blocked by apparatus-response identification.
 - **Process integration:** a guarded DWSIM contract carries cycle-average `FEED`, `PRODUCT` and `TAIL` streams with thermodynamic state, enthalpy and provenance. The interface is implemented, but automatic DWSIM release and industrial-design qualification remain closed. A single completed cycle is not cyclic steady state.
+- **Research continuity:** the [research handoff](https://github.com/lyullee/psa-dyna/blob/main/docs/research-handoff.md), machine-readable research state and S-015 applicability supplement distinguish completed work, failed approaches and open validation/design gates.
 - **Relationship:** a reusable dynamic separation model, distinct from the `psa-qae-resource-audit` archive of a particular engineering probability event and hardware probe. See the [physics](https://github.com/lyullee/psa-dyna/blob/main/docs/physics.md), [validation](https://github.com/lyullee/psa-dyna/blob/main/docs/validation.md) and [DWSIM bridge](https://github.com/lyullee/psa-dyna/blob/main/docs/dwsim-bridge.md) documentation.
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+A composable Python research framework for turning process signals into anomaly scores, fault evidence and monitoring events. It separates signal quality, statistical novelty, known-fault classification and physical explanation.
+
+- **Capabilities:** rules, statistical and subspace methods, classical machine learning, temporal/graph/neural models and CoolProp residuals share an explicit signal contract. Causal windows, independent threshold calibration, validity masks and elapsed-time alarm policies preserve the meaning of an output.
+- **Evidence:** the release documents 72 named configurations, six official UCI archives, 117 passing local tests and 31 exploratory benchmark runs. Configurations are not 72 independently invented algorithms, and dataset-specific scores are not a universal detector ranking. See the [benchmark results](https://github.com/lyullee/process-monitoring-toolkit/blob/main/docs/BENCHMARK_RESULTS.md).
+- **Integration and limits:** adapters cover station, LH2DT, PRISM, SAGA and PSA boundaries, with actual object checks and pinned schemas distinguished from live-service tests. Invalid observations are not healthy operation; an anomaly is not a proven root cause or a calibrated accident frequency. [Integration evidence](https://github.com/lyullee/process-monitoring-toolkit/blob/main/docs/INTEGRATION.md) records scope and known mismatches.
 
 ## Safety knowledge systems
 
@@ -168,6 +179,34 @@ A compact Python package publishing the reproducible core screening examples fro
 - **Reproduction:** seeded NumPy sampling, evidence qualifications and source identifiers, existing API tests, and an archived seven-output Sobol summary.
 - **Boundary:** material rankings are conditional proxies, not observed annual leak rates. Calibrated frequencies need exposure/failure/inspection evidence; the package does not contain a complete ammonia source, dispersion, consequence, or facility-QRA solver.
 
+## Human reliability and risk-based inspection
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+Composable Python models linking task context, human-performance evidence, error/response-time estimates and process-risk calculations. The offline core separates observed counts, method references and application-specific assumptions.
+
+- **Capabilities:** task DAGs, Bayesian observed-count updates, SPAR-H/HEART/CREAM/IDHEAS-ECA references, censored response models, recovery/dependency, repeated-event-safe FTA, conditional ETA, small Bayesian networks, bounded Petri nets and optional sensitivity tools.
+- **Evidence:** version 0.2.0 provides 1,334 catalog records from seven numeric sources, including 578 observed context-group count records. The total includes method components, multipliers, intervals and rules; it is not 1,334 independent measurements or complete human-error probabilities. See the [evidence guide](https://github.com/lyullee/human-reliability-toolkit/blob/main/docs/HUMAN_ERROR_DATA.md).
+- **Application boundary:** SACADA evidence concerns nuclear training simulators. Chemical-plant field HEP calibration and observed annual error-frequency series are not claimed; calendar frequencies need compatible exposure and explicit transfer review. Integration traces do not establish that every receiving application has been implemented. Software is MIT; catalog evidence retains source-specific terms.
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+An unofficial, independently authored implementation of API-RP-581 risk-based inspection calculations and composable workflows. The package is published as `api581-engine` and imported as `api581`.
+
+- **Capabilities:** typed calculation contracts cover damage, failure frequency, inspection, release, effects, Level 1/2 consequence composition, financial risk and planning. Optional process-isolated SLABx/SLABx-LH2 adapters retain source fingerprints and explicit capability status; API 520 sizing utilities occupy a separate companion namespace.
+- **Software evidence:** the public release reports 509 typed calculation registrations, 861 source-section records, direct-test traceability and local/Nurion verification receipts. These are software verification records, not independent experimental evaluation or third-party API conformity certification. See the [module catalog](https://github.com/lyullee/api581-risk-analysis/blob/main/docs/MODULE_CATALOG.md) and [development status](https://github.com/lyullee/api581-risk-analysis/blob/main/docs/DEVELOPMENT_STATUS.md).
+- **Standards and use:** no API affiliation or endorsement is asserted. Standards and purchased source tables are excluded and must be obtained under the user's licence. Original work is Apache-2.0; outputs are not a fitness-for-service decision, inspection release or operating authorization.
+
+## Bioenergy and sustainability
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+An executable record of earlier ADM1-based grass-silage/cattle-slurry biomethane research, combining dynamic digestion, reconstructed techno-economic analysis, partial environmental accounting and finite-grid studies.
+
+- **Workflow:** feed characterization → direct 34-state ADM1 integration → gas/product/material ledger → CAPEX/OPEX, NPV/IRR/LCOB and partial GHG screen → grid/Pareto, robustness and sensitivity records with hashes. Original equation/input sources are preserved, while missing analysis interfaces were reconstructed from research notes.
+- **Recorded evidence:** five light execution/bookkeeping tests and a small four-point demonstration grid are documented. These do not establish experimental validity, complete historical numerical reproduction or global optimization. See the [reconstruction record](https://github.com/lyullee/adm1-tea-lca/blob/main/docs/RECONSTRUCTION.md) and [test report](https://github.com/lyullee/adm1-tea-lca/blob/main/docs/TEST_REPORT.md).
+- **Interpretation:** environmental outputs are a partial historical GHG screen, not a full LCA or verified product footprint; the archived fertilizer-credit assumption can overstate credits. Descriptive sampled ranks are not the original converged global sensitivity analysis. DWSIM/Aspen and downstream hydrogen optimization are outside this archive.
+
 ## Materials and quantum methods
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
@@ -225,6 +264,10 @@ Scenarios + frequencies + consequences ── PRISM
 Time-dependent release + sensitivity ──── PRISM-DynaSense
 Ammonia material/path screening ───────── ammonia-supply-risk
 
+Process monitoring ─────── process-monitoring-toolkit
+Human reliability ──────── human-reliability-toolkit
+Risk-based inspection ──── api581-risk-analysis
+Biomethane / TEA / GHG ─── adm1-tea-lca
 Dynamic separation ─────── psa-dyna (guarded DWSIM contract)
 Fire / tank analysis ───── pifira / lh2-psv-tno-risk
 Atomistic hydrogen ─────── hydrogen-local-energetics
@@ -238,6 +281,7 @@ Magnetic refrigeration ─── nbcp-magnetocaloric-quantum-spectral-flow
 | --- | --- |
 | Scientific computing | Python, NumPy, SciPy, CoolProp, finite volumes, stiff integration, mass/energy balances |
 | Sensitivity and uncertainty | SALib Sobol analysis, seeded sampling, convergence diagnostics |
+| Typed models and monitoring | Pydantic, scikit-learn, optional PyTorch, signal and evidence contracts |
 | Services and retrieval | FastAPI, Java, Spring Boot, Spring AI, Lucene/Nori, PostgreSQL/pgvector |
 | Materials | Quantum ESPRESSO, DFT, archived MACE-OMat-0 and CHGNet analysis |
 | Quantum computing | Qiskit, Aer, IBM Quantum, QAE, circuit-resource accounting |
@@ -250,4 +294,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-10-24 · 20 projects + this profile repository.</sub>
+<sub>Public-repository review: 2026-10-26 · 24 research projects + profile and website repositories (26 public repositories).</sub>

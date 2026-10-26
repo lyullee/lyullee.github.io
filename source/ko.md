@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [주 이메일](mailto:lyullee@gmail.com) · [보조 이메일](mailto:lyullee@kgs.or.kr)
+[연구 홈페이지](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [주 이메일](mailto:lyullee@gmail.com) · [보조 이메일](mailto:lyullee@kgs.or.kr)
 
 ## 소개
 
@@ -12,7 +12,9 @@
 
 수소 설비 외에도 암모니아 공급계통 스크리닝, 동적 PSA/VPSA 분리공정과 시간별 열 노출·민감도 분석으로 연구 범위를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 20개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-10-24. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
+
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 24개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-10-26. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
 
 ## 프로젝트
 
@@ -39,6 +41,22 @@ PRISM-DynaSense는 가압 수소 방출→지연 점화→상류 격리→하류
 ### [psa-dyna](https://github.com/lyullee/psa-dyna)
 
 PSA-Dyna는 1차원 비등온 다성분 PSA/VPSA 동적 모델입니다. 유한체적 흡착층, Ergun 유동, 경쟁 흡착·LDF 속도, 기체/고체/벽 에너지, 압축성 밸브, 다중 흡착탑·단계와 checkpoint/CSS를 제공합니다. Wang 단일탑 파과 곡선의 그림 수준 비교는 선언된 게이트를 통과했지만 순환 VPSA·산업 설계 검증은 별개입니다. DWSIM 평균 FEED/PRODUCT/TAIL 계약은 구현됐으나 자동 전달 승인은 닫혀 있습니다.
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+공정 신호를 이상 점수·고장 근거·모니터링 이벤트로 바꾸는 조합형 Python 연구 프레임워크입니다. 규칙·통계·머신러닝·시계열/그래프 신경 모델과 CoolProp 잔차에 공통 신호 계약, 독립 보정, 유효성 마스크와 경보 정책을 적용합니다. 공개 기록은 72개 구성, 117개 로컬 테스트, 31개 탐색 벤치마크를 구분하며, 이상을 실제 원인·사고 빈도·현장 성능으로 해석하지 않습니다.
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+작업 맥락·인적 수행 근거·오류/응답시간·공정 위험을 연결하는 Python 모델입니다. 작업 DAG, 베이지안 관측수 갱신, SPAR-H/HEART/CREAM/IDHEAS 참조, 회복·의존성, FTA/ETA와 동적 모델을 제공합니다. 7개 수치 출처의 1,334개 기록은 관측수·방법 성분·계수 등을 포함하며 독립 측정 1,334개가 아닙니다. SACADA는 원자력 훈련 시뮬레이터 근거이며 화학 플랜트 현장 HEP·연간 오류 빈도 검증은 별도입니다.
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+API-RP-581 기반 위험기반검사 계산과 워크플로를 독립 작성한 비공식 Python 구현입니다. 배포명 api581-engine/import api581로 손상·빈도·검사·누출·영향·위험·계획을 형식화하며 선택적 SLABx 연계와 별도 API 520 유틸리티를 제공합니다. 509개 계산 등록·861개 출처 구간의 소프트웨어 검증은 외부 적합성 인증이 아닙니다. API의 승인·제휴를 주장하지 않고 표준 원문은 제외하며, 원저작물은 Apache-2.0입니다.
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+목초 사일리지·우분 슬러리 바이오메탄의 기존 ADM1 연구를 실행 가능한 기록으로 보존합니다. 34상태 직접 적분, 재구성 TEA, 부분 GHG 회계와 유한 격자/Pareto·강건성·민감도 분석을 연결합니다. 5개 경량 테스트와 소규모 실행은 실험 검증·완전한 과거 수치 재현을 뜻하지 않으며, 환경 출력은 전체 LCA나 검증 탄소발자국이 아닙니다. 비료 크레딧 과대평가 가능성과 재구성 범위를 공개합니다.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

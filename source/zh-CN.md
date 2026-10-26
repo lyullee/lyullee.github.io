@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [主要邮箱](mailto:lyullee@gmail.com) · [备用邮箱](mailto:lyullee@kgs.or.kr)
+[研究主页](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [主要邮箱](mailto:lyullee@gmail.com) · [备用邮箱](mailto:lyullee@kgs.or.kr)
 
 ## 关于我
 
@@ -12,7 +12,9 @@
 
 研究还扩展到氨供应筛查、动态PSA/VPSA分离过程以及随时间变化的热暴露与敏感性分析。
 
-> 本页是英文主 README 的本地化项目指南，概述20个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-10-24；此次简介更新未独立重新运行验证计算。
+近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
+
+> 本页是英文主 README 的本地化项目指南，概述24个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-10-26；此次简介更新未独立重新运行验证计算。
 
 ## 项目
 
@@ -39,6 +41,22 @@ PRISM-DynaSense是本地研究工具，计算加压氢气释放、延迟点火�
 ### [psa-dyna](https://github.com/lyullee/psa-dyna)
 
 PSA-Dyna是一维非等温多组分PSA/VPSA动态模型，包含有限体积床层、Ergun流动、竞争吸附/LDF动力学、气固壁能量、可压缩阀、多床多步骤及检查点/CSS。Wang单床穿透曲线的图级比较通过了声明门槛，但不验证循环VPSA或工业设计。DWSIM平均FEED/PRODUCT/TAIL接口已实现，自动放行仍关闭。
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+将过程信号转化为异常分数、故障证据和监测事件的模块化Python框架。规则、统计、机器学习、时序/图神经模型和CoolProp残差共享信号契约、独立校准、有效性掩码与报警策略。公开记录区分72种配置、117项本地测试和31次探索基准；异常不等于根因、事故频率或跨工厂有效性。
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+连接任务情境、人因证据、错误/响应时间和过程风险的Python模型。包含任务DAG、贝叶斯计数更新、SPAR-H/HEART/CREAM/IDHEAS参考、恢复/依赖及FTA/ETA。七个数值来源的1,334条记录含观测计数、方法组件与乘数，并非1,334次独立测量。SACADA来自核电培训模拟器，不证明化工现场HEP或年度错误频率。
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+独立编写的非官方API-RP-581风险检验Python实现，发行名api581-engine、导入名api581。类型化计算覆盖损伤、频率、检验、释放、后果、风险和规划，附可选SLABx及独立API 520工具。509项注册和861条源章节记录体现软件验证，并非第三方认证。无API背书，标准原文不分发；原创内容为Apache-2.0。
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+保存草青贮/牛粪浆生物甲烷ADM1研究的可执行记录。连接34状态积分、重建TEA、部分温室气体核算及有限网格/Pareto、稳健性和敏感性分析。五项轻量测试和小型演示不等于实验验证或完整历史重现；环境输出并非完整LCA或已验证产品足迹，肥料抵扣可能被高估。
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 

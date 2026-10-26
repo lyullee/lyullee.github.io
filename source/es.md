@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [हिन्दी](README.hi.md)
 
-[GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Correo principal](mailto:lyullee@gmail.com) · [Correo secundario](mailto:lyullee@kgs.or.kr)
+[Sitio de investigación](https://lyullee.github.io/) · [GitHub](https://github.com/lyullee) · [Google Scholar](https://scholar.google.com/citations?user=WZn0QQwAAAAJ) · [Correo principal](mailto:lyullee@gmail.com) · [Correo secundario](mailto:lyullee@kgs.or.kr)
 
 ## Sobre mí
 
@@ -12,7 +12,9 @@ Soy Ugwiyeon Lee (이우귀연, Lyul Lee), de Korea Gas Safety Corporation, en l
 
 También trabajo en cribado de suministro de amoníaco, separación dinámica PSA/VPSA y exposición térmica transitoria con análisis de sensibilidad.
 
-> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 20 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-10-24; no se repitieron de forma independiente los cálculos de validación para esta actualización.
+Mis herramientas incluyen también monitoreo de procesos, fiabilidad humana, inspección basada en riesgo y TEA/contabilidad ambiental parcial del biometano.
+
+> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 24 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-10-26; no se repitieron de forma independiente los cálculos de validación para esta actualización.
 
 ## Proyectos
 
@@ -39,6 +41,22 @@ Herramientas Python de cribado para suministro de amoníaco: indicadores inciert
 ### [psa-dyna](https://github.com/lyullee/psa-dyna)
 
 PSA-Dyna modela PSA/VPSA dinámica 1D, no isotérmica y multicomponente: volúmenes finitos, Ergun, adsorción competitiva/LDF, energía gas-sólido-pared, válvulas compresibles, múltiples lechos/pasos y reinicio/CSS. La comparación gráfica de ruptura de un lecho de Wang supera los criterios declarados, sin validar ciclos VPSA ni diseño industrial. El contrato DWSIM de corrientes medias FEED/PRODUCT/TAIL está implementado, pero la transferencia automática permanece bloqueada.
+
+### [process-monitoring-toolkit](https://github.com/lyullee/process-monitoring-toolkit)
+
+Marco Python componible que convierte señales de proceso en puntuaciones de anomalía, evidencia de fallo y eventos. Reglas, estadística, aprendizaje, modelos temporales/grafos y residuos CoolProp comparten contratos, calibración independiente y máscaras de validez. Las 72 configuraciones, 117 pruebas locales y 31 ensayos exploratorios no demuestran causa física, frecuencia de accidentes ni eficacia entre plantas.
+
+### [human-reliability-toolkit](https://github.com/lyullee/human-reliability-toolkit)
+
+Modelos Python que conectan tareas, evidencia humana, errores/tiempos de respuesta y riesgo: DAG, actualización bayesiana de conteos, referencias SPAR-H/HEART/CREAM/IDHEAS, recuperación, dependencia y FTA/ETA. Los 1.334 registros de siete fuentes incluyen conteos, componentes y factores, no 1.334 mediciones independientes. SACADA procede de simuladores nucleares; no se afirma calibración HEP química de campo ni frecuencias anuales observadas.
+
+### [api581-risk-analysis](https://github.com/lyullee/api581-risk-analysis)
+
+Implementación Python independiente y no oficial de inspección basada en riesgo API-RP-581. Paquete api581-engine/import api581 con daño, frecuencia, inspección, liberación, consecuencias, riesgo y planificación; SLABx opcional y API 520 separado. Los 509 cálculos y 861 referencias son evidencia de software, no certificación externa. Sin respaldo API ni redistribución de normas; contenido original Apache-2.0.
+
+### [adm1-tea-lca](https://github.com/lyullee/adm1-tea-lca)
+
+Archivo ejecutable de investigación ADM1 de biometano a partir de ensilado de hierba y purín bovino. Integra 34 estados, TEA reconstruida, balance parcial de GEI y análisis de malla finita/Pareto, robustez y sensibilidad. Cinco pruebas ligeras y una pequeña demostración no validan experimentos ni reproducción histórica completa. No es ACV completa ni huella verificada; el crédito de fertilizante puede sobreestimarse.
 
 ### [saga-py](https://github.com/lyullee/saga-py)
 
