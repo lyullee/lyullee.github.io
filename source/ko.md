@@ -14,9 +14,17 @@
 
 최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 25개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-10-26. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 26개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-02. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
 
 ## 프로젝트
+
+### [h2physics](https://github.com/lyullee/h2physics)
+
+수소 생산·저장·이송·안전 연구를 위한 조립형 Python 물리 모델입니다. 열역학, 장치·유한 이송, 수소화물·흡착, 전기화학·분리, 투과·확산, 누출 이력과 시설 인터페이스를 제공하며 Python 객체·함수·배열로 계수와 공급자를 교체합니다.
+
+- SI 단위, 물질·상·에너지 기준과 시간축을 명시합니다. CoolProp·Cantera·LH2DT·PSA-Dyna·HyRAM+ 등 선택 엔진은 별도 설치·권리 확인이 필요합니다. 카탈로그 82개 항목과 검증 캠페인의 78개 주제군은 독립 방정식 수나 전체 물리 검증 완료를 뜻하지 않습니다.
+- 문서에는 선택 입력·계산·경계·연결·회귀 검사와 투과계수·정규화 수소화물 반응곡선·PEM 전압·노즐 유량의 조건부 분리 평가가 기록돼 있습니다. 서로 다른 오차 지표를 합산하지 않으며 노즐 평균 상대오차는 약 29.8%입니다. 전체 물리 자격 검증과 일부 정상 연결은 미완료이며 이번 프로필에서 계산을 재실행하지 않았습니다.
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0)는 wheel·소스 자산과 함께 공개됐고 PyPI·Zenodo는 대기 상태입니다. Python 3.12+, 원본 코드 Apache-2.0이며 외부 관측자료·엔진·참고문헌은 배포에서 제외됩니다. [비교 근거](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)와 [출판 상태](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)를 확인하세요.
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

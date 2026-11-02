@@ -14,9 +14,17 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述25个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-10-26；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述26个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-02；此次简介更新未独立重新运行验证计算。
 
 ## 项目
+
+### [h2physics](https://github.com/lyullee/h2physics)
+
+用于氢气生产、储存、输送和安全研究的可组合 Python 物理模型。涵盖热力学、设备与有限输送、氢化物与吸附、电化学与分离、渗透与扩散、释放历史及设施接口；可通过 Python 对象、函数和数组替换参数与供应模块。
+
+- 明确 SI 单位、物质与相态、能量基准及时间轴。CoolProp、Cantera、LH2DT、PSA-Dyna、HyRAM+ 等可选引擎需另行安装并核查许可。82 个目录条目和验证活动中的 78 个主题族并非独立方程数量，也不代表完整物理鉴定。
+- 文档记录了选定的输入、计算、边界、连接和回归检查，以及有效渗透系数、归一化氢化物反应曲线、PEM 电压和喷嘴流量的四项条件性留出比较。指标不可合并；喷嘴平均相对误差约为 29.8%。完整物理鉴定尚未建立，部分正常连接仍被阻断或仅有拒绝证据；本次简介未重跑计算。
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) 已提供 wheel 和源码包；PyPI 发布及 Zenodo 存档仍待完成。Python 3.12+，原创代码采用 Apache-2.0；外部观测、引擎和参考文献不随发行包分发。参见[比较报告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)与[发布状态](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)。
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

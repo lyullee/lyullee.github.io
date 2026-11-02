@@ -57,6 +57,15 @@
       "readmeSha256": "b3cbac206ee6b3e67ceb78ddc8ba7cfd7ddd87bf50c160986f29f3bfe97a810d"
     },
     {
+      "name": "h2physics",
+      "description": "Composable Python models for hydrogen production, storage, transfer and safety research.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-02T12:34:47Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "1809ca79af2d4159b92479836103cbfc667e7d21653d3cb41e2f3ce720d9e03e"
+    },
+    {
       "name": "human-reliability-toolkit",
       "description": "Composable, evidence-qualified human reliability and process-risk research models with source-qualified numeric data and Python APIs.",
       "defaultBranch": "main",

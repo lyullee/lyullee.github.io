@@ -18,11 +18,11 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **25 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 27 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **26 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 28 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
+| Process simulation and risk integration | h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
@@ -32,6 +32,15 @@ This profile covers **25 research/software projects**, grouped by purpose. Toget
 | Materials and quantum methods | hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
 
 ## Process simulation and risk integration
+
+### [h2physics](https://github.com/lyullee/h2physics)
+
+Composable Python research models for hydrogen production, storage, transfer and safety, with replaceable calculation objects and explicit physical-state and time-series contracts.
+
+- **Capabilities:** thermodynamics, equipment and finite transfer, hydride/adsorption storage, electrochemistry and separation, material permeation/diffusion, release histories, and facility/safety interfaces. Optional adapters connect specialist engines such as CoolProp, Cantera, LH2DT, PSA-Dyna and HyRAM+; native dependencies and their licences must be acquired separately.
+- **Architecture and use:** ordinary Python objects, functions and arrays let researchers replace parameters and providers without a web service. SI units, material/phase identity, energy references and aligned clocks are explicit; provider failures do not silently substitute different physics. The catalog has 82 entries and verification campaigns cover 78 scoped topic families, neither a count of independent equations nor proof of complete qualification.
+- **Recorded evidence:** selected input, formula, boundary, regression and connection campaigns are documented. Four conditional measured-data holdouts cover effective permeance, normalized hydride reaction curves, PEM polarization voltage and fixed-coefficient nozzle flow. They use different metrics and cannot form one accuracy score; the nozzle comparison reports about 29.8% mean absolute relative error. Full physical qualification remains unestablished, with rejection-only and blocked native connections retained explicitly. These calculations were not rerun for this portfolio.
+- **Release and reuse:** [0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) is published on GitHub with wheel/source assets; PyPI publication and Zenodo archival remain pending. Python 3.12+ and Apache-2.0 original code; external observations, engines and reference documents retain separate terms and are excluded from the distributions. See the [quickstart](https://github.com/lyullee/h2physics/blob/main/docs/QUICKSTART.md), [comparison report](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md) and [publication status](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md).
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 
@@ -275,6 +284,7 @@ Scenarios + frequencies + consequences ── PRISM
 Time-dependent release + sensitivity ──── PRISM-DynaSense
 Ammonia material/path screening ───────── ammonia-supply-risk
 
+Composable H₂ physics ──── h2physics
 Consequence workflows ──── process-risk-consequence-toolkit
 Process monitoring ─────── process-monitoring-toolkit
 Human reliability ──────── human-reliability-toolkit
@@ -306,4 +316,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-10-26 · 25 research projects + profile and website repositories (27 public repositories).</sub>
+<sub>Public-repository review: 2026-11-02 · 26 research projects + profile and website repositories (28 public repositories).</sub>

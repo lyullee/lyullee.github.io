@@ -1,7 +1,8 @@
 {
-  "reviewDate": "2026-10-26",
+  "reviewDate": "2026-11-02",
   "categories": [
     [
+      "h2physics",
       "hydrogen-station-sim",
       "lh2dt_models",
       "prism",
@@ -68,6 +69,7 @@
     "human-reliability-toolkit": "Human Reliability Toolkit",
     "api581-risk-analysis": "API RP 581 Risk Analysis",
     "adm1-tea-lca": "ADM1–TEA–LCA",
-    "process-risk-consequence-toolkit": "Process Risk Consequence Toolkit"
+    "process-risk-consequence-toolkit": "Process Risk Consequence Toolkit",
+    "h2physics": "H2Physics"
   }
 }

@@ -14,9 +14,17 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 25 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-10-26; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 26 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-02; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
+
+### [h2physics](https://github.com/lyullee/h2physics)
+
+Zusammensetzbare Python-Physikmodelle zur Erforschung von Wasserstoffproduktion, Speicherung, Transfer und Sicherheit: Thermodynamik, Anlagenkomponenten, Hydride/Adsorption, Elektrochemie/Trennung, Permeation/Diffusion, Freisetzungsverläufe und Anlagen-Schnittstellen. Parameter und Anbieter lassen sich über Python-Objekte, Funktionen und Arrays austauschen.
+
+- SI-Einheiten, Stoff-/Phasenidentität, Energiebezüge und Zeitachsen sind explizit. Optionale Engines wie CoolProp, Cantera, LH2DT, PSA-Dyna und HyRAM+ erfordern separate Installation und Lizenzprüfung. 82 Katalogeinträge und 78 Themenfamilien der Prüfkampagnen sind weder unabhängige Gleichungen noch ein Nachweis vollständiger physikalischer Qualifikation.
+- Dokumentiert sind ausgewählte Eingabe-, Rechen-, Grenz-, Verbindungs- und Regressionstests sowie vier bedingte Vergleiche mit zurückgehaltenen Messdaten: effektive Permeanz, normierte Hydridreaktionskurven, PEM-Spannung und Düsendurchfluss. Unterschiedliche Fehlermaße dürfen nicht zusammengefasst werden; der mittlere relative Düsenfehler beträgt etwa 29,8 %. Die vollständige physikalische Qualifikation ist nicht belegt; einige normale Verbindungen bleiben blockiert oder nur durch Ablehnung geprüft. Für dieses Profil wurden keine Berechnungen wiederholt.
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) enthält Wheel und Quellarchiv; PyPI-Veröffentlichung und Zenodo-Archivierung stehen aus. Python 3.12+, Originalcode Apache-2.0; externe Beobachtungen, Engines und Referenzdokumente sind nicht enthalten. Siehe [Vergleichsbericht](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md) und [Publikationsstatus](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md).
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

@@ -14,9 +14,17 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 25 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-10-26 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 26 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-02 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
+
+### [h2physics](https://github.com/lyullee/h2physics)
+
+Modèles physiques Python composables pour la recherche sur la production, le stockage, le transfert et la sécurité de l’hydrogène : thermodynamique, équipements, hydrures/adsorption, électrochimie/séparation, perméation/diffusion, rejets et interfaces de site. Objets, fonctions et tableaux permettent de remplacer paramètres et fournisseurs.
+
+- Les unités SI, espèces/phases, références énergétiques et horloges sont explicites. Les moteurs optionnels CoolProp, Cantera, LH2DT, PSA-Dyna ou HyRAM+ nécessitent une installation et une vérification des licences distinctes. Les 82 entrées du catalogue et 78 familles thématiques des campagnes ne comptent pas des équations indépendantes et ne prouvent pas une qualification physique complète.
+- Les documents décrivent des contrôles sélectionnés des entrées, calculs, limites, connexions et régressions, ainsi que quatre comparaisons conditionnelles sur données réservées : perméance effective, courbes normalisées d’hydrures, tension PEM et débit de buse. Les métriques ne peuvent être fusionnées ; l’erreur relative moyenne de la buse atteint environ 29,8 %. La qualification physique globale reste non établie et certaines connexions normales restent bloquées ou limitées au rejet. Aucun calcul n’a été réexécuté pour ce profil.
+- [0.1.0 Alpha sur GitHub](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) fournit wheel et sources ; PyPI et l’archivage Zenodo restent en attente. Python 3.12+, code original Apache-2.0 ; observations externes, moteurs et documents de référence sont exclus des distributions. Voir le [rapport de comparaison](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md) et le [statut de publication](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md).
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

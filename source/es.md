@@ -14,9 +14,17 @@ También trabajo en cribado de suministro de amoníaco, separación dinámica PS
 
 Mis herramientas incluyen también monitoreo de procesos, fiabilidad humana, inspección basada en riesgo y TEA/contabilidad ambiental parcial del biometano.
 
-> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 25 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-10-26; no se repitieron de forma independiente los cálculos de validación para esta actualización.
+> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 26 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-02; no se repitieron de forma independiente los cálculos de validación para esta actualización.
 
 ## Proyectos
+
+### [h2physics](https://github.com/lyullee/h2physics)
+
+Modelos físicos componibles en Python para investigar producción, almacenamiento, transferencia y seguridad del hidrógeno: termodinámica, equipos, hidruros/adsorción, electroquímica/separación, permeación/difusión, historiales de liberación e interfaces de instalaciones. Objetos, funciones y matrices permiten sustituir parámetros y proveedores.
+
+- Explicita unidades SI, identidad de sustancias/fases, referencias energéticas y relojes. Motores opcionales como CoolProp, Cantera, LH2DT, PSA-Dyna y HyRAM+ requieren instalación y revisión de licencias por separado. Las 82 entradas del catálogo y 78 familias temáticas de las campañas no son ecuaciones independientes ni acreditan una cualificación física completa.
+- Documenta comprobaciones seleccionadas de entradas, cálculos, límites, conexiones y regresión, además de cuatro comparaciones condicionales con datos reservados: permeancia efectiva, curvas normalizadas de hidruros, tensión PEM y caudal de tobera. No se pueden combinar métricas distintas; el error relativo medio de la tobera es de aproximadamente 29,8 %. La cualificación física global sigue sin establecerse y algunas conexiones normales están bloqueadas o solo tienen pruebas de rechazo. No se repitieron cálculos para este perfil.
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) ofrece wheel y fuentes; la publicación en PyPI y el archivo en Zenodo están pendientes. Python 3.12+, código original Apache-2.0; observaciones externas, motores y documentos de referencia se excluyen de las distribuciones. Véanse el [informe comparativo](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md) y el [estado de publicación](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md).
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 
