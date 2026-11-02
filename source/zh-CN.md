@@ -14,9 +14,16 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述26个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-02；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述28个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-03；此次简介更新未独立重新运行验证计算。
 
 ## 项目
+
+### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
+
+用于流动、热力学、结构响应、损伤、计量及风险交换的组合式管道工程研究工具，明确单位、时钟、来源及可替换提供程序的契约。
+
+- Python 3.12+，原创代码 MIT，导入名 `pipeline_integrity`。[PyPI 0.1.0a1](https://pypi.org/project/pipeline-safety-toolkit/0.1.0a1/)及[Zenodo 存档](https://doi.org/10.5281/zenodo.23899127)已公开，外部引擎和数据另有要求。223 种方法、304 个 API 不等于独立验证的求解器数量。
+- [记录证据](https://github.com/lyullee/pipeline-safety-toolkit/blob/main/research/public_validation_status.json)：限定域内的独立物理测试配置覆盖 198/223 种方法，25 种待完成，保留 4 项实测验收失败。已安装 wheel 的便携测试子集报告 276 项通过，完整风格检查仍有未解决问题。本页未重跑上游检查，结果不构成现场安全或标准认证。
 
 ### [h2physics](https://github.com/lyullee/h2physics)
 
@@ -113,6 +120,13 @@ SLAB重气扩散模型的Python重实现，支持蒸发池、水平/上升射流
 ### [lh2-psv-tno-risk](https://github.com/lyullee/lh2-psv-tno-risk)
 
 连接液氢储罐自增压、PSV开闭与排放、闪蒸/出口热状态及TNO火灾和扩散指标的研究档案。提供结果读取、条件风险面积、路径分类和图形重建。不是完整上游储罐/TNO求解器或经认证的PSV设计工具。
+
+### [materials-corrosion-toolkit](https://github.com/lyullee/materials-corrosion-toolkit)
+
+面向材料、腐蚀、电化学、扩散、结构完整性、制造/焊接与检测的独立 Python 模块，使用严格的输入、单位、证据及结果状态契约。
+
+- Python 3.11+，原创代码 MIT，导入名 `matintegrity`；源码元数据为研究 Alpha 0.1.0a1。审查时未确认 PyPI 已公开。可选科学计算、物性提供程序及外部数据需另行安装并确认权利。
+- [记录限制](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md)：757 个注册 API 包括数据和工作流工具，核心计算分为 63 组；审计对象中 230/232 个核心 API 完成计算，2 个等待外部证据。已安装 wheel 数值检查报告 59 项通过，但仍有 885 项 Ruff 问题及 1 项完整示例覆盖检查未解决。计数存在重叠，不是独立物理验证数量。不宣称自动设计批准、从确定性损伤推导故障概率或现场适用性认定；本页未重跑检查。
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
 

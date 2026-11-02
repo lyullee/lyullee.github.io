@@ -1,7 +1,8 @@
 {
-  "reviewDate": "2026-11-02",
+  "reviewDate": "2026-11-03",
   "categories": [
     [
+      "pipeline-safety-toolkit",
       "h2physics",
       "hydrogen-station-sim",
       "lh2dt_models",
@@ -31,6 +32,7 @@
       "ammonia-supply-risk"
     ],
     [
+      "materials-corrosion-toolkit",
       "hydrogen-local-energetics",
       "qsafety-qae",
       "psa-qae-resource-audit",
@@ -70,6 +72,8 @@
     "api581-risk-analysis": "API RP 581 Risk Analysis",
     "adm1-tea-lca": "ADM1–TEA–LCA",
     "process-risk-consequence-toolkit": "Process Risk Consequence Toolkit",
-    "h2physics": "H2Physics"
+    "h2physics": "H2Physics",
+    "pipeline-safety-toolkit": "Pipeline Safety Toolkit",
+    "materials-corrosion-toolkit": "Materials Corrosion Toolkit"
   }
 }

@@ -14,9 +14,16 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 26 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-02 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 28 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-03 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
+
+### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
+
+Outils de recherche composables pour l’écoulement, la thermodynamique, les structures, les dommages, la métrologie et les échanges de risque des conduites, avec unités, horloges, provenance et fournisseurs remplaçables explicites.
+
+- Python 3.12+, code original MIT, import `pipeline_integrity`. [PyPI 0.1.0a1](https://pypi.org/project/pipeline-safety-toolkit/0.1.0a1/) et [archive Zenodo](https://doi.org/10.5281/zenodo.23899127) publics ; moteurs et données externes ont leurs propres exigences. Les 223 méthodes et 304 API ne sont pas autant de solveurs validés indépendamment.
+- [Preuves consignées](https://github.com/lyullee/pipeline-safety-toolkit/blob/main/research/public_validation_status.json) : profils physiques indépendants limités à 198/223 méthodes ; 25 restent en attente et quatre échecs d’acceptation empirique subsistent. Le sous-ensemble portable du wheel installé rapporte 276 réussites ; des constats de style restent ouverts. Ces contrôles amont n’ont pas été réexécutés ici et ne certifient ni la sécurité sur site ni la conformité normative.
 
 ### [h2physics](https://github.com/lyullee/h2physics)
 
@@ -113,6 +120,13 @@ Analyse inverse de l’apport thermique, de la surface effective de contact des 
 ### [lh2-psv-tno-risk](https://github.com/lyullee/lh2-psv-tno-risk)
 
 Archive reliant auto-pressurisation LH₂, ouverture/fermeture PSV, historique de décharge, état flash/thermique et indicateurs incendie/dispersion alignés TNO. Outils de lecture des résultats, aire de risque conditionnelle, classification et régénération des figures. Ne fournit pas tous les solveurs amont/TNO ni un dimensionnement PSV certifié.
+
+### [materials-corrosion-toolkit](https://github.com/lyullee/materials-corrosion-toolkit)
+
+Modules Python indépendants pour matériaux, corrosion, électrochimie, diffusion, intégrité structurale, fabrication/soudage et inspection, avec contrats stricts d’entrée, d’unité, de preuve et de statut.
+
+- Python 3.11+, code original MIT, import `matintegrity` ; métadonnées source Alpha de recherche 0.1.0a1. La disponibilité PyPI n’a pas été confirmée lors de la revue. Fournisseurs scientifiques/de propriétés optionnels et données externes nécessitent installation et droits séparés.
+- [Limites consignées](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md) : 757 API incluent données et workflows, avec 63 groupes de calcul centraux ; 230/232 API centrales auditées ont calculé, deux attendent des preuves externes. Le wheel installé rapporte 59 contrôles numériques réussis ; 885 constats Ruff et un contrôle de couverture complète des exemples restent ouverts. Les décomptes se chevauchent et ne sont pas des validations physiques indépendantes. Aucune approbation automatique de conception, probabilité de défaillance déduite du dommage déterministe ou qualification sur site ; contrôles non réexécutés ici.
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
 

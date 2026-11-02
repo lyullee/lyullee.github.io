@@ -14,9 +14,16 @@
 
 プロセス異常監視、人間信頼性、リスクベース検査、バイオメタンTEAと部分環境会計にも研究を拡張しています。
 
-> 英語版メインREADMEをもとにした各言語向けガイドです。26プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-02。今回の更新では検証計算を独立に再実行していません。
+> 英語版メインREADMEをもとにした各言語向けガイドです。28プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-03。今回の更新では検証計算を独立に再実行していません。
 
 ## プロジェクト
+
+### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
+
+流動・熱力学・構造応答・損傷・計測・リスク交換を結ぶ配管工学研究ツールです。単位、時計、出典、交換可能なプロバイダーの契約を明示します。
+
+- Python 3.12+、独自コード MIT、import 名 `pipeline_integrity`。[PyPI 0.1.0a1](https://pypi.org/project/pipeline-safety-toolkit/0.1.0a1/) と [Zenodo 記録](https://doi.org/10.5281/zenodo.23899127)は公開済みです。外部エンジン・データには別途条件があります。223 手法・304 API は独立検証済みソルバー数ではありません。
+- [記録された根拠](https://github.com/lyullee/pipeline-safety-toolkit/blob/main/research/public_validation_status.json)：限定領域の独立物理試験プロファイルは 198/223 手法、25 手法が未完了で、実測適合性の失敗 4 件が残ります。導入済み wheel の公開部分集合は 276 件合格を報告しますが、全体のスタイル指摘は未解決です。ここでは再実行しておらず、現場安全や規格認証の根拠にはなりません。
 
 ### [h2physics](https://github.com/lyullee/h2physics)
 
@@ -113,6 +120,13 @@ LPGタンクの圧力上昇と壁温から熱入力、有効火炎接触面積�
 ### [lh2-psv-tno-risk](https://github.com/lyullee/lh2-psv-tno-risk)
 
 LH₂タンクの自己加圧、PSV開閉・放出、フラッシュ・出口熱状態とTNO火災・拡散指標を結ぶ研究記録です。公開結果の読込、条件付きリスク面積、経路分類、図の再生成を提供します。上流タンク/TNO全ソルバーや認証済みPSV設計ツールではありません。
+
+### [materials-corrosion-toolkit](https://github.com/lyullee/materials-corrosion-toolkit)
+
+材料・腐食・電気化学・拡散・構造健全性・製作/溶接・検査の独立 Python モジュールです。入力・単位・根拠・結果状態を厳格な契約で扱います。
+
+- Python 3.11+、独自コード MIT、import 名 `matintegrity`。ソースの研究用 Alpha 版は 0.1.0a1 で、レビュー時に PyPI 公開は確認できませんでした。任意の科学計算・物性プロバイダーと外部データには別途導入・権利確認が必要です。
+- [記録された限界](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md)：登録 757 API はデータ・ワークフローも含み、核心計算は 63 群です。監査対象の核心 API は 230/232 件が計算完了、2 件は外部根拠待ちです。導入済み wheel の数値検査 59 件合格とは別に、Ruff 指摘 885 件と全 API の例示網羅検査 1 件が未解決です。集計は重複し、独立物理検証数ではありません。自動設計承認、決定論的損傷からの故障確率、現場適格性を主張せず、ここでは再実行していません。
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
 

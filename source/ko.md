@@ -14,9 +14,16 @@
 
 최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 26개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-02. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 28개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-03. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
 
 ## 프로젝트
+
+### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
+
+유동·열역학·구조 응답·손상·계측·위험 교환을 연결하는 배관 공학 연구 도구입니다. 단위·시계·출처와 교체 가능한 공급자 계약을 명시합니다.
+
+- Python 3.12+, 원본 코드 MIT, import `pipeline_integrity`. [PyPI 0.1.0a1](https://pypi.org/project/pipeline-safety-toolkit/0.1.0a1/)와 [Zenodo 기록](https://doi.org/10.5281/zenodo.23899127)이 공개됐습니다. 외부 엔진·자료의 요구조건은 별도입니다. 223개 방법·304개 API는 독립 검증된 솔버 수가 아닙니다.
+- [기록된 근거](https://github.com/lyullee/pipeline-safety-toolkit/blob/main/research/public_validation_status.json): 제한 영역 독립 물리 프로필은 198/223개이며 25개가 보류되고 실측 적합성 실패 4건이 남습니다. 설치 wheel의 공개 부분집합은 276건 통과를 보고하나 전체 스타일 지적은 미해결입니다. 원 저장소의 검사를 여기서 재실행하지 않았으며 현장 안전·규격 인증을 뜻하지 않습니다.
 
 ### [h2physics](https://github.com/lyullee/h2physics)
 
@@ -113,6 +120,13 @@ LPG 탱크 압력 상승과 벽 온도에서 열유입·유효 화염 접촉면�
 ### [lh2-psv-tno-risk](https://github.com/lyullee/lh2-psv-tno-risk)
 
 액체수소 탱크의 자체가압→PSV 개폐·방출→플래시·벤트 열상태→TNO 기반 화재·확산 지표를 연결한 연구 아카이브입니다. 공개 결과 읽기·조건부 위험면적·경로 분류와 그림 재생성을 제공합니다. 상류 탱크·내부 TNO 전체 솔버나 인증된 PSV 설계 도구는 아닙니다.
+
+### [materials-corrosion-toolkit](https://github.com/lyullee/materials-corrosion-toolkit)
+
+재료·부식·전기화학·확산·구조 건전성·제작/용접·검사를 위한 독립 Python 모듈입니다. 입력·단위·근거·결과 상태를 엄격한 계약으로 연결합니다.
+
+- Python 3.11+, 원본 코드 MIT, import `matintegrity`; 소스 메타데이터의 연구용 알파 버전은 0.1.0a1입니다. 검토 시 PyPI 공개는 확인되지 않았습니다. 선택적 과학·물성 공급자와 외부 자료는 별도 설치·권리 확인이 필요합니다.
+- [기록된 한계](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md): 등록 API 757개에는 자료·워크플로 도구가 포함되며 핵심 계산군은 63개입니다. 감사 대상 핵심 API 230/232개가 계산됐고 2개는 외부 근거 보류입니다. 설치 wheel 수치 시험 59건 통과와 별개로 Ruff 지적 885건 및 전체 예제 포함 검사 1건이 미해결입니다. 집계는 중복되며 독립 물리 검증 수가 아닙니다. 자동 설계 합격·결정론적 손상의 고장확률 변환·현장 적격성을 주장하지 않으며 여기서 검사를 재실행하지 않았습니다.
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
 

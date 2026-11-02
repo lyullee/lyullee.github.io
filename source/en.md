@@ -18,20 +18,27 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **26 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 28 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **28 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 30 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
+| Process simulation and risk integration | pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
 | Ammonia supply-system screening | ammonia-supply-risk |
 | Human reliability and risk-based inspection | human-reliability-toolkit · api581-risk-analysis |
 | Bioenergy and sustainability | adm1-tea-lca |
-| Materials and quantum methods | hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
+| Materials and quantum methods | materials-corrosion-toolkit · hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
 
 ## Process simulation and risk integration
+
+### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
+
+Composable pipeline engineering research tools for flow, thermodynamics, structural response, damage, metrology and risk exchange, with explicit units, clocks, provenance and replaceable providers.
+
+- Python 3.12+, MIT original code, import `pipeline_integrity`. [PyPI 0.1.0a1](https://pypi.org/project/pipeline-safety-toolkit/0.1.0a1/) and [Zenodo archive](https://doi.org/10.5281/zenodo.23899127) are public; external engines/data retain separate requirements. The catalog maps 223 methods to 304 APIs, not 304 independently validated solvers.
+- [Recorded evidence](https://github.com/lyullee/pipeline-safety-toolkit/blob/main/research/public_validation_status.json): bounded independent physical profiles cover 198/223 methods; 25 remain pending and four empirical acceptance failures remain. The portable installed-wheel subset reports 276 passes. Full-style lint findings remain unresolved. These upstream checks were not rerun here and do not establish field safety or standards certification.
 
 ### [h2physics](https://github.com/lyullee/h2physics)
 
@@ -231,6 +238,13 @@ An executable record of earlier ADM1-based grass-silage/cattle-slurry biomethane
 
 ## Materials and quantum methods
 
+### [materials-corrosion-toolkit](https://github.com/lyullee/materials-corrosion-toolkit)
+
+Independent Python modules for materials, corrosion, electrochemistry, diffusion, structural integrity, fabrication/welding and inspection, with strict input, unit, evidence and result-status contracts.
+
+- Python 3.11+, MIT original code, import `matintegrity`; source metadata identifies research Alpha 0.1.0a1. PyPI availability was not confirmed at review. Optional scientific/property providers and external data require separate installation and rights.
+- [Recorded limits](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md): 757 registered APIs include data/workflow tools, with 63 core calculation groups; 230/232 audited core APIs computed and two await external evidence. Installed-wheel numerical checks report 59 passes; 885 Ruff findings and one full-example-coverage check remain unresolved. Counts overlap and are not independent physical validations. No automatic design approval, failure probability from deterministic damage, or field qualification is claimed; checks were not rerun here.
+
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
 
 A reproducibility archive for local hydrogen energetics and lattice-controlled mobility, connecting DFT and machine-learning-potential outputs to traceable analysis.
@@ -318,4 +332,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-02 · 26 research projects + profile and website repositories (28 public repositories).</sub>
+<sub>Public-repository review: 2026-11-03 · 28 research projects + profile and website repositories (30 public repositories).</sub>

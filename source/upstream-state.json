@@ -60,10 +60,10 @@
       "name": "h2physics",
       "description": "Composable Python models for hydrogen production, storage, transfer and safety research.",
       "defaultBranch": "main",
-      "pushedAt": "2026-11-02T15:55:42Z",
+      "pushedAt": "2026-11-02T23:04:58Z",
       "archived": false,
       "readmePath": "README.md",
-      "readmeSha256": "3549e214e569d1a69a3ba35cefc63526cf86c592a197f5c0962ba8f172a4b945"
+      "readmeSha256": "98b5dadc3732e94f206f93405b5f2406c66493e6bed96a932d308d86bebfc5df"
     },
     {
       "name": "human-reliability-toolkit",
@@ -120,6 +120,15 @@
       "readmeSha256": "2498d8a10eb74e88abe575beb98a0f0fd48d23d4785f159d4c0ffa3200a8f26f"
     },
     {
+      "name": "materials-corrosion-toolkit",
+      "description": "Research-alpha Python toolkit for modular materials, corrosion and integrity calculations with explicit contracts, units and validation scope.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-02T23:36:14Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "7ee977c21846e1fa8f236094a3fece83566d6910be2ec7c293b6401d59335c0c"
+    },
+    {
       "name": "nbcp-magnetocaloric-quantum-spectral-flow",
       "description": "Reproducible Cryogenics study with N=18 model-transfer gates and a complete IBM Kingston QPU benchmark.",
       "defaultBranch": "main",
@@ -136,6 +145,15 @@
       "archived": false,
       "readmePath": "README.md",
       "readmeSha256": "2523cfd0f4ba4f89ca14a6969d3b17b05e9de8d2e4fcb3f3dc2fc940e2e56261"
+    },
+    {
+      "name": "pipeline-safety-toolkit",
+      "description": "Composable Python pipeline engineering with explicit contracts and reproducible verification. Research alpha; bounded verification scope is documented.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-02T23:32:20Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "b029438f007468e6025d09160b0b44b1d69f291126792ff331b80d47ce2372a8"
     },
     {
       "name": "prism",

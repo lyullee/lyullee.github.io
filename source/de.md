@@ -14,9 +14,16 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 26 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-02; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 28 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-03; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
+
+### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
+
+Kombinierbare Forschungswerkzeuge für Rohrströmung, Thermodynamik, Strukturantwort, Schäden, Messtechnik und Risikoaustausch mit expliziten Einheiten, Zeitbasen, Herkunft und austauschbaren Anbietern.
+
+- Python 3.12+, Originalcode MIT, Import `pipeline_integrity`. [PyPI 0.1.0a1](https://pypi.org/project/pipeline-safety-toolkit/0.1.0a1/) und [Zenodo-Archiv](https://doi.org/10.5281/zenodo.23899127) sind öffentlich; externe Engines und Daten haben eigene Anforderungen. 223 Methoden und 304 APIs sind keine Anzahl unabhängig validierter Solver.
+- [Dokumentierte Evidenz](https://github.com/lyullee/pipeline-safety-toolkit/blob/main/research/public_validation_status.json): begrenzte unabhängige Physikprofile für 198/223 Methoden; 25 sind offen, vier empirische Akzeptanzfehler bleiben. Die portable Teilmenge des installierten Wheels meldet 276 bestandene Prüfungen; vollständige Stilprüfungen haben offene Befunde. Hier nicht erneut ausgeführt; keine Feldsicherheits- oder Normenzertifizierung.
 
 ### [h2physics](https://github.com/lyullee/h2physics)
 
@@ -113,6 +120,13 @@ Inverse Bestimmung von Wärmeeintrag, effektiver Flammenkontaktfläche und Wärm
 ### [lh2-psv-tno-risk](https://github.com/lyullee/lh2-psv-tno-risk)
 
 Forschungsarchiv zu LH₂-Selbstdruckaufbau, PSV-Schalten/Abblasen, Flash-/Austrittszustand und TNO-orientierten Brand-/Ausbreitungsindikatoren. Öffentliche Ergebnisse, bedingte Risikoflächen, Pfadklassifikation und Abbildungsreproduktion. Enthält weder sämtliche vorgelagerten Tank-/TNO-Löser noch eine zertifizierte PSV-Auslegung.
+
+### [materials-corrosion-toolkit](https://github.com/lyullee/materials-corrosion-toolkit)
+
+Unabhängige Python-Module für Materialien, Korrosion, Elektrochemie, Diffusion, Strukturintegrität, Fertigung/Schweißen und Inspektion mit strengen Eingabe-, Einheiten-, Evidenz- und Ergebnisstatusverträgen.
+
+- Python 3.11+, Originalcode MIT, Import `matintegrity`; Quellmetadaten nennen Forschungs-Alpha 0.1.0a1. PyPI-Verfügbarkeit war bei der Prüfung nicht bestätigt. Optionale Wissenschafts-/Stoffwertanbieter und externe Daten benötigen separate Installation und Rechte.
+- [Dokumentierte Grenzen](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md): 757 registrierte APIs enthalten Daten und Workflows; 63 zentrale Rechengruppen, 230/232 geprüfte Kern-APIs berechnet, zwei warten auf externe Evidenz. Das installierte Wheel meldet 59 bestandene numerische Prüfungen; 885 Ruff-Befunde und eine Prüfung vollständiger Beispielabdeckung bleiben offen. Überlappende Zahlen sind keine unabhängigen physikalischen Validierungen. Keine automatische Entwurfsfreigabe, Ausfallwahrscheinlichkeit aus deterministischem Schaden oder Feldqualifikation; hier nicht erneut ausgeführt.
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
 
