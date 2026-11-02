@@ -123,10 +123,10 @@
       "name": "materials-corrosion-toolkit",
       "description": "Research-alpha Python toolkit for modular materials, corrosion and integrity calculations with explicit contracts, units and validation scope.",
       "defaultBranch": "main",
-      "pushedAt": "2026-11-02T23:36:14Z",
+      "pushedAt": "2026-11-02T23:51:33Z",
       "archived": false,
       "readmePath": "README.md",
-      "readmeSha256": "7ee977c21846e1fa8f236094a3fece83566d6910be2ec7c293b6401d59335c0c"
+      "readmeSha256": "4868340504e73dd2923549a2507984fa29f8093426e1d72a3d8bff7b6c833995"
     },
     {
       "name": "nbcp-magnetocaloric-quantum-spectral-flow",

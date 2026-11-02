@@ -242,7 +242,7 @@ An executable record of earlier ADM1-based grass-silage/cattle-slurry biomethane
 
 Independent Python modules for materials, corrosion, electrochemistry, diffusion, structural integrity, fabrication/welding and inspection, with strict input, unit, evidence and result-status contracts.
 
-- Python 3.11+, MIT original code, import `matintegrity`; source metadata identifies research Alpha 0.1.0a1. PyPI availability was not confirmed at review. Optional scientific/property providers and external data require separate installation and rights.
+- Python 3.11+, MIT original code, import `matintegrity`; source metadata identifies research Alpha 0.1.0a1. [PyPI 0.1.0a1](https://pypi.org/project/materials-corrosion-toolkit/0.1.0a1/), the [GitHub release](https://github.com/lyullee/materials-corrosion-toolkit/releases/tag/v0.1.0a1) and [Zenodo archive](https://doi.org/10.5281/zenodo.23899598) are now public; registry availability and DOI metadata were checked. Optional scientific/property providers and external data require separate installation and rights.
 - [Recorded limits](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md): 757 registered APIs include data/workflow tools, with 63 core calculation groups; 230/232 audited core APIs computed and two await external evidence. Installed-wheel numerical checks report 59 passes; 885 Ruff findings and one full-example-coverage check remain unresolved. Counts overlap and are not independent physical validations. No automatic design approval, failure probability from deterministic damage, or field qualification is claimed; checks were not rerun here.
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)

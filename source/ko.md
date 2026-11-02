@@ -125,7 +125,7 @@ LPG 탱크 압력 상승과 벽 온도에서 열유입·유효 화염 접촉면�
 
 재료·부식·전기화학·확산·구조 건전성·제작/용접·검사를 위한 독립 Python 모듈입니다. 입력·단위·근거·결과 상태를 엄격한 계약으로 연결합니다.
 
-- Python 3.11+, 원본 코드 MIT, import `matintegrity`; 소스 메타데이터의 연구용 알파 버전은 0.1.0a1입니다. 검토 시 PyPI 공개는 확인되지 않았습니다. 선택적 과학·물성 공급자와 외부 자료는 별도 설치·권리 확인이 필요합니다.
+- Python 3.11+, 원본 코드 MIT, import `matintegrity`; 소스 메타데이터의 연구용 알파 버전은 0.1.0a1입니다. [PyPI 0.1.0a1](https://pypi.org/project/materials-corrosion-toolkit/0.1.0a1/)·[GitHub 릴리스](https://github.com/lyullee/materials-corrosion-toolkit/releases/tag/v0.1.0a1)·[Zenodo 기록](https://doi.org/10.5281/zenodo.23899598)이 공개됐으며 레지스트리 공개와 DOI 메타데이터를 확인했습니다. 선택적 과학·물성 공급자와 외부 자료는 별도 설치·권리 확인이 필요합니다.
 - [기록된 한계](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md): 등록 API 757개에는 자료·워크플로 도구가 포함되며 핵심 계산군은 63개입니다. 감사 대상 핵심 API 230/232개가 계산됐고 2개는 외부 근거 보류입니다. 설치 wheel 수치 시험 59건 통과와 별개로 Ruff 지적 885건 및 전체 예제 포함 검사 1건이 미해결입니다. 집계는 중복되며 독립 물리 검증 수가 아닙니다. 자동 설계 합격·결정론적 손상의 고장확률 변환·현장 적격성을 주장하지 않으며 여기서 검사를 재실행하지 않았습니다.
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)

@@ -125,7 +125,7 @@ SLAB重气扩散模型的Python重实现，支持蒸发池、水平/上升射流
 
 面向材料、腐蚀、电化学、扩散、结构完整性、制造/焊接与检测的独立 Python 模块，使用严格的输入、单位、证据及结果状态契约。
 
-- Python 3.11+，原创代码 MIT，导入名 `matintegrity`；源码元数据为研究 Alpha 0.1.0a1。审查时未确认 PyPI 已公开。可选科学计算、物性提供程序及外部数据需另行安装并确认权利。
+- Python 3.11+，原创代码 MIT，导入名 `matintegrity`；源码元数据为研究 Alpha 0.1.0a1。[PyPI 0.1.0a1](https://pypi.org/project/materials-corrosion-toolkit/0.1.0a1/)、[GitHub 发行版](https://github.com/lyullee/materials-corrosion-toolkit/releases/tag/v0.1.0a1)和[Zenodo 存档](https://doi.org/10.5281/zenodo.23899598)现已公开；已核查注册表可用性及 DOI 元数据。可选科学计算、物性提供程序及外部数据需另行安装并确认权利。
 - [记录限制](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md)：757 个注册 API 包括数据和工作流工具，核心计算分为 63 组；审计对象中 230/232 个核心 API 完成计算，2 个等待外部证据。已安装 wheel 数值检查报告 59 项通过，但仍有 885 项 Ruff 问题及 1 项完整示例覆盖检查未解决。计数存在重叠，不是独立物理验证数量。不宣称自动设计批准、从确定性损伤推导故障概率或现场适用性认定；本页未重跑检查。
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)

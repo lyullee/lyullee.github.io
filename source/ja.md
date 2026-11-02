@@ -125,7 +125,7 @@ LH₂タンクの自己加圧、PSV開閉・放出、フラッシュ・出口熱
 
 材料・腐食・電気化学・拡散・構造健全性・製作/溶接・検査の独立 Python モジュールです。入力・単位・根拠・結果状態を厳格な契約で扱います。
 
-- Python 3.11+、独自コード MIT、import 名 `matintegrity`。ソースの研究用 Alpha 版は 0.1.0a1 で、レビュー時に PyPI 公開は確認できませんでした。任意の科学計算・物性プロバイダーと外部データには別途導入・権利確認が必要です。
+- Python 3.11+、独自コード MIT、import 名 `matintegrity`。ソースの研究用 Alpha 版は 0.1.0a1 で、[PyPI 0.1.0a1](https://pypi.org/project/materials-corrosion-toolkit/0.1.0a1/)・[GitHub リリース](https://github.com/lyullee/materials-corrosion-toolkit/releases/tag/v0.1.0a1)・[Zenodo 記録](https://doi.org/10.5281/zenodo.23899598)は公開済みで、レジストリでの公開と DOI メタデータを確認しました。任意の科学計算・物性プロバイダーと外部データには別途導入・権利確認が必要です。
 - [記録された限界](https://github.com/lyullee/materials-corrosion-toolkit/blob/main/docs/RELEASE_STATUS_KO.md)：登録 757 API はデータ・ワークフローも含み、核心計算は 63 群です。監査対象の核心 API は 230/232 件が計算完了、2 件は外部根拠待ちです。導入済み wheel の数値検査 59 件合格とは別に、Ruff 指摘 885 件と全 API の例示網羅検査 1 件が未解決です。集計は重複し、独立物理検証数ではありません。自動設計承認、決定論的損傷からの故障確率、現場適格性を主張せず、ここでは再実行していません。
 
 ### [hydrogen-local-energetics](https://github.com/lyullee/hydrogen-local-energetics)
