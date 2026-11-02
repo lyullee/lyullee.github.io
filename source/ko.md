@@ -24,7 +24,7 @@
 
 - SI 단위, 물질·상·에너지 기준과 시간축을 명시합니다. CoolProp·Cantera·LH2DT·PSA-Dyna·HyRAM+ 등 선택 엔진은 별도 설치·권리 확인이 필요합니다. 카탈로그 82개 항목과 검증 캠페인의 78개 주제군은 독립 방정식 수나 전체 물리 검증 완료를 뜻하지 않습니다.
 - 문서에는 선택 입력·계산·경계·연결·회귀 검사와 투과계수·정규화 수소화물 반응곡선·PEM 전압·노즐 유량의 조건부 분리 평가가 기록돼 있습니다. 서로 다른 오차 지표를 합산하지 않으며 노즐 평균 상대오차는 약 29.8%입니다. 전체 물리 자격 검증과 일부 정상 연결은 미완료이며 이번 프로필에서 계산을 재실행하지 않았습니다.
-- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0)는 wheel·소스 자산과 함께 공개됐고 PyPI·Zenodo는 대기 상태입니다. Python 3.12+, 원본 코드 Apache-2.0이며 외부 관측자료·엔진·참고문헌은 배포에서 제외됩니다. [비교 근거](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)와 [출판 상태](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)를 확인하세요.
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0)는 wheel·소스 자산과 함께 공개됐고 [PyPI 0.1.0](https://pypi.org/project/h2physics/0.1.0/)와 [Zenodo DOI](https://doi.org/10.5281/zenodo.23886390) 소프트웨어 기록도 공개됐습니다. 레지스트리·DOI 메타데이터를 확인했으며 설치 검사는 원 저장소의 기록으로, 이번 프로필에서 재실행하지 않았습니다. Python 3.12+, 원본 코드 Apache-2.0이며 외부 관측자료·엔진·참고문헌은 배포에서 제외됩니다. [비교 근거](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)와 [출판 상태](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)를 확인하세요.
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

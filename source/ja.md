@@ -24,7 +24,7 @@
 
 - SI 単位、物質・相、エネルギー基準、時刻の整合を明示します。CoolProp、Cantera、LH2DT、PSA-Dyna、HyRAM+ などの任意エンジンは別途導入とライセンス確認が必要です。82 のカタログ項目と検証の 78 主題群は独立方程式数でも完全な物理的適格性の証明でもありません。
 - 選定した入力・計算・境界・接続・回帰検査と、有効透過係数、正規化水素化物反応曲線、PEM 電圧、ノズル流量の条件付きホールドアウト比較を記録しています。異なる誤差指標は統合できず、ノズルの平均相対誤差は約 29.8% です。全体の物理的適格性は未確立で、一部の正常接続は未完了です。本プロフィールでは計算を再実行していません。
-- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) は wheel とソースを公開済みですが、PyPI 公開と Zenodo 保存は保留中です。Python 3.12+、独自コードは Apache-2.0。外部観測・エンジン・参考文献は配布物から除外されます。[比較報告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)と[公開状況](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)を参照してください。
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0)  は wheel とソースを公開済みで、[PyPI 0.1.0](https://pypi.org/project/h2physics/0.1.0/) と [Zenodo DOI](https://doi.org/10.5281/zenodo.23886390) のソフトウェア記録も公開されました。レジストリと DOI メタデータを確認しました。導入検査は元リポジトリの記録で、本プロフィールでは再実行していません。Python 3.12+、独自コードは Apache-2.0。外部観測・エンジン・参考文献は配布物から除外されます。[比較報告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)と[公開状況](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)を参照してください。
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

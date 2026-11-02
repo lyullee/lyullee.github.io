@@ -24,7 +24,7 @@
 
 - 明确 SI 单位、物质与相态、能量基准及时间轴。CoolProp、Cantera、LH2DT、PSA-Dyna、HyRAM+ 等可选引擎需另行安装并核查许可。82 个目录条目和验证活动中的 78 个主题族并非独立方程数量，也不代表完整物理鉴定。
 - 文档记录了选定的输入、计算、边界、连接和回归检查，以及有效渗透系数、归一化氢化物反应曲线、PEM 电压和喷嘴流量的四项条件性留出比较。指标不可合并；喷嘴平均相对误差约为 29.8%。完整物理鉴定尚未建立，部分正常连接仍被阻断或仅有拒绝证据；本次简介未重跑计算。
-- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) 已提供 wheel 和源码包；PyPI 发布及 Zenodo 存档仍待完成。Python 3.12+，原创代码采用 Apache-2.0；外部观测、引擎和参考文献不随发行包分发。参见[比较报告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)与[发布状态](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)。
+- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) 已提供 wheel 和源码包；[PyPI 0.1.0](https://pypi.org/project/h2physics/0.1.0/) 和 [Zenodo DOI](https://doi.org/10.5281/zenodo.23886390) 软件存档现已公开。已核查注册表与 DOI 元数据；安装检查由原仓库记录，本次简介未重跑。Python 3.12+，原创代码采用 Apache-2.0；外部观测、引擎和参考文献不随发行包分发。参见[比较报告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)与[发布状态](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)。
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 
