@@ -26,6 +26,8 @@
 - 문서에는 선택 입력·계산·경계·연결·회귀 검사와 투과계수·정규화 수소화물 반응곡선·PEM 전압·노즐 유량의 조건부 분리 평가가 기록돼 있습니다. 서로 다른 오차 지표를 합산하지 않으며 노즐 평균 상대오차는 약 29.8%입니다. 전체 물리 자격 검증과 일부 정상 연결은 미완료이며 이번 프로필에서 계산을 재실행하지 않았습니다.
 - [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0)는 wheel·소스 자산과 함께 공개됐고 [PyPI 0.1.0](https://pypi.org/project/h2physics/0.1.0/)와 [Zenodo DOI](https://doi.org/10.5281/zenodo.23886390) 소프트웨어 기록도 공개됐습니다. 레지스트리·DOI 메타데이터를 확인했으며 설치 검사는 원 저장소의 기록으로, 이번 프로필에서 재실행하지 않았습니다. Python 3.12+, 원본 코드 Apache-2.0이며 외부 관측자료·엔진·참고문헌은 배포에서 제외됩니다. [비교 근거](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)와 [출판 상태](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)를 확인하세요.
 
+- **개발 브랜치:** [0.2.0.dev0 확장](https://github.com/lyullee/h2physics/blob/main/docs/ENHANCEMENTS_20261102.md)은 실내 축적과 점화 지연별 조건부 피크, FA/DDT 선별, 기계적 팽창과 약한 파동 하중, 선형 구조 응답, 열 사이클·엑서지, 고체 산화환원 평형, 전극 지표, 결합형 수동 촉매식 재결합기(PAR)를 추가합니다. 현재 소스와 선택적 공급자가 필요하며 공개된 0.1.0 배포본에는 포함되지 않습니다. 상위 저장소는 설치된 휠 검사를 포함해 실행 환경별로 구분되는 집중 검사 139건의 완료를 보고합니다. 별도의 광범위 재실행에는 환경·산출물 문제로 실패한 61건이 남습니다. 이는 범위가 한정된 소프트웨어 검사이며 새로운 실험·시설 적격성 근거가 아니고, 여기서는 재실행하지 않았습니다.
+
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 
 수소충전소의 저장·3단 압축기·캐스케이드·충전·안전 로직을 연결하는 물리 기반 디지털 트윈입니다. FastAPI, 3D 화면, 82개 HAZOP 태그, 고장 훈련과 SAGA/HyRAM+ 연계를 제공하며, 가스검지기에는 가상 프록시가 포함됩니다. 구성요소 평가와 전체 현장 루프 검증을 구분하는 연구·교육용 프로토타입입니다.
