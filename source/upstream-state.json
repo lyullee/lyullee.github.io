@@ -60,10 +60,10 @@
       "name": "h2physics",
       "description": "Composable Python models for hydrogen production, storage, transfer and safety research.",
       "defaultBranch": "main",
-      "pushedAt": "2026-11-02T15:23:10Z",
+      "pushedAt": "2026-11-02T15:55:42Z",
       "archived": false,
       "readmePath": "README.md",
-      "readmeSha256": "d3e130bc71cea0516bc0c9e1f4ec8fb07ee7b759f6173f7fd1fb3a8ce9585216"
+      "readmeSha256": "3549e214e569d1a69a3ba35cefc63526cf86c592a197f5c0962ba8f172a4b945"
     },
     {
       "name": "human-reliability-toolkit",

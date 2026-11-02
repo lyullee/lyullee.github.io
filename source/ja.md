@@ -24,9 +24,9 @@
 
 - SI 単位、物質・相、エネルギー基準、時刻の整合を明示します。CoolProp、Cantera、LH2DT、PSA-Dyna、HyRAM+ などの任意エンジンは別途導入とライセンス確認が必要です。82 のカタログ項目と検証の 78 主題群は独立方程式数でも完全な物理的適格性の証明でもありません。
 - 選定した入力・計算・境界・接続・回帰検査と、有効透過係数、正規化水素化物反応曲線、PEM 電圧、ノズル流量の条件付きホールドアウト比較を記録しています。異なる誤差指標は統合できず、ノズルの平均相対誤差は約 29.8% です。全体の物理的適格性は未確立で、一部の正常接続は未完了です。本プロフィールでは計算を再実行していません。
-- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0)  は wheel とソースを公開済みで、[PyPI 0.1.0](https://pypi.org/project/h2physics/0.1.0/) と [Zenodo DOI](https://doi.org/10.5281/zenodo.23886390) のソフトウェア記録も公開されました。レジストリと DOI メタデータを確認しました。導入検査は元リポジトリの記録で、本プロフィールでは再実行していません。Python 3.12+、独自コードは Apache-2.0。外部観測・エンジン・参考文献は配布物から除外されます。[比較報告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)と[公開状況](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)を参照してください。
+- [GitHub 0.2.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.2.0)  は wheel とソースを公開済みで、[PyPI 0.2.0](https://pypi.org/project/h2physics/0.2.0/) と [Zenodo DOI](https://doi.org/10.5281/zenodo.23889027) のソフトウェア記録も公開されました。レジストリと DOI メタデータを確認しました。導入検査は元リポジトリの記録で、本プロフィールでは再実行していません。Python 3.12+、独自コードは Apache-2.0。外部観測・エンジン・参考文献は配布物から除外されます。[比較報告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)と[公開状況](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)を参照してください。
 
-- **開発ブランチ：**[0.2.0.dev0 の拡張](https://github.com/lyullee/h2physics/blob/main/docs/ENHANCEMENTS_20261102.md)では、室内蓄積と点火遅延別の条件付きピーク、FA/DDT スクリーニング、機械的膨張と弱い波動荷重、線形構造応答、熱サイクル・エクセルギー、固体酸化還元平衡、電極指標、結合型静的触媒式再結合器（PAR）を追加しています。現在のソースと任意のプロバイダーが必要で、公開済みの 0.1.0 配布物には含まれません。上流では、インストール済み wheel の検査を含む、実行環境をまたいだ重複なしの重点検査 139 件の完了を報告しています。別の広範な再実行では環境・成果物の問題による 61 件の失敗が残っています。これは限定的なソフトウェア検査であり、新たな実験的検証や施設の適格性を示すものではなく、ここでは再実行していません。
+- **公開済みの拡張：**[0.2.0 の拡張](https://github.com/lyullee/h2physics/blob/main/docs/ENHANCEMENTS_20261102.md)では、室内蓄積と点火遅延別の条件付きピーク、FA/DDT スクリーニング、機械的膨張と弱い波動荷重、線形構造応答、熱サイクル・エクセルギー、固体酸化還元平衡、電極指標、結合型静的触媒式再結合器（PAR）を追加しています。公開済みの 0.2.0 配布物に含まれます。任意のプロバイダーは別途必要です。上流では、インストール済み wheel の検査を含む、実行環境をまたいだ重複なしの重点検査 139 件の完了を報告しています。別の広範な再実行では環境・成果物の問題による 61 件の失敗が残っています。これは限定的なソフトウェア検査であり、新たな実験的検証や施設の適格性を示すものではなく、ここでは再実行していません。
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 

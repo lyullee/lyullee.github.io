@@ -24,9 +24,9 @@
 
 - 明确 SI 单位、物质与相态、能量基准及时间轴。CoolProp、Cantera、LH2DT、PSA-Dyna、HyRAM+ 等可选引擎需另行安装并核查许可。82 个目录条目和验证活动中的 78 个主题族并非独立方程数量，也不代表完整物理鉴定。
 - 文档记录了选定的输入、计算、边界、连接和回归检查，以及有效渗透系数、归一化氢化物反应曲线、PEM 电压和喷嘴流量的四项条件性留出比较。指标不可合并；喷嘴平均相对误差约为 29.8%。完整物理鉴定尚未建立，部分正常连接仍被阻断或仅有拒绝证据；本次简介未重跑计算。
-- [GitHub 0.1.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.1.0) 已提供 wheel 和源码包；[PyPI 0.1.0](https://pypi.org/project/h2physics/0.1.0/) 和 [Zenodo DOI](https://doi.org/10.5281/zenodo.23886390) 软件存档现已公开。已核查注册表与 DOI 元数据；安装检查由原仓库记录，本次简介未重跑。Python 3.12+，原创代码采用 Apache-2.0；外部观测、引擎和参考文献不随发行包分发。参见[比较报告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)与[发布状态](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)。
+- [GitHub 0.2.0 Alpha](https://github.com/lyullee/h2physics/releases/tag/v0.2.0) 已提供 wheel 和源码包；[PyPI 0.2.0](https://pypi.org/project/h2physics/0.2.0/) 和 [Zenodo DOI](https://doi.org/10.5281/zenodo.23889027) 软件存档现已公开。已核查注册表与 DOI 元数据；安装检查由原仓库记录，本次简介未重跑。Python 3.12+，原创代码采用 Apache-2.0；外部观测、引擎和参考文献不随发行包分发。参见[比较报告](https://github.com/lyullee/h2physics/blob/main/docs/PHYSICAL_VALIDATION_CAMPAIGN.md)与[发布状态](https://github.com/lyullee/h2physics/blob/main/docs/PUBLICATION_STATUS.md)。
 
-- **开发分支：**[0.2.0.dev0 扩展](https://github.com/lyullee/h2physics/blob/main/docs/ENHANCEMENTS_20261102.md)新增室内积聚与按点火延迟确定的条件峰值、FA/DDT 筛查、机械膨胀与弱波载荷、线性结构响应、热循环与火用、固体氧化还原平衡、电极指标及耦合式非能动自催化复合器（PAR）。这些功能需要当前源码及可选提供程序，已发布的 0.1.0 归档不包含它们。上游报告在不同运行环境中完成了 139 项不重复的专项检查，包括已安装 wheel 的检查；另一组更广泛的重放仍有 61 项环境或产物问题导致的失败。这些是有限范围的软件检查，并非新的实验或设施适用性认定，本主页未重新运行。
+- **已发布的扩展：**[0.2.0 扩展](https://github.com/lyullee/h2physics/blob/main/docs/ENHANCEMENTS_20261102.md)新增室内积聚与按点火延迟确定的条件峰值、FA/DDT 筛查、机械膨胀与弱波载荷、线性结构响应、热循环与火用、固体氧化还原平衡、电极指标及耦合式非能动自催化复合器（PAR）。这些功能已包含在公开的 0.2.0 发行版中，可选提供程序仍需单独安装。上游报告在不同运行环境中完成了 139 项不重复的专项检查，包括已安装 wheel 的检查；另一组更广泛的重放仍有 61 项环境或产物问题导致的失败。这些是有限范围的软件检查，并非新的实验或设施适用性认定，本主页未重新运行。
 
 ### [hydrogen-station-sim](https://github.com/lyullee/hydrogen-station-sim)
 
