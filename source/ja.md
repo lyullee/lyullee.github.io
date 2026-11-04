@@ -14,9 +14,18 @@
 
 プロセス異常監視、人間信頼性、リスクベース検査、バイオメタンTEAと部分環境会計にも研究を拡張しています。
 
-> 英語版メインREADMEをもとにした各言語向けガイドです。29プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-04。今回の更新では検証計算を独立に再実行していません。
+> 英語版メインREADMEをもとにした各言語向けガイドです。30プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-05。今回の更新では検証計算を独立に再実行していません。
 
 ## プロジェクト
+
+### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
+
+67 の明示的な計算手法でプロセスプラント設計、機器スクリーニング、経済評価、環境会計を支援する研究用 Alpha です。Python SDK・CLI・ローカル JSON HTTP API は SQLite 履歴、計算グラフ、シナリオ、再利用を提供し、任意の DWSIM エンジンは別途導入します。
+
+- Python 3.11+、import 名 `plantdesign`、GPL-3.0-only。DWSIM 由来モデルの必須表示を保持します。0.11.0 は公開済みで、通常の計算器に第三者ランタイム依存はありません。
+- [検証記録](https://github.com/lyullee/plantdesign-toolkit/blob/main/docs/VERIFICATION.md)は Windows/Ubuntu・Python 3.11/3.12 の 364 試験と導入済み全 67 手法の検査を報告しており、ここでは再実行していません。44 分類群は追加の計算器ではありません。例示価格・係数・因子は仮定値で、出典付き案件データ、詳細物理設計、完全な環境境界が必要です。設計承認、完全な LCA、許認可、投資・現場適格性を示しません。
+
+[PyPI 0.11.0](https://pypi.org/project/plantdesign-toolkit/0.11.0/) · [GitHub](https://github.com/lyullee/plantdesign-toolkit/releases/tag/v0.11.0) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23954849)
 
 ### [rotorvibe](https://github.com/lyullee/rotorvibe)
 

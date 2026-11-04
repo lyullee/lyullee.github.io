@@ -14,9 +14,18 @@ También trabajo en cribado de suministro de amoníaco, separación dinámica PS
 
 Mis herramientas incluyen también monitoreo de procesos, fiabilidad humana, inspección basada en riesgo y TEA/contabilidad ambiental parcial del biometano.
 
-> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 29 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-04; no se repitieron de forma independiente los cálculos de validación para esta actualización.
+> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 30 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-05; no se repitieron de forma independiente los cálculos de validación para esta actualización.
 
 ## Proyectos
+
+### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
+
+Alpha de investigación para diseño de plantas de proceso, cribado de equipos, evaluación económica y contabilidad ambiental mediante 67 métodos explícitos. SDK Python, CLI y API HTTP JSON local ofrecen historiales SQLite, grafos de cálculo, escenarios y reutilización; DWSIM es un motor opcional instalado aparte.
+
+- Python 3.11+, importación `plantdesign`, GPL-3.0-only con avisos obligatorios de modelos derivados de DWSIM. Versión 0.11.0 pública; calculadoras ordinarias sin dependencias externas de ejecución.
+- La [verificación registrada](https://github.com/lyullee/plantdesign-toolkit/blob/main/docs/VERIFICATION.md) informa de 364 pruebas Windows/Ubuntu con Python 3.11/3.12 y comprobaciones de los 67 métodos instalados; no se repitieron aquí. Las 44 familias organizativas no son calculadoras adicionales. Precios, coeficientes y factores de ejemplo son supuestos; siguen siendo necesarios datos de proyecto con fuentes, diseño físico detallado y límites ambientales completos. No establece aprobación de diseño, ACV completo, permisos ni cualificación de inversión/sitio.
+
+[PyPI 0.11.0](https://pypi.org/project/plantdesign-toolkit/0.11.0/) · [GitHub](https://github.com/lyullee/plantdesign-toolkit/releases/tag/v0.11.0) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23954849)
 
 ### [rotorvibe](https://github.com/lyullee/rotorvibe)
 

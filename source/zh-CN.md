@@ -14,9 +14,18 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述29个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-04；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述30个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-05；此次简介更新未独立重新运行验证计算。
 
 ## 项目
+
+### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
+
+研究 Alpha 工具，通过 67 种明确计算方法支持工厂工艺设计、设备筛查、经济评估及环境核算。Python SDK、CLI 和本地 JSON HTTP API 支持 SQLite 历史、计算图、场景与复用；可选 DWSIM 引擎需单独安装。
+
+- Python 3.11+，导入名 `plantdesign`，GPL-3.0-only，须保留 DWSIM 衍生模型声明。0.11.0 已公开，常规计算器无需第三方运行时依赖。
+- [记录验证](https://github.com/lyullee/plantdesign-toolkit/blob/main/docs/VERIFICATION.md)报告 Windows/Ubuntu、Python 3.11/3.12 上的 364 项测试及已安装软件包全部 67 种方法检查，本页未重跑。44 个组织类别不是额外计算器。示例价格、系数和因子均为假设输入，仍需有来源的项目数据、详细物理设计及完整环境边界。不构成设计批准、完整 LCA、许可或投资/现场适用性认定。
+
+[PyPI 0.11.0](https://pypi.org/project/plantdesign-toolkit/0.11.0/) · [GitHub](https://github.com/lyullee/plantdesign-toolkit/releases/tag/v0.11.0) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23954849)
 
 ### [rotorvibe](https://github.com/lyullee/rotorvibe)
 

@@ -18,11 +18,11 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **29 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 31 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **30 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 32 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
+| Process simulation and risk integration | plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
@@ -32,6 +32,15 @@ This profile covers **29 research/software projects**, grouped by purpose. Toget
 | Materials and quantum methods | materials-corrosion-toolkit · hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
 
 ## Process simulation and risk integration
+
+### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
+
+Research-alpha process plant design, equipment screening, economic assessment and environmental accounting through 67 explicit calculation methods. Python SDK, CLI and local JSON HTTP APIs support SQLite histories, calculation graphs, scenarios and reuse; DWSIM is a separately installed optional engine.
+
+- Python 3.11+, import `plantdesign`, GPL-3.0-only with required DWSIM-derived model notices. Version 0.11.0 is public; ordinary calculators require no third-party runtime dependency.
+- [Recorded verification](https://github.com/lyullee/plantdesign-toolkit/blob/main/docs/VERIFICATION.md) reports 364 tests on Windows/Ubuntu Python 3.11/3.12 and installed-package checks across all 67 methods. These were not rerun here. The 44 organizing families are not additional calculators. Prices, coefficients and factors in examples are assumed inputs; source-qualified project data, detailed physical design and complete environmental boundaries remain necessary. No design approval, full LCA, permitting or investment/site qualification is established.
+
+[PyPI 0.11.0](https://pypi.org/project/plantdesign-toolkit/0.11.0/) · [GitHub](https://github.com/lyullee/plantdesign-toolkit/releases/tag/v0.11.0) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23954849)
 
 ### [rotorvibe](https://github.com/lyullee/rotorvibe)
 
@@ -342,4 +351,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-04 · 29 research projects + profile and website repositories (31 public repositories).</sub>
+<sub>Public-repository review: 2026-11-05 · 30 research projects + profile and website repositories (32 public repositories).</sub>

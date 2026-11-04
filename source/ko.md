@@ -14,9 +14,18 @@
 
 최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 29개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-04. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 30개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-05. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
 
 ## 프로젝트
+
+### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
+
+67개 명시적 계산 방법으로 공장설계·설비 선별·경제성·환경 회계를 지원하는 연구용 알파 도구입니다. Python SDK·CLI·로컬 JSON HTTP API에서 SQLite 이력, 계산 그래프, 시나리오와 재사용을 연결하며 DWSIM 엔진은 선택적으로 별도 설치합니다.
+
+- Python 3.11+, import `plantdesign`, GPL-3.0-only이며 DWSIM 유래 모델의 필수 고지를 유지해야 합니다. 0.11.0이 공개됐고 일반 계산기는 제3자 런타임 의존성이 없습니다.
+- [기록된 검증](https://github.com/lyullee/plantdesign-toolkit/blob/main/docs/VERIFICATION.md)은 Windows/Ubuntu·Python 3.11/3.12 시험 364건과 설치본 67개 방법 검사를 보고하며 여기서 재실행하지 않았습니다. 44개 분류군은 추가 계산기가 아닙니다. 예제 가격·계수·배출인자는 가정값이며 출처가 확인된 사업 자료, 상세 물리설계와 완전한 환경 경계가 필요합니다. 설계 승인·전체 LCA·인허가·투자 또는 현장 적격성의 근거가 아닙니다.
+
+[PyPI 0.11.0](https://pypi.org/project/plantdesign-toolkit/0.11.0/) · [GitHub](https://github.com/lyullee/plantdesign-toolkit/releases/tag/v0.11.0) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23954849)
 
 ### [rotorvibe](https://github.com/lyullee/rotorvibe)
 

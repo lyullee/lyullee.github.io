@@ -156,6 +156,15 @@
       "readmeSha256": "b029438f007468e6025d09160b0b44b1d69f291126792ff331b80d47ce2372a8"
     },
     {
+      "name": "plantdesign-toolkit",
+      "description": "Composable process plant design, techno-economic and environmental calculations: 67 explicit Python/API methods, reproducible verification and optional DWSIM integration.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-04T15:39:55Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "f1e7157c743e7fcbb264910d01e8ee0cae89fe6199db6f54f9afc086ce1ce814"
+    },
+    {
       "name": "prism",
       "description": "PRISM — Process Risk Integration and Scenario Modeling; optional LH2 analysis, auditable model coupling and literature-based frequencies.",
       "defaultBranch": "main",
