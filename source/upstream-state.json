@@ -219,6 +219,15 @@
       "readmeSha256": "ef396c55e3ec42fefc525dc8cee7589e6592ed610c0597f955cb9ba57a2c0d20"
     },
     {
+      "name": "rotorvibe",
+      "description": "Composable rotating-machine vibration analysis for Python, with explicit signal contracts, experimental diagnostics, reproducible evidence and documented transfer limits.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-04T06:10:57Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "a82b71477b4ef9fe753d585bd378af82df2e49128da61525b11a33f42819f9f8"
+    },
+    {
       "name": "saga-py",
       "description": "Python/FastAPI gas-safety knowledge assistant with document-grounded Korean/English chat, HAZOP retrieval, and digital-twin explanation APIs.",
       "defaultBranch": "main",

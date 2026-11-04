@@ -18,11 +18,11 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **28 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 30 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **29 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 31 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
+| Process simulation and risk integration | rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
@@ -32,6 +32,15 @@ This profile covers **28 research/software projects**, grouped by purpose. Toget
 | Materials and quantum methods | materials-corrosion-toolkit · hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
 
 ## Process simulation and risk integration
+
+### [rotorvibe](https://github.com/lyullee/rotorvibe)
+
+Composable Python vibration analysis for rotating machinery: calibrated waveform blocks, FFT/PSD and envelope spectra, bearing-frequency markers, scoped normal references and inspectable fault candidates. NumPy APIs accept replaceable providers, stages and sinks; the local dashboard is optional.
+
+- Python 3.11+, MIT original code; Alpha 0.1.0a1 is publicly available. Raw data and trained rig-specific profiles are acquired separately; standards limits must be supplied by the caller.
+- [Evidence and limits](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures): the 99.82% result was fault-only on the same apparatus/bearing/severities, with no new healthy test. New-bearing and independent-rig transfer failed; the strict API held all 580 new windows. This does not establish a zero false-alarm rate, field diagnosis, remaining-life prediction or automatic shutdown authority. Public software checks are distinct from the historical private 547-check count and were not rerun here.
+
+[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 
@@ -332,4 +341,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-03 · 28 research projects + profile and website repositories (30 public repositories).</sub>
+<sub>Public-repository review: 2026-11-04 · 29 research projects + profile and website repositories (31 public repositories).</sub>

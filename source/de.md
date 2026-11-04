@@ -14,9 +14,18 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 28 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-03; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 29 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-04; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
+
+### [rotorvibe](https://github.com/lyullee/rotorvibe)
+
+Kombinierbare Python-Schwingungsanalyse für rotierende Maschinen: kalibrierte Wellenformen, FFT/PSD und Hüllkurvenspektren, Lagerfrequenzmarkierungen, begrenzte Normalreferenzen und prüfbare Fehlerkandidaten. Anbieter, Stufen und Ergebniskonsumenten der NumPy-API sind austauschbar; das lokale Dashboard ist optional.
+
+- Python 3.11+, Originalcode MIT, Forschungs-Alpha 0.1.0a1 öffentlich. Rohdaten und prüfstandsbezogene trainierte Profile separat beschaffen; Normgrenzen liefert der Aufrufer.
+- [Evidenz und Grenzen](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures): 99,82 % betraf nur Fehlerdaten desselben Aufbaus/Lagers/Schweregrads, ohne neuen Normaltest. Übertragung auf neue Lager und unabhängige Prüfstände scheiterte; die strenge API hielt alle 580 neuen Fenster zurück. Daraus folgen weder Null-Fehlalarmrate noch Felddiagnose, Restlebensdauerprognose oder automatische Abschaltbefugnis. Öffentliche Softwareprüfungen sind von den historischen 547 privaten Prüfungen getrennt und wurden hier nicht wiederholt.
+
+[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 

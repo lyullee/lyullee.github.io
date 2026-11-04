@@ -14,9 +14,18 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述28个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-03；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述29个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-04；此次简介更新未独立重新运行验证计算。
 
 ## 项目
+
+### [rotorvibe](https://github.com/lyullee/rotorvibe)
+
+用于旋转机械的组合式 Python 振动分析：校准波形、FFT/PSD 与包络谱、轴承特征频率、限定条件的正常参考及可检查的故障候选。NumPy API 的提供程序、阶段和结果接收端可替换，本地仪表板为可选功能。
+
+- Python 3.11+，原创代码 MIT，研究 Alpha 0.1.0a1 已公开。原始数据和装置专用训练配置需另行获取，标准限值由调用方提供。
+- [证据与限制](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures)：99.82% 仅来自相同装置、轴承和严重度的故障样本，没有新的正常测试。新轴承和独立试验台迁移失败；严格 API 对全部 580 个新窗口均保留判断。这不能证明零误报率、现场诊断、剩余寿命预测或自动停机权限。公开软件检查与历史私有 547 项检查分开记录，本页未重跑。
+
+[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 
