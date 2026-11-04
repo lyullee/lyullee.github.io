@@ -37,10 +37,11 @@ This profile covers **29 research/software projects**, grouped by purpose. Toget
 
 Composable Python vibration analysis for rotating machinery: calibrated waveform blocks, FFT/PSD and envelope spectra, bearing-frequency markers, scoped normal references and inspectable fault candidates. NumPy APIs accept replaceable providers, stages and sinks; the local dashboard is optional.
 
-- Python 3.11+, MIT original code; Alpha 0.1.0a1 is publicly available. Raw data and trained rig-specific profiles are acquired separately; standards limits must be supplied by the caller.
+- Python 3.11+, MIT original code; Alpha 0.1.0a5 is publicly available. Raw data and trained rig-specific profiles are acquired separately; standards limits must be supplied by the caller.
 - [Evidence and limits](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures): the 99.82% result was fault-only on the same apparatus/bearing/severities, with no new healthy test. New-bearing and independent-rig transfer failed; the strict API held all 580 new windows. This does not establish a zero false-alarm rate, field diagnosis, remaining-life prediction or automatic shutdown authority. Public software checks are distinct from the historical private 547-check count and were not rerun here.
 
-[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
+[PyPI 0.1.0a5](https://pypi.org/project/rotorvibe/0.1.0a5/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a5) · [Zenodo 0.1.0a5](https://doi.org/10.5281/zenodo.23941252)
+- **0.1.0a5 update:** stricter profile/numeric/decision contracts, acquisition quality and scoped normal calibration, measured-speed angle experiments, bounded queues, detached stage/sink results, an optional pinned process-monitoring bridge, hashed profiles, power-conserving PSD history and reviewed caller rules. Life estimation now requires explicit experimental opt-in. Upstream reports 224 selected installed-wheel tests; no new measured classification or field-life qualification follows. A 48 kHz/four-channel burst still missed its 250 ms latency budget 17 times. See the [release record](https://github.com/lyullee/rotorvibe/blob/main/docs/RELEASE_0_1_0a5.md).
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 

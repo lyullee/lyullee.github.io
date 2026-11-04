@@ -222,10 +222,10 @@
       "name": "rotorvibe",
       "description": "Composable rotating-machine vibration analysis for Python, with explicit signal contracts, experimental diagnostics, reproducible evidence and documented transfer limits.",
       "defaultBranch": "main",
-      "pushedAt": "2026-11-04T06:10:57Z",
+      "pushedAt": "2026-11-04T09:06:40Z",
       "archived": false,
       "readmePath": "README.md",
-      "readmeSha256": "a82b71477b4ef9fe753d585bd378af82df2e49128da61525b11a33f42819f9f8"
+      "readmeSha256": "3ae4b48abe666758cd55e3fe397943cc0da52e55d1cb5f0608b0ac180d7da9b5"
     },
     {
       "name": "saga-py",

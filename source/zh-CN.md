@@ -22,10 +22,11 @@
 
 用于旋转机械的组合式 Python 振动分析：校准波形、FFT/PSD 与包络谱、轴承特征频率、限定条件的正常参考及可检查的故障候选。NumPy API 的提供程序、阶段和结果接收端可替换，本地仪表板为可选功能。
 
-- Python 3.11+，原创代码 MIT，研究 Alpha 0.1.0a1 已公开。原始数据和装置专用训练配置需另行获取，标准限值由调用方提供。
+- Python 3.11+，原创代码 MIT，研究 Alpha 0.1.0a5 已公开。原始数据和装置专用训练配置需另行获取，标准限值由调用方提供。
 - [证据与限制](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures)：99.82% 仅来自相同装置、轴承和严重度的故障样本，没有新的正常测试。新轴承和独立试验台迁移失败；严格 API 对全部 580 个新窗口均保留判断。这不能证明零误报率、现场诊断、剩余寿命预测或自动停机权限。公开软件检查与历史私有 547 项检查分开记录，本页未重跑。
 
-[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
+[PyPI 0.1.0a5](https://pypi.org/project/rotorvibe/0.1.0a5/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a5) · [Zenodo 0.1.0a5](https://doi.org/10.5281/zenodo.23941252)
+- **0.1.0a5 更新：**强化配置、数值和决策契约，新增采集质量、限定条件的正常校准、实测速率角度实验、有界队列、阶段/接收端独立结果副本、固定版本的可选过程监测桥接、哈希配置、功率守恒 PSD 历史及经审查的调用方规则。寿命估计需明确选择实验功能。上游报告 224 项已安装 wheel 专项测试，并不构成新的实测分类或现场寿命认定。48 kHz/四通道突发仍有 17 次超出 250 ms 延迟预算。参见[发行记录](https://github.com/lyullee/rotorvibe/blob/main/docs/RELEASE_0_1_0a5.md)。
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 

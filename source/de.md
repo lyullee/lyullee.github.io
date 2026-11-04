@@ -22,10 +22,11 @@ Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasi
 
 Kombinierbare Python-Schwingungsanalyse für rotierende Maschinen: kalibrierte Wellenformen, FFT/PSD und Hüllkurvenspektren, Lagerfrequenzmarkierungen, begrenzte Normalreferenzen und prüfbare Fehlerkandidaten. Anbieter, Stufen und Ergebniskonsumenten der NumPy-API sind austauschbar; das lokale Dashboard ist optional.
 
-- Python 3.11+, Originalcode MIT, Forschungs-Alpha 0.1.0a1 öffentlich. Rohdaten und prüfstandsbezogene trainierte Profile separat beschaffen; Normgrenzen liefert der Aufrufer.
+- Python 3.11+, Originalcode MIT, Forschungs-Alpha 0.1.0a5 öffentlich. Rohdaten und prüfstandsbezogene trainierte Profile separat beschaffen; Normgrenzen liefert der Aufrufer.
 - [Evidenz und Grenzen](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures): 99,82 % betraf nur Fehlerdaten desselben Aufbaus/Lagers/Schweregrads, ohne neuen Normaltest. Übertragung auf neue Lager und unabhängige Prüfstände scheiterte; die strenge API hielt alle 580 neuen Fenster zurück. Daraus folgen weder Null-Fehlalarmrate noch Felddiagnose, Restlebensdauerprognose oder automatische Abschaltbefugnis. Öffentliche Softwareprüfungen sind von den historischen 547 privaten Prüfungen getrennt und wurden hier nicht wiederholt.
 
-[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
+[PyPI 0.1.0a5](https://pypi.org/project/rotorvibe/0.1.0a5/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a5) · [Zenodo 0.1.0a5](https://doi.org/10.5281/zenodo.23941252)
+- **Aktualisierung 0.1.0a5:** strengere Profil-/Zahlen-/Entscheidungsverträge, Erfassungsqualität und bedingungsbezogene Normalkalibrierung, Winkelversuche mit gemessener Drehzahl, begrenzte Warteschlangen, getrennte Ergebnisdaten pro Stufe/Empfänger, optionale versionsgebundene Prozessmonitoring-Brücke, Profilhashes, leistungserhaltende PSD-Historie und geprüfte Aufruferregeln. Lebensdauerschätzung erfordert eine explizite experimentelle Aktivierung. Das Quellprojekt meldet 224 ausgewählte Prüfungen des installierten Wheels, ohne neue Qualifikation gemessener Klassifikation oder Feldlebensdauer. Ein Burst mit 48 kHz/vier Kanälen überschritt das 250-ms-Budget weiterhin 17-mal. Siehe [Release-Nachweis](https://github.com/lyullee/rotorvibe/blob/main/docs/RELEASE_0_1_0a5.md).
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 

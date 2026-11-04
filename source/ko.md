@@ -22,10 +22,11 @@
 
 회전기계의 교정된 파형에서 FFT/PSD·포락선 스펙트럼, 베어링 특성 주파수, 조건이 명시된 정상 기준과 검토 가능한 고장 후보를 계산하는 Python 도구입니다. NumPy API의 공급자·단계·결과 수신자를 교체할 수 있으며 로컬 대시보드는 선택 사항입니다.
 
-- Python 3.11+, 원본 코드 MIT, 연구용 알파 0.1.0a1이 공개됐습니다. 원자료와 장치별 학습 프로필은 별도 취득하며 규격 한계값은 호출자가 제공합니다.
+- Python 3.11+, 원본 코드 MIT, 연구용 알파 0.1.0a5이 공개됐습니다. 원자료와 장치별 학습 프로필은 별도 취득하며 규격 한계값은 호출자가 제공합니다.
 - [근거와 한계](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures): 99.82%는 같은 장치·베어링·고장 심각도의 고장 자료만 평가한 결과이며 새로운 정상 시험은 없었습니다. 새 베어링·독립 장치로의 전이는 실패했고 엄격한 API는 새 580개 구간 모두를 보류했습니다. 오경보율 0·현장 진단·잔여수명 예측·자동 정지 권한의 근거가 아닙니다. 공개 소프트웨어 검사는 과거 비공개 547건 집계와 구분하며 여기서 재실행하지 않았습니다.
 
-[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
+[PyPI 0.1.0a5](https://pypi.org/project/rotorvibe/0.1.0a5/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a5) · [Zenodo 0.1.0a5](https://doi.org/10.5281/zenodo.23941252)
+- **0.1.0a5 갱신:** 프로필·수치·판정 계약 강화, 취득 품질과 조건별 정상 보정, 실측 속도 기반 각도 실험, 제한된 대기열, 단계·수신자별 결과 복사, 버전이 고정된 선택적 공정 모니터링 연결, 해시 프로필, 전력 보존 PSD 이력과 검토된 사용자 규칙을 추가했습니다. 수명 추정은 명시적인 실험 사용 동의가 필요합니다. 원 저장소는 설치 wheel 선택 시험 224건을 보고하지만 새로운 실측 분류·현장 수명 적격성을 뜻하지 않습니다. 48 kHz·4채널 버스트는 250 ms 지연 한계를 17회 초과했습니다. [릴리스 기록](https://github.com/lyullee/rotorvibe/blob/main/docs/RELEASE_0_1_0a5.md)을 참고하세요.
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 

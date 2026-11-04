@@ -22,10 +22,11 @@
 
 回転機械向けの組み合わせ可能な Python 振動解析です。校正波形から FFT/PSD・包絡線スペクトル、軸受特性周波数、条件を限定した正常基準、検討可能な故障候補を生成します。NumPy API のプロバイダー・段階・結果受信先は交換可能で、ローカルダッシュボードは任意です。
 
-- Python 3.11+、独自コード MIT、研究用 Alpha 0.1.0a1 は公開済みです。生データと装置別の学習プロファイルは別途取得し、規格限界値は呼出側が提供します。
+- Python 3.11+、独自コード MIT、研究用 Alpha 0.1.0a5 は公開済みです。生データと装置別の学習プロファイルは別途取得し、規格限界値は呼出側が提供します。
 - [根拠と限界](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures)：99.82% は同じ装置・軸受・故障程度の故障データ限定で、新たな正常試験はありません。新軸受・独立装置への転移は失敗し、厳格な API は新規 580 窓すべてを保留しました。ゼロ誤警報率、現場診断、残存寿命予測、自動停止権限の根拠にはなりません。公開検査は過去の非公開 547 件と区別され、ここでは再実行していません。
 
-[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
+[PyPI 0.1.0a5](https://pypi.org/project/rotorvibe/0.1.0a5/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a5) · [Zenodo 0.1.0a5](https://doi.org/10.5281/zenodo.23941252)
+- **0.1.0a5 更新：**プロファイル・数値・判定契約の強化、取得品質と条件別正常校正、実測速度による角度実験、有界キュー、段階・受信先別の結果コピー、版固定の任意プロセス監視接続、ハッシュ付きプロファイル、電力保存 PSD 履歴、レビュー済み呼出側ルールを追加しました。寿命推定は実験利用の明示選択が必要です。上流の導入済み wheel 選択試験は 224 件で、新たな実測分類や現場寿命の適格性を示しません。48 kHz・4 チャネルのバーストでは 250 ms 遅延予算を 17 回超えました。[リリース記録](https://github.com/lyullee/rotorvibe/blob/main/docs/RELEASE_0_1_0a5.md)を参照してください。
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 

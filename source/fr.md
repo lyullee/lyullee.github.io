@@ -22,10 +22,11 @@ Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilit
 
 Analyse vibratoire Python composable pour machines tournantes : signaux étalonnés, FFT/PSD et spectres d’enveloppe, fréquences de roulement, références normales à périmètre explicite et candidats de défaut inspectables. Fournisseurs, étapes et récepteurs de l’API NumPy sont remplaçables ; tableau de bord local optionnel.
 
-- Python 3.11+, code original MIT, Alpha de recherche 0.1.0a1 public. Données brutes et profils entraînés propres au banc à acquérir séparément ; limites normatives fournies par l’appelant.
+- Python 3.11+, code original MIT, Alpha de recherche 0.1.0a5 public. Données brutes et profils entraînés propres au banc à acquérir séparément ; limites normatives fournies par l’appelant.
 - [Preuves et limites](https://github.com/lyullee/rotorvibe/blob/main/README.md#evidence-retain-the-failures) : 99,82 % concernait uniquement des défauts sur le même appareil/roulement/niveaux de sévérité, sans nouveau test sain. Les transferts vers un nouveau roulement et un banc indépendant ont échoué ; l’API stricte a suspendu ses décisions sur les 580 nouvelles fenêtres. Aucun taux nul de fausses alertes, diagnostic de terrain, pronostic de durée de vie ou pouvoir d’arrêt automatique n’est établi. Contrôles publics distincts des 547 contrôles privés historiques, non réexécutés ici.
 
-[PyPI 0.1.0a1](https://pypi.org/project/rotorvibe/0.1.0a1/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.23937890)
+[PyPI 0.1.0a5](https://pypi.org/project/rotorvibe/0.1.0a5/) · [GitHub](https://github.com/lyullee/rotorvibe/releases/tag/v0.1.0a5) · [Zenodo 0.1.0a5](https://doi.org/10.5281/zenodo.23941252)
+- **Mise à jour 0.1.0a5 :** contrats de profil/nombres/décision renforcés, qualité d’acquisition et étalonnage normal contextualisé, expériences angulaires à vitesse mesurée, files bornées, copies isolées par étape/récepteur, pont optionnel de surveillance de procédé à version fixée, profils hachés, historique PSD conservant la puissance et règles fournies révisées. L’estimation de vie exige un choix expérimental explicite. Le dépôt rapporte 224 tests ciblés du wheel installé, sans nouvelle qualification de classification mesurée ou de vie sur site. Une rafale à 48 kHz/quatre canaux dépasse encore 17 fois le budget de 250 ms. Voir le [dossier de version](https://github.com/lyullee/rotorvibe/blob/main/docs/RELEASE_0_1_0a5.md).
 
 ### [pipeline-safety-toolkit](https://github.com/lyullee/pipeline-safety-toolkit)
 
