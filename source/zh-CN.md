@@ -22,7 +22,7 @@
 
 通过明确 SI 单位的温度、压力、流量、库存和位置传感器进行设备专用 Python 监测。质量/热量衡算、阻力、膜渗透率、正常性能残差及因果报警同时返回有效性、决策理由和来源。11 种 CLI 诊断之外另有 Python API 及可选固定版本项目适配器。
 
-- Python 3.11+、NumPy 核心、导入名 `equipment_diagnostics`、原创代码 MIT。研究 Alpha 0.17.1 源码和 Zenodo 存档可用；审查时未确认 PyPI 发布。原始数据、外部引擎和训练配置另行获取。
+- Python 3.11+、NumPy 核心、导入名 `equipment_diagnostics`、原创代码 MIT。研究 Alpha 0.17.1 源码和 Zenodo 存档可用；[PyPI 0.17.1](https://pypi.org/project/monitoring-diagnostics-toolkit/0.17.1/)和[GitHub 发行版](https://github.com/lyullee/monitoring-diagnostics-toolkit/releases/tag/v0.17.1)现已公开；上游新安装软件包的基本运行检查不构成新的实测故障验证。原始数据、外部引擎和训练配置另行获取。
 - [证据与限制](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability)：上游报告 286 项软件/物理测试和 7 项限定对象集成，本页未重跑。报警不是故障概率或确定根因。复用的热泵评估增益依赖会话间 0.3 K 差异，正常记录的合成 ±0.3 K 偏移导致 99.28% 报警。故障特异性、独立设备迁移及部分模块的实测故障真值仍未解决，不宣称通用准确度或认证安全运行。
 
 [Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)

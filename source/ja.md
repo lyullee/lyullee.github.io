@@ -22,7 +22,7 @@
 
 SI 単位を明示した温度・圧力・流量・在庫・位置センサーによる設備別 Python 監視です。質量・熱収支、抵抗、膜透過率、正常性能残差、因果的警報に有効性・判定理由・出典を付します。CLI の 11 診断種別に加え、Python API と任意の版固定プロジェクト接続を提供します。
 
-- Python 3.11+、NumPy コア、import 名 `equipment_diagnostics`、独自コード MIT。研究用 Alpha 0.17.1 のソースと Zenodo 記録は公開済みで、レビュー時に PyPI 公開は確認できませんでした。生データ・外部エンジン・学習プロファイルは別途必要です。
+- Python 3.11+、NumPy コア、import 名 `equipment_diagnostics`、独自コード MIT。研究用 Alpha 0.17.1 のソースと Zenodo 記録は公開済みで、[PyPI 0.17.1](https://pypi.org/project/monitoring-diagnostics-toolkit/0.17.1/) と [GitHub リリース](https://github.com/lyullee/monitoring-diagnostics-toolkit/releases/tag/v0.17.1)も公開済みです。上流の新規導入パッケージ動作確認は、新たな実測故障検証とは区別されます。生データ・外部エンジン・学習プロファイルは別途必要です。
 - [根拠と限界](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability)：上流はソフトウェア・物理試験 286 件と限定的なオブジェクト接続 7 件を報告しており、ここでは再実行していません。警報は故障確率や確定原因ではありません。再利用した熱ポンプ評価の改善はセッション間 0.3 K 差に依存し、正常記録の合成 ±0.3 K オフセットで 99.28% の警報が発生しました。故障特異性・独立設備への転移・複数モジュールの実測故障正解は未解決で、普遍的精度や認証安全運転を主張しません。
 
 [Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)

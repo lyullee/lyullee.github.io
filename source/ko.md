@@ -22,7 +22,7 @@
 
 SI 단위의 온도·압력·유량·재고·위치 센서로 설비별 물리 상태를 감시하는 Python 도구입니다. 질량·열 수지, 저항, 막 투과도, 정상 성능 잔차와 인과적 경보에 유효성·판정 이유·출처를 함께 반환합니다. CLI 진단 종류 11개 외에 추가 Python API와 버전 고정 선택적 프로젝트 연결을 제공합니다.
 
-- Python 3.11+, NumPy 코어, import `equipment_diagnostics`, 원본 코드 MIT. 연구용 알파 0.17.1의 소스와 Zenodo 기록을 확인했으며 검토 시 PyPI 공개는 확인되지 않았습니다. 원자료·외부 엔진·학습 프로필은 별도입니다.
+- Python 3.11+, NumPy 코어, import `equipment_diagnostics`, 원본 코드 MIT. 연구용 알파 0.17.1의 소스와 Zenodo 기록을 확인했으며 [PyPI 0.17.1](https://pypi.org/project/monitoring-diagnostics-toolkit/0.17.1/)와 [GitHub 릴리스](https://github.com/lyullee/monitoring-diagnostics-toolkit/releases/tag/v0.17.1)도 공개됐습니다. 원 저장소의 새 설치본 기본 동작 검사는 새로운 실측 고장 검증과 구분됩니다. 원자료·외부 엔진·학습 프로필은 별도입니다.
 - [근거와 한계](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability): 원 저장소가 소프트웨어·물리 시험 286건과 범위가 한정된 객체 연결 7건을 보고하며 여기서 재실행하지 않았습니다. 경보는 고장확률이나 확정 원인이 아닙니다. 재사용 열펌프 평가의 개선은 세션 간 0.3 K 차이에 의존하고 정상 자료에 합성 ±0.3 K 오프셋을 주면 경보가 99.28% 발생했습니다. 고장 특이성·독립 설비 전이와 여러 모듈의 실측 고장 정답은 미해결이며 보편적 정확도·인증 안전 운전을 주장하지 않습니다.
 
 [Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)
