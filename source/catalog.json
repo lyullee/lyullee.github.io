@@ -1,7 +1,8 @@
 {
-  "reviewDate": "2026-11-05",
+  "reviewDate": "2026-11-06",
   "categories": [
     [
+      "monitoring-diagnostics-toolkit",
       "plantdesign-toolkit",
       "rotorvibe",
       "pipeline-safety-toolkit",
@@ -78,6 +79,7 @@
     "pipeline-safety-toolkit": "Pipeline Safety Toolkit",
     "materials-corrosion-toolkit": "Materials Corrosion Toolkit",
     "rotorvibe": "RotorVibe",
-    "plantdesign-toolkit": "PlantDesign Toolkit"
+    "plantdesign-toolkit": "PlantDesign Toolkit",
+    "monitoring-diagnostics-toolkit": "Monitoring Diagnostics Toolkit"
   }
 }

@@ -14,9 +14,18 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 30 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-05 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 31 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-06 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
+
+### [monitoring-diagnostics-toolkit](https://github.com/lyullee/monitoring-diagnostics-toolkit)
+
+Surveillance Python spécifique aux équipements à partir de capteurs SI explicites de température, pression, débit, inventaire et position. Bilans massiques/thermiques, résistance, perméabilité membranaire, résidus de performance et alarmes causales exposent validité, raisons et provenance. Onze types CLI complètent les API Python et adaptateurs optionnels à révisions fixées.
+
+- Python 3.11+, cœur NumPy, import `equipment_diagnostics`, code original MIT. Alpha de recherche 0.17.1 disponible en source et archive Zenodo ; publication PyPI non confirmée à la revue. Données brutes, moteurs externes et profils entraînés séparés.
+- [Preuves et limites](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability) : 286 tests logiciels/physiques et sept intégrations d’objets limitées rapportés en amont, non réexécutés ici. Une alarme n’est ni probabilité de défaut ni cause confirmée. Le gain réévalué de pompe à chaleur dépend d’un écart intersession de 0,3 K ; des décalages synthétiques ±0,3 K sur les données normales provoquent 99,28 % d’alarmes. Spécificité, transfert indépendant et vérité terrain de plusieurs modules restent ouverts ; aucune précision universelle ou exploitation sûre certifiée.
+
+[Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)
 
 ### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
 

@@ -14,9 +14,18 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 30 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-05; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 31 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-06; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
+
+### [monitoring-diagnostics-toolkit](https://github.com/lyullee/monitoring-diagnostics-toolkit)
+
+Anlagenspezifische Python-Überwachung mit expliziten SI-Sensoren für Temperatur, Druck, Durchfluss, Inventar und Position. Massen-/Wärmebilanzen, Widerstand, Membranpermeabilität, Normalleistungsresiduen und kausale Alarme liefern Gültigkeit, Entscheidungsgründe und Herkunft. Elf CLI-Diagnosearten ergänzen Python-APIs und optionale versionsgebundene Projektadapter.
+
+- Python 3.11+, NumPy-Kern, Import `equipment_diagnostics`, Originalcode MIT. Forschungs-Alpha 0.17.1 als Quelle und Zenodo-Archiv verfügbar; PyPI-Veröffentlichung bei der Prüfung nicht bestätigt. Rohdaten, externe Engines und trainierte Profile separat.
+- [Evidenz und Grenzen](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability): 286 Software-/Physiktests und sieben begrenzte Objektintegrationen im Quellprojekt dokumentiert, hier nicht wiederholt. Ein Alarm ist weder Fehlerwahrscheinlichkeit noch bestätigte Ursache. Wiederverwendete Wärmepumpenergebnisse hängen von 0,3 K Sitzungsunterschied ab; synthetische ±0,3-K-Verschiebungen normaler Daten erzeugten 99,28 % Alarme. Fehlerspezifität, unabhängiger Anlagentransfer und gemessene Fehlerreferenzen mehrerer Module bleiben offen; keine universelle Genauigkeit oder zertifizierte Betriebssicherheit.
+
+[Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)
 
 ### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
 

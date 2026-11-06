@@ -18,11 +18,11 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **30 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 32 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **31 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 33 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
+| Process simulation and risk integration | monitoring-diagnostics-toolkit · plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
@@ -32,6 +32,15 @@ This profile covers **30 research/software projects**, grouped by purpose. Toget
 | Materials and quantum methods | materials-corrosion-toolkit · hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
 
 ## Process simulation and risk integration
+
+### [monitoring-diagnostics-toolkit](https://github.com/lyullee/monitoring-diagnostics-toolkit)
+
+Equipment-specific Python monitoring from explicit SI temperature, pressure, flow, inventory and position sensors. Mass/heat balances, resistance, membrane permeability, normal-performance residuals and causal alarms return validity, decision reasons and provenance. Eleven CLI diagnostic kinds complement additional Python APIs and optional pinned project adapters.
+
+- Python 3.11+, NumPy core, import `equipment_diagnostics`, MIT original code; research Alpha 0.17.1 is available as source and a Zenodo archive. PyPI publication was not confirmed at review. Raw data, external engines and fitted corpus profiles are separate.
+- [Evidence and limits](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability): 286 software/physics tests and seven scoped object integrations are reported upstream, not rerun here. An alarm is neither fault probability nor confirmed root cause. Reused heat-pump gains depend on a 0.3 K between-session difference; synthetic ±0.3 K normal offsets caused 99.28% alarms. Fault specificity, independent equipment transfer and several modules’ measured fault truth remain unresolved; no universal accuracy or certified safety operation is claimed.
+
+[Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)
 
 ### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
 
@@ -351,4 +360,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-05 · 30 research projects + profile and website repositories (32 public repositories).</sub>
+<sub>Public-repository review: 2026-11-06 · 31 research projects + profile and website repositories (33 public repositories).</sub>

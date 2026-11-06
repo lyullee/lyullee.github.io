@@ -14,9 +14,18 @@ También trabajo en cribado de suministro de amoníaco, separación dinámica PS
 
 Mis herramientas incluyen también monitoreo de procesos, fiabilidad humana, inspección basada en riesgo y TEA/contabilidad ambiental parcial del biometano.
 
-> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 30 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-05; no se repitieron de forma independiente los cálculos de validación para esta actualización.
+> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 31 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-06; no se repitieron de forma independiente los cálculos de validación para esta actualización.
 
 ## Proyectos
+
+### [monitoring-diagnostics-toolkit](https://github.com/lyullee/monitoring-diagnostics-toolkit)
+
+Monitorización Python específica por equipo mediante sensores SI explícitos de temperatura, presión, caudal, inventario y posición. Balances de masa/calor, resistencia, permeabilidad de membranas, residuos de rendimiento y alarmas causales incluyen validez, motivos y procedencia. Once tipos CLI complementan API Python y adaptadores opcionales con revisiones fijadas.
+
+- Python 3.11+, núcleo NumPy, importación `equipment_diagnostics`, código original MIT. Alpha de investigación 0.17.1 disponible como fuente y archivo Zenodo; publicación PyPI no confirmada durante la revisión. Datos originales, motores externos y perfiles entrenados separados.
+- [Evidencia y límites](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability): 286 pruebas de software/física y siete integraciones de objetos acotadas registradas en origen, no repetidas aquí. Una alarma no es probabilidad de fallo ni causa confirmada. Las mejoras reutilizadas de bomba de calor dependen de 0,3 K entre sesiones; desplazamientos sintéticos ±0,3 K en datos normales causaron 99,28 % de alarmas. Especificidad, transferencia independiente y verdad de fallos medida de varios módulos siguen abiertas; no se afirma precisión universal ni operación segura certificada.
+
+[Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)
 
 ### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
 

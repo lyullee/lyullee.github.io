@@ -14,9 +14,18 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述30个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-05；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述31个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-06；此次简介更新未独立重新运行验证计算。
 
 ## 项目
+
+### [monitoring-diagnostics-toolkit](https://github.com/lyullee/monitoring-diagnostics-toolkit)
+
+通过明确 SI 单位的温度、压力、流量、库存和位置传感器进行设备专用 Python 监测。质量/热量衡算、阻力、膜渗透率、正常性能残差及因果报警同时返回有效性、决策理由和来源。11 种 CLI 诊断之外另有 Python API 及可选固定版本项目适配器。
+
+- Python 3.11+、NumPy 核心、导入名 `equipment_diagnostics`、原创代码 MIT。研究 Alpha 0.17.1 源码和 Zenodo 存档可用；审查时未确认 PyPI 发布。原始数据、外部引擎和训练配置另行获取。
+- [证据与限制](https://github.com/lyullee/monitoring-diagnostics-toolkit/blob/main/README.md#evidence-and-current-applicability)：上游报告 286 项软件/物理测试和 7 项限定对象集成，本页未重跑。报警不是故障概率或确定根因。复用的热泵评估增益依赖会话间 0.3 K 差异，正常记录的合成 ±0.3 K 偏移导致 99.28% 报警。故障特异性、独立设备迁移及部分模块的实测故障真值仍未解决，不宣称通用准确度或认证安全运行。
+
+[Zenodo 0.17.1](https://doi.org/10.5281/zenodo.23993237)
 
 ### [plantdesign-toolkit](https://github.com/lyullee/plantdesign-toolkit)
 

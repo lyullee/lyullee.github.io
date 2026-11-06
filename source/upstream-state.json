@@ -129,6 +129,15 @@
       "readmeSha256": "4868340504e73dd2923549a2507984fa29f8093426e1d72a3d8bff7b6c833995"
     },
     {
+      "name": "monitoring-diagnostics-toolkit",
+      "description": "Equipment-specific process monitoring in Python: explicit SI inputs, physical residuals, normal references, causal alarms, and reproducible validation evidence.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-06T02:28:48Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "33caa8f28b08c1c6b27ef88bb097c8a3d65b88181d1a49643749250dbc05be2d"
+    },
+    {
       "name": "nbcp-magnetocaloric-quantum-spectral-flow",
       "description": "Reproducible Cryogenics study with N=18 model-transfer gates and a complete IBM Kingston QPU benchmark.",
       "defaultBranch": "main",
