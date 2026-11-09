@@ -117,14 +117,15 @@ PSA-Dyna是一维非等温多组分PSA/VPSA动态模型，包含有限体积床�
 
 独立保存的早期Java 21/Spring Boot版SAGA。整合Tika、Lucene/Nori、pgvector、Spring AI和Ollama进行文档检索与HAZOP/LPG分析。不含私有文档或索引；其运行环境与API不能直接替代SAGA-PY。
 
-### [qesx](https://github.com/lyullee/qesx)
+### [plumeswift](https://github.com/lyullee/plumeswift)
 
 用于地形和障碍物周围三维风场及拉格朗日气体泄漏扩散的模块化 Python 研究工具，可选择湍流、积分、边界和采集组件。参照 QES v2.3.1，提供实验性液氢平衡物性与浮力/阻力耦合。
 
-- Python 3.11+，导入名 `qespy`，GPL-3.0-or-later，须保留上游及第三方声明。研究 Alpha 0.1.0a1 已在 GitHub 和 Zenodo 公开，审查时未确认 PyPI 可用。加速、热力学及 GIS/GPU 提供程序为可选项，需兼容环境。
-- [记录证据](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md)：七个 FFI 工况、210 个传感器的 Python 顺序/并行浓度及质量衡算一致。实测浓度 RMSE 为 1.9843 个百分点，实测均值达到或超过 4 vol% 的九个传感器仅捕获两个。本页未重跑计算。上游完整功能移植仍未完成，报告计时的输出工作量也不同。
+- 原 QESx 更名为 PlumeSwift 0.1.0a4，已在 PyPI、GitHub 和 Zenodo 公开。Python 3.11+，模块/CLI 为 `plumeswift`。QES 衍生代码采用 GPL-3.0-only；glibc 衍生数值组件保留 LGPL-2.1-or-later 及上游、第三方声明。加速、热力学、GIS/GPU 和可视化为需兼容环境的可选项。
+- 包含合成 LH₂ 示例及可选的离线三维浓度视图。FFI 流程从用户提供的官方报告中本地读取实测值；报告和实测传感器记录不随软件分发。
+- [记录证据](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md)：七个 FFI 工况、210 个传感器的 Python 顺序/并行浓度及质量衡算一致。实测浓度 RMSE 为 1.9843 个百分点，实测均值达到或超过 4 vol% 的九个传感器仅捕获两个。本页未重跑计算。上游完整功能移植仍未完成，报告计时的输出工作量也不同。
 
-[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
+[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

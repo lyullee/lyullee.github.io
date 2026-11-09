@@ -117,14 +117,15 @@ API-RP-581リスクベース検査計算を独立作成した非公式Python実�
 
 初期のJava 21/Spring Boot版SAGAを独立保存しています。Tika、Lucene/Nori、pgvector、Spring AI、Ollamaで検索・会話とHAZOP/LPG機能を構成します。非公開文書・索引は含まず、APIと実行環境が異なるためSAGA-PYを直接置換できません。
 
-### [qesx](https://github.com/lyullee/qesx)
+### [plumeswift](https://github.com/lyullee/plumeswift)
 
 地形・障害物周辺の三次元風場とラグランジュ型ガス漏洩拡散を組み立てる Python 研究ツールです。乱流・積分・境界・収集を選択でき、QES v2.3.1 を参照した実験的な液体水素平衡物性と浮力・抗力結合を含みます。
 
-- Python 3.11+、import 名 `qespy`、GPL-3.0-or-later。上流・第三者の表示を保持します。研究用 Alpha 0.1.0a1 は GitHub・Zenodo で公開済みで、レビュー時に PyPI 公開は確認できませんでした。加速・熱力学・GIS/GPU は互換環境を要する任意機能です。
-- [記録された根拠](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md)：FFI の七条件・210 センサーで Python 逐次・並列経路の濃度と質量収支が一致しました。実測濃度 RMSE は 1.9843 パーセントポイントで、実測平均 4 vol% 以上の九センサーのうち二つを捕捉しました。ここでは再実行していません。上流全機能の移植は未完了で、報告された計時の出力処理量も異なります。
+- 旧 QESx は PlumeSwift 0.1.0a4 に改名し、PyPI・GitHub・Zenodo で公開済みです。Python 3.11+、モジュール/CLI は `plumeswift`。QES 由来コードは GPL-3.0-only、glibc 由来の数値部品は LGPL-2.1-or-later で、上流・第三者の表示を保持します。加速・熱力学・GIS/GPU・可視化は互換環境を要する任意機能です。
+- 同梱の合成 LH₂ 例と任意のオフライン三次元濃度表示を提供します。FFI 手順は利用者が用意した公式報告書から実測値をローカルで読み取り、報告書と実測センサー記録はソフトウェア配布に含みません。
+- [記録された根拠](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md)：FFI の七条件・210 センサーで Python 逐次・並列経路の濃度と質量収支が一致しました。実測濃度 RMSE は 1.9843 パーセントポイントで、実測平均 4 vol% 以上の九センサーのうち二つを捕捉しました。ここでは再実行していません。上流全機能の移植は未完了で、報告された計時の出力処理量も異なります。
 
-[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
+[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

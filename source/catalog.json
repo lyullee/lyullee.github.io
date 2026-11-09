@@ -20,7 +20,7 @@
       "saga-sts"
     ],
     [
-      "qesx",
+      "plumeswift",
       "slabx",
       "slabx-lh2",
       "degadisx",
@@ -82,6 +82,6 @@
     "rotorvibe": "RotorVibe",
     "plantdesign-toolkit": "PlantDesign Toolkit",
     "monitoring-diagnostics-toolkit": "Monitoring Diagnostics Toolkit",
-    "qesx": "QESx"
+    "plumeswift": "PlumeSwift"
   }
 }

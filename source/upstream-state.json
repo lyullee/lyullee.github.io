@@ -174,6 +174,15 @@
       "readmeSha256": "f1e7157c743e7fcbb264910d01e8ee0cae89fe6199db6f54f9afc086ce1ce814"
     },
     {
+      "name": "plumeswift",
+      "description": "Fast 3D gas leak dispersion. Independent Python port of QES v2.3.1.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T11:14:14Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "9595052f2382bfb15c7782e9ba82d611435018ddc9d69357b72b286cf4e7c252"
+    },
+    {
       "name": "prism",
       "description": "PRISM — Process Risk Integration and Scenario Modeling; optional LH2 analysis, auditable model coupling and literature-based frequencies.",
       "defaultBranch": "main",
@@ -226,15 +235,6 @@
       "archived": false,
       "readmePath": "README.md",
       "readmeSha256": "26c25b5ea01ef39ba6e4ae03c6172df963125ef943400751f1a5934b4e9f07b7"
-    },
-    {
-      "name": "qesx",
-      "description": "QESx: fast 3D leak dispersion, diagnostic wind fields and liquid hydrogen research in Python",
-      "defaultBranch": "main",
-      "pushedAt": "2026-11-09T06:20:48Z",
-      "archived": false,
-      "readmePath": "README.md",
-      "readmeSha256": "7f89b7255ce4b691d59df68221aa4da57c7b945498ea40a81372c63075ed3cdd"
     },
     {
       "name": "qsafety-qae",

@@ -117,14 +117,15 @@ Python/FastAPI-Assistent für koreanische Gasnormen, Recht und HAZOP. Dokumentdi
 
 Separat erhaltene ältere Java-21-/Spring-Boot-Ausgabe von SAGA. Tika, Lucene/Nori, pgvector, Spring AI und Ollama unterstützen Suche, Dialog und HAZOP/LPG-Module. Private Dokumente und Indizes fehlen bewusst; Laufzeit und APIs sind kein direkter Ersatz für SAGA-PY.
 
-### [qesx](https://github.com/lyullee/qesx)
+### [plumeswift](https://github.com/lyullee/plumeswift)
 
 Modulare Python-Forschungswerkzeuge für 3D-Windfelder um Gelände/Hindernisse und lagrangesche Gasleckdispersion mit wählbarer Turbulenz, Integration, Randbehandlung und Erfassung. Mit Bezug auf QES v2.3.1 sowie experimentellen Flüssigwasserstoff-Gleichgewichtseigenschaften und Auftriebs-/Widerstandskopplung.
 
-- Python 3.11+, Import `qespy`, GPL-3.0-or-later mit Upstream-/Dritthinweisen. Forschungs-Alpha 0.1.0a1 auf GitHub und Zenodo öffentlich, PyPI-Verfügbarkeit bei Prüfung unbestätigt. Beschleunigung, Thermodynamik und GIS/GPU optional mit kompatiblen Umgebungen.
-- [Dokumentierte Evidenz](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md) für sieben FFI-Bedingungen und 210 Sensoren, mit übereinstimmenden Konzentrationen/Massenbilanzen der sequenziellen und parallelen Python-Pfade. Gemessener RMSE 1,9843 Prozentpunkte, nur 2/9 Sensoren mit Messmittel von mindestens 4 vol% erfasst. Hier nicht erneut ausgeführt. Vollständige Upstream-Funktionsparität bleibt offen, berichtete Laufzeiten hatten unterschiedliche Ausgabelasten.
+- Früher QESx, jetzt PlumeSwift 0.1.0a4, auf PyPI, GitHub und Zenodo veröffentlicht. Python 3.11+, Modul/CLI `plumeswift`. QES-abgeleiteter Code: GPL-3.0-only; glibc-abgeleitete numerische Komponenten: LGPL-2.1-or-later, mit Upstream- und Dritthinweisen. Beschleunigung, Thermodynamik, GIS/GPU und Visualisierung sind optional und benötigen kompatible Umgebungen.
+- Enthält ein synthetisches LH₂-Beispiel und optionale offline nutzbare 3D-Konzentrationsansichten. Der FFI-Ablauf liest Messwerte lokal aus einem vom Nutzer bereitgestellten offiziellen Bericht; Bericht und gemessene Sensordaten sind nicht Teil der Softwareverteilung.
+- [Dokumentierte Evidenz](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md) für sieben FFI-Bedingungen und 210 Sensoren, mit übereinstimmenden Konzentrationen/Massenbilanzen der sequenziellen und parallelen Python-Pfade. Gemessener RMSE 1,9843 Prozentpunkte, nur 2/9 Sensoren mit Messmittel von mindestens 4 vol% erfasst. Hier nicht erneut ausgeführt. Vollständige Upstream-Funktionsparität bleibt offen, berichtete Laufzeiten hatten unterschiedliche Ausgabelasten.
 
-[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
+[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

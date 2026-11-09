@@ -117,14 +117,15 @@ API-RP-581 기반 위험기반검사 계산과 워크플로를 독립 작성한 
 
 Java 21/Spring Boot 기반 SAGA 초기 구현을 독립 보존합니다. Tika, Lucene/Nori, pgvector, Spring AI와 Ollama로 문서 검색·대화 및 HAZOP/LPG 기능을 구성합니다. 비공개 문서·인덱스는 제외하며 SAGA-PY와 API·런타임이 달라 바로 대체할 수 없습니다.
 
-### [qesx](https://github.com/lyullee/qesx)
+### [plumeswift](https://github.com/lyullee/plumeswift)
 
 지형·장애물 주변 3차원 풍장과 라그랑지안 가스 누출 확산을 조립하는 Python 연구 도구입니다. 난류·적분기·경계·수집기를 선택하며 QES v2.3.1을 참조한 연구용 액화수소 평형 물성·부력·항력 결합을 제공합니다.
 
-- Python 3.11+, import `qespy`, GPL-3.0-or-later이며 원본·제3자 고지를 유지합니다. 연구용 알파 0.1.0a1의 GitHub·Zenodo 공개를 확인했고 검토 시 PyPI 공개는 확인되지 않았습니다. 가속·열역학·GIS/GPU 공급자는 호환 환경이 필요한 선택 사항입니다.
-- [기록된 근거](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md): FFI 7개 조건·210개 센서에서 Python 순차·병렬 경로의 농도·질량수지가 일치했습니다. 실측 농도 RMSE는 1.9843 %p이며 실측 평균 4 vol% 이상 센서 9개 중 2개만 포착했습니다. 여기서 재실행하지 않았습니다. 원본 전체 기능 이식은 미완료이며 보고된 실행시간의 출력 작업도 달랐습니다.
+- 기존 QESx가 PlumeSwift 0.1.0a4로 이름을 바꿔 PyPI·GitHub·Zenodo에 공개되었습니다. Python 3.11+, 모듈/CLI `plumeswift`. QES 유래 코드는 GPL-3.0-only, glibc 유래 수치 구성요소는 LGPL-2.1-or-later이며 원본·제3자 고지를 유지합니다. 가속·열역학·GIS/GPU·시각화는 호환 환경이 필요한 선택 사항입니다.
+- 패키지 내 합성 LH₂ 예제와 선택적 오프라인 3D 농도 표시를 제공합니다. FFI 절차는 사용자가 제공한 공식 보고서에서 실측값을 로컬로 읽으며 보고서와 실측 센서 기록은 소프트웨어 배포에 포함되지 않습니다.
+- [기록된 근거](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md): FFI 7개 조건·210개 센서에서 Python 순차·병렬 경로의 농도·질량수지가 일치했습니다. 실측 농도 RMSE는 1.9843 %p이며 실측 평균 4 vol% 이상 센서 9개 중 2개만 포착했습니다. 여기서 재실행하지 않았습니다. 원본 전체 기능 이식은 미완료이며 보고된 실행시간의 출력 작업도 달랐습니다.
 
-[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
+[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

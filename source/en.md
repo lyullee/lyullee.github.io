@@ -24,7 +24,7 @@ This profile covers **32 research/software projects**, grouped by purpose. Toget
 | --- | --- |
 | Process simulation and risk integration | monitoring-diagnostics-toolkit · plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
-| Release sources and dispersion | qesx · slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
+| Release sources and dispersion | plumeswift · slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
 | Ammonia supply-system screening | ammonia-supply-risk |
 | Human reliability and risk-based inspection | human-reliability-toolkit · api581-risk-analysis |
@@ -158,14 +158,15 @@ The earlier Java/Spring Boot SAGA implementation, preserved as a separate source
 
 ## Release sources and atmospheric dispersion
 
-### [qesx](https://github.com/lyullee/qesx)
+### [plumeswift](https://github.com/lyullee/plumeswift)
 
 Modular Python research tools for 3D wind fields around terrain/obstacles and Lagrangian gas-release dispersion, with selectable turbulence, integration, boundary and collection components. Includes experimental liquid-hydrogen equilibrium properties and buoyancy/drag coupling, referencing QES v2.3.1.
 
-- Python 3.11+, import `qespy`, GPL-3.0-or-later with upstream/third-party notices. Research Alpha 0.1.0a1 is public on GitHub and Zenodo. PyPI availability was not confirmed at review. Acceleration, thermodynamic and GIS/GPU providers are optional and require compatible environments.
-- [Recorded evidence](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md): seven FFI conditions and 210 sensors showed agreement among sequential and parallel Python concentration/mass-balance paths. Measured-concentration RMSE was 1.9843 percentage points, with only 2/9 sensors whose measured means were at least 4 vol% captured. These calculations were not rerun here. Complete upstream feature parity remains unfinished, and the reported timings used differing output workloads.
+- Previously QESx; now published as PlumeSwift 0.1.0a4 on PyPI, GitHub and Zenodo. Python 3.11+, module/CLI `plumeswift`. QES-derived code is GPL-3.0-only; glibc-derived numerical components retain LGPL-2.1-or-later, with upstream and third-party notices. Acceleration, thermodynamics, GIS/GPU and visualization are optional and require compatible environments.
+- Includes a packaged synthetic LH₂ example and optional offline 3D concentration views. The FFI workflow reads measurements locally from a user-supplied official report; the report and measured sensor records are outside the software distribution.
+- [Recorded evidence](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md): seven FFI conditions and 210 sensors showed agreement among sequential and parallel Python concentration/mass-balance paths. Measured-concentration RMSE was 1.9843 percentage points, with only 2/9 sensors whose measured means were at least 4 vol% captured. These calculations were not rerun here. Complete upstream feature parity remains unfinished, and the reported timings used differing output workloads.
 
-[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
+[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
 
 ### [slabx](https://github.com/lyullee/slabx)
 
