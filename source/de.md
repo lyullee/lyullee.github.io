@@ -14,7 +14,7 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 31 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-06; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 32 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-09; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
 
@@ -116,6 +116,15 @@ Python/FastAPI-Assistent für koreanische Gasnormen, Recht und HAZOP. Dokumentdi
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
 Separat erhaltene ältere Java-21-/Spring-Boot-Ausgabe von SAGA. Tika, Lucene/Nori, pgvector, Spring AI und Ollama unterstützen Suche, Dialog und HAZOP/LPG-Module. Private Dokumente und Indizes fehlen bewusst; Laufzeit und APIs sind kein direkter Ersatz für SAGA-PY.
+
+### [qesx](https://github.com/lyullee/qesx)
+
+Modulare Python-Forschungswerkzeuge für 3D-Windfelder um Gelände/Hindernisse und lagrangesche Gasleckdispersion mit wählbarer Turbulenz, Integration, Randbehandlung und Erfassung. Mit Bezug auf QES v2.3.1 sowie experimentellen Flüssigwasserstoff-Gleichgewichtseigenschaften und Auftriebs-/Widerstandskopplung.
+
+- Python 3.11+, Import `qespy`, GPL-3.0-or-later mit Upstream-/Dritthinweisen. Forschungs-Alpha 0.1.0a1 auf GitHub und Zenodo öffentlich, PyPI-Verfügbarkeit bei Prüfung unbestätigt. Beschleunigung, Thermodynamik und GIS/GPU optional mit kompatiblen Umgebungen.
+- [Dokumentierte Evidenz](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md) für sieben FFI-Bedingungen und 210 Sensoren, mit übereinstimmenden Konzentrationen/Massenbilanzen der sequenziellen und parallelen Python-Pfade. Gemessener RMSE 1,9843 Prozentpunkte, nur 2/9 Sensoren mit Messmittel von mindestens 4 vol% erfasst. Hier nicht erneut ausgeführt. Vollständige Upstream-Funktionsparität bleibt offen, berichtete Laufzeiten hatten unterschiedliche Ausgabelasten.
+
+[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

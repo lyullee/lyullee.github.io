@@ -14,7 +14,7 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述31个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-06；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述32个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-09；此次简介更新未独立重新运行验证计算。
 
 ## 项目
 
@@ -116,6 +116,15 @@ PSA-Dyna是一维非等温多组分PSA/VPSA动态模型，包含有限体积床�
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
 独立保存的早期Java 21/Spring Boot版SAGA。整合Tika、Lucene/Nori、pgvector、Spring AI和Ollama进行文档检索与HAZOP/LPG分析。不含私有文档或索引；其运行环境与API不能直接替代SAGA-PY。
+
+### [qesx](https://github.com/lyullee/qesx)
+
+用于地形和障碍物周围三维风场及拉格朗日气体泄漏扩散的模块化 Python 研究工具，可选择湍流、积分、边界和采集组件。参照 QES v2.3.1，提供实验性液氢平衡物性与浮力/阻力耦合。
+
+- Python 3.11+，导入名 `qespy`，GPL-3.0-or-later，须保留上游及第三方声明。研究 Alpha 0.1.0a1 已在 GitHub 和 Zenodo 公开，审查时未确认 PyPI 可用。加速、热力学及 GIS/GPU 提供程序为可选项，需兼容环境。
+- [记录证据](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md)：七个 FFI 工况、210 个传感器的 Python 顺序/并行浓度及质量衡算一致。实测浓度 RMSE 为 1.9843 个百分点，实测均值达到或超过 4 vol% 的九个传感器仅捕获两个。本页未重跑计算。上游完整功能移植仍未完成，报告计时的输出工作量也不同。
+
+[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

@@ -14,7 +14,7 @@
 
 プロセス異常監視、人間信頼性、リスクベース検査、バイオメタンTEAと部分環境会計にも研究を拡張しています。
 
-> 英語版メインREADMEをもとにした各言語向けガイドです。31プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-06。今回の更新では検証計算を独立に再実行していません。
+> 英語版メインREADMEをもとにした各言語向けガイドです。32プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-09。今回の更新では検証計算を独立に再実行していません。
 
 ## プロジェクト
 
@@ -116,6 +116,15 @@ API-RP-581リスクベース検査計算を独立作成した非公式Python実�
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
 初期のJava 21/Spring Boot版SAGAを独立保存しています。Tika、Lucene/Nori、pgvector、Spring AI、Ollamaで検索・会話とHAZOP/LPG機能を構成します。非公開文書・索引は含まず、APIと実行環境が異なるためSAGA-PYを直接置換できません。
+
+### [qesx](https://github.com/lyullee/qesx)
+
+地形・障害物周辺の三次元風場とラグランジュ型ガス漏洩拡散を組み立てる Python 研究ツールです。乱流・積分・境界・収集を選択でき、QES v2.3.1 を参照した実験的な液体水素平衡物性と浮力・抗力結合を含みます。
+
+- Python 3.11+、import 名 `qespy`、GPL-3.0-or-later。上流・第三者の表示を保持します。研究用 Alpha 0.1.0a1 は GitHub・Zenodo で公開済みで、レビュー時に PyPI 公開は確認できませんでした。加速・熱力学・GIS/GPU は互換環境を要する任意機能です。
+- [記録された根拠](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md)：FFI の七条件・210 センサーで Python 逐次・並列経路の濃度と質量収支が一致しました。実測濃度 RMSE は 1.9843 パーセントポイントで、実測平均 4 vol% 以上の九センサーのうち二つを捕捉しました。ここでは再実行していません。上流全機能の移植は未完了で、報告された計時の出力処理量も異なります。
+
+[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

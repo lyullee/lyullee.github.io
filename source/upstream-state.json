@@ -228,6 +228,15 @@
       "readmeSha256": "26c25b5ea01ef39ba6e4ae03c6172df963125ef943400751f1a5934b4e9f07b7"
     },
     {
+      "name": "qesx",
+      "description": "QESx: fast 3D leak dispersion, diagnostic wind fields and liquid hydrogen research in Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T06:20:48Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "7f89b7255ce4b691d59df68221aa4da57c7b945498ea40a81372c63075ed3cdd"
+    },
+    {
       "name": "qsafety-qae",
       "description": "Quantum amplitude-estimation research for finite-mixture safety and reliability models, with classical baselines, Qiskit circuit checks, and opt-in IBM QPU execution.",
       "defaultBranch": "main",

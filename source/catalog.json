@@ -1,5 +1,5 @@
 {
-  "reviewDate": "2026-11-06",
+  "reviewDate": "2026-11-09",
   "categories": [
     [
       "monitoring-diagnostics-toolkit",
@@ -20,6 +20,7 @@
       "saga-sts"
     ],
     [
+      "qesx",
       "slabx",
       "slabx-lh2",
       "degadisx",
@@ -80,6 +81,7 @@
     "materials-corrosion-toolkit": "Materials Corrosion Toolkit",
     "rotorvibe": "RotorVibe",
     "plantdesign-toolkit": "PlantDesign Toolkit",
-    "monitoring-diagnostics-toolkit": "Monitoring Diagnostics Toolkit"
+    "monitoring-diagnostics-toolkit": "Monitoring Diagnostics Toolkit",
+    "qesx": "QESx"
   }
 }

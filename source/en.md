@@ -18,13 +18,13 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **31 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 33 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **32 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 34 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
 | Process simulation and risk integration | monitoring-diagnostics-toolkit · plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
 | Safety knowledge systems | saga-py · saga-sts |
-| Release sources and dispersion | slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
+| Release sources and dispersion | qesx · slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
 | Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
 | Ammonia supply-system screening | ammonia-supply-risk |
 | Human reliability and risk-based inspection | human-reliability-toolkit · api581-risk-analysis |
@@ -157,6 +157,15 @@ The earlier Java/Spring Boot SAGA implementation, preserved as a separate source
 - **Relationship:** its runtime and APIs differ from SAGA-PY; it is not a drop-in replacement or a validated live-station safety controller.
 
 ## Release sources and atmospheric dispersion
+
+### [qesx](https://github.com/lyullee/qesx)
+
+Modular Python research tools for 3D wind fields around terrain/obstacles and Lagrangian gas-release dispersion, with selectable turbulence, integration, boundary and collection components. Includes experimental liquid-hydrogen equilibrium properties and buoyancy/drag coupling, referencing QES v2.3.1.
+
+- Python 3.11+, import `qespy`, GPL-3.0-or-later with upstream/third-party notices. Research Alpha 0.1.0a1 is public on GitHub and Zenodo. PyPI availability was not confirmed at review. Acceleration, thermodynamic and GIS/GPU providers are optional and require compatible environments.
+- [Recorded evidence](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md): seven FFI conditions and 210 sensors showed agreement among sequential and parallel Python concentration/mass-balance paths. Measured-concentration RMSE was 1.9843 percentage points, with only 2/9 sensors whose measured means were at least 4 vol% captured. These calculations were not rerun here. Complete upstream feature parity remains unfinished, and the reported timings used differing output workloads.
+
+[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
 
 ### [slabx](https://github.com/lyullee/slabx)
 
@@ -360,4 +369,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-06 · 31 research projects + profile and website repositories (33 public repositories).</sub>
+<sub>Public-repository review: 2026-11-09 · 32 research projects + profile and website repositories (34 public repositories).</sub>

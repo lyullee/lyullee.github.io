@@ -14,7 +14,7 @@
 
 최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 31개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-06. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 32개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-09. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
 
 ## 프로젝트
 
@@ -116,6 +116,15 @@ API-RP-581 기반 위험기반검사 계산과 워크플로를 독립 작성한 
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
 Java 21/Spring Boot 기반 SAGA 초기 구현을 독립 보존합니다. Tika, Lucene/Nori, pgvector, Spring AI와 Ollama로 문서 검색·대화 및 HAZOP/LPG 기능을 구성합니다. 비공개 문서·인덱스는 제외하며 SAGA-PY와 API·런타임이 달라 바로 대체할 수 없습니다.
+
+### [qesx](https://github.com/lyullee/qesx)
+
+지형·장애물 주변 3차원 풍장과 라그랑지안 가스 누출 확산을 조립하는 Python 연구 도구입니다. 난류·적분기·경계·수집기를 선택하며 QES v2.3.1을 참조한 연구용 액화수소 평형 물성·부력·항력 결합을 제공합니다.
+
+- Python 3.11+, import `qespy`, GPL-3.0-or-later이며 원본·제3자 고지를 유지합니다. 연구용 알파 0.1.0a1의 GitHub·Zenodo 공개를 확인했고 검토 시 PyPI 공개는 확인되지 않았습니다. 가속·열역학·GIS/GPU 공급자는 호환 환경이 필요한 선택 사항입니다.
+- [기록된 근거](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md): FFI 7개 조건·210개 센서에서 Python 순차·병렬 경로의 농도·질량수지가 일치했습니다. 실측 농도 RMSE는 1.9843 %p이며 실측 평균 4 vol% 이상 센서 9개 중 2개만 포착했습니다. 여기서 재실행하지 않았습니다. 원본 전체 기능 이식은 미완료이며 보고된 실행시간의 출력 작업도 달랐습니다.
+
+[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

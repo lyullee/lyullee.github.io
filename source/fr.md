@@ -14,7 +14,7 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 31 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-06 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 32 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-09 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
 
@@ -116,6 +116,15 @@ Assistant Python/FastAPI pour les normes coréennes du gaz, le droit et HAZOP : 
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
 Ancienne édition Java 21/Spring Boot de SAGA conservée séparément. Tika, Lucene/Nori, pgvector, Spring AI et Ollama assurent recherche, conversation et modules HAZOP/LPG. Documents privés et index exclus ; ses API et son environnement ne remplacent pas directement SAGA-PY.
+
+### [qesx](https://github.com/lyullee/qesx)
+
+Outils Python modulaires de recherche pour champs de vent 3D autour du terrain/obstacles et dispersion lagrangienne de fuites, avec turbulence, intégration, frontières et collecte sélectionnables. Référence à QES v2.3.1, propriétés d’équilibre expérimentales de l’hydrogène liquide et couplage flottabilité/traînée.
+
+- Python 3.11+, import `qespy`, GPL-3.0-or-later avec notices amont/tiers. Alpha 0.1.0a1 public sur GitHub et Zenodo, disponibilité PyPI non confirmée lors de la revue. Fournisseurs d’accélération, thermodynamique et GIS/GPU optionnels avec environnements compatibles.
+- [Preuves consignées](https://github.com/lyullee/qesx/blob/main/docs/DEVELOPMENT.md) sur sept conditions FFI et 210 capteurs, avec accord des concentrations/bilans massiques entre chemins Python séquentiels et parallèles. RMSE mesurée de 1,9843 point de pourcentage, seulement 2/9 capteurs de moyenne mesurée d’au moins 4 vol% captés. Calculs non réexécutés ici. Parité complète avec l’amont inachevée, charges de sortie différentes dans les chronométrages rapportés.
+
+[GitHub 0.1.0a1](https://github.com/lyullee/qesx/releases/tag/v0.1.0a1) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24073832)
 
 ### [slabx](https://github.com/lyullee/slabx)
 
