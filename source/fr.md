@@ -14,7 +14,7 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 32 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-11 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 32 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-12 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
 
@@ -125,11 +125,12 @@ Ancienne édition Java 21/Spring Boot de SAGA conservée séparément. Tika, Luc
 
 Outils Python modulaires de recherche pour champs de vent 3D autour du terrain/obstacles et dispersion lagrangienne de fuites, avec turbulence, intégration, frontières et collecte sélectionnables. Référence à QES v2.3.1, propriétés d’équilibre expérimentales de l’hydrogène liquide et couplage flottabilité/traînée.
 
-- Anciennement QESx, désormais PlumeSwift 0.1.0a4, publié sur PyPI, GitHub et Zenodo. Python 3.11+, module/CLI `plumeswift`. Code dérivé de QES sous GPL-3.0-only ; composants numériques dérivés de glibc sous LGPL-2.1-or-later, avec notices amont et tierces. Accélération, thermodynamique, GIS/GPU et visualisation facultatifs, selon la compatibilité de l’environnement.
+- Anciennement QESx, désormais PlumeSwift, publié sur PyPI, GitHub et Zenodo. Python 3.11+, module/CLI `plumeswift`. Code dérivé de QES sous GPL-3.0-only ; composants numériques dérivés de glibc sous LGPL-2.1-or-later, avec notices amont et tierces. Accélération, thermodynamique, GIS/GPU et visualisation facultatifs, selon la compatibilité de l’environnement.
 - Exemple synthétique LH₂ inclus et vues 3D de concentration hors ligne facultatives. Le flux FFI lit les mesures localement dans le rapport officiel fourni par l’utilisateur ; le rapport et les relevés mesurés des capteurs sont exclus de la distribution logicielle.
 - [Preuves consignées](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md) sur sept conditions FFI et 210 capteurs, avec accord des concentrations/bilans massiques entre chemins Python séquentiels et parallèles. RMSE mesurée de 1,9843 point de pourcentage, seulement 2/9 capteurs de moyenne mesurée d’au moins 4 vol% captés. Calculs non réexécutés ici. Parité complète avec l’amont inachevée, charges de sortie différentes dans les chronométrages rapportés.
+- La version alpha de recherche 0.1.0a5 ajoute des options pour les jets d’hydrogène liquide, l’évaporation de nappes, les nuages denses et les vents mesurés, ainsi que des modules de stabilité atmosphérique, de sillage de barrières et d’ammoniac humide. La configuration FFI par défaut reste `legacy`. Sur 210 mesures FFI, la MAE archivée était de 0,709 vol% avec la configuration par défaut, de 0,547 vol% avec le seul échange thermique au sol et de 0,706 vol% avec les trois termes étudiés. Les résultats contrastés de FLADIS ont conduit à conserver les paramètres par défaut. Les alarmes sur site et les jumeaux numériques en temps réel exigent une validation distincte. [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

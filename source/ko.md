@@ -14,7 +14,7 @@
 
 최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 32개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-11. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 32개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-12. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
 
 ## 프로젝트
 
@@ -125,11 +125,12 @@ Java 21/Spring Boot 기반 SAGA 초기 구현을 독립 보존합니다. Tika, L
 
 지형·장애물 주변 3차원 풍장과 라그랑지안 가스 누출 확산을 조립하는 Python 연구 도구입니다. 난류·적분기·경계·수집기를 선택하며 QES v2.3.1을 참조한 연구용 액화수소 평형 물성·부력·항력 결합을 제공합니다.
 
-- 기존 QESx가 PlumeSwift 0.1.0a4로 이름을 바꿔 PyPI·GitHub·Zenodo에 공개되었습니다. Python 3.11+, 모듈/CLI `plumeswift`. QES 유래 코드는 GPL-3.0-only, glibc 유래 수치 구성요소는 LGPL-2.1-or-later이며 원본·제3자 고지를 유지합니다. 가속·열역학·GIS/GPU·시각화는 호환 환경이 필요한 선택 사항입니다.
+- 기존 QESx가 PlumeSwift로 이름을 바꿔 PyPI·GitHub·Zenodo에 공개되었습니다. Python 3.11+, 모듈/CLI `plumeswift`. QES 유래 코드는 GPL-3.0-only, glibc 유래 수치 구성요소는 LGPL-2.1-or-later이며 원본·제3자 고지를 유지합니다. 가속·열역학·GIS/GPU·시각화는 호환 환경이 필요한 선택 사항입니다.
 - 패키지 내 합성 LH₂ 예제와 선택적 오프라인 3D 농도 표시를 제공합니다. FFI 절차는 사용자가 제공한 공식 보고서에서 실측값을 로컬로 읽으며 보고서와 실측 센서 기록은 소프트웨어 배포에 포함되지 않습니다.
 - [기록된 근거](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md): FFI 7개 조건·210개 센서에서 Python 순차·병렬 경로의 농도·질량수지가 일치했습니다. 실측 농도 RMSE는 1.9843 %p이며 실측 평균 4 vol% 이상 센서 9개 중 2개만 포착했습니다. 여기서 재실행하지 않았습니다. 원본 전체 기능 이식은 미완료이며 보고된 실행시간의 출력 작업도 달랐습니다.
+- 연구용 알파 0.1.0a5에는 선택형 액화수소 제트·액체 풀 증발·고밀도 가스운·실측 풍속 적용과 대기 안정도·차폐벽 후류·습윤 암모니아 모듈이 추가되었습니다. FFI 기본 설정은 `legacy`입니다. 실측값 210개를 대조한 FFI 기록에서 MAE는 기본 설정 0.709 vol%, 지면 열교환만 적용할 때 0.547 vol%, 시험한 세 항을 모두 적용할 때 0.706 vol%였습니다. FLADIS 암모니아 시험은 사례별 결과가 달라 모델 기본값을 유지했습니다. 현장 경보와 실시간 디지털 트윈에는 별도 검증이 필요합니다. [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

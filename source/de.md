@@ -14,7 +14,7 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 32 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-11; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 32 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-12; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
 
@@ -125,11 +125,12 @@ Separat erhaltene ältere Java-21-/Spring-Boot-Ausgabe von SAGA. Tika, Lucene/No
 
 Modulare Python-Forschungswerkzeuge für 3D-Windfelder um Gelände/Hindernisse und lagrangesche Gasleckdispersion mit wählbarer Turbulenz, Integration, Randbehandlung und Erfassung. Mit Bezug auf QES v2.3.1 sowie experimentellen Flüssigwasserstoff-Gleichgewichtseigenschaften und Auftriebs-/Widerstandskopplung.
 
-- Früher QESx, jetzt PlumeSwift 0.1.0a4, auf PyPI, GitHub und Zenodo veröffentlicht. Python 3.11+, Modul/CLI `plumeswift`. QES-abgeleiteter Code: GPL-3.0-only; glibc-abgeleitete numerische Komponenten: LGPL-2.1-or-later, mit Upstream- und Dritthinweisen. Beschleunigung, Thermodynamik, GIS/GPU und Visualisierung sind optional und benötigen kompatible Umgebungen.
+- Früher QESx, jetzt PlumeSwift, auf PyPI, GitHub und Zenodo veröffentlicht. Python 3.11+, Modul/CLI `plumeswift`. QES-abgeleiteter Code: GPL-3.0-only; glibc-abgeleitete numerische Komponenten: LGPL-2.1-or-later, mit Upstream- und Dritthinweisen. Beschleunigung, Thermodynamik, GIS/GPU und Visualisierung sind optional und benötigen kompatible Umgebungen.
 - Enthält ein synthetisches LH₂-Beispiel und optionale offline nutzbare 3D-Konzentrationsansichten. Der FFI-Ablauf liest Messwerte lokal aus einem vom Nutzer bereitgestellten offiziellen Bericht; Bericht und gemessene Sensordaten sind nicht Teil der Softwareverteilung.
 - [Dokumentierte Evidenz](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md) für sieben FFI-Bedingungen und 210 Sensoren, mit übereinstimmenden Konzentrationen/Massenbilanzen der sequenziellen und parallelen Python-Pfade. Gemessener RMSE 1,9843 Prozentpunkte, nur 2/9 Sensoren mit Messmittel von mindestens 4 vol% erfasst. Hier nicht erneut ausgeführt. Vollständige Upstream-Funktionsparität bleibt offen, berichtete Laufzeiten hatten unterschiedliche Ausgabelasten.
+- Die Forschungsalpha 0.1.0a5 ergänzt optionale Verfahren für Flüssigwasserstoffstrahlen, Lachenverdampfung, dichte Gaswolken und gemessenen Wind sowie Module für atmosphärische Stabilität, Barrierenachläufe und feuchtes Ammoniak. Die FFI-Voreinstellung bleibt `legacy`. Bei 210 FFI-Messwerten betrug die archivierte MAE 0,709 Vol.-% mit der Voreinstellung, 0,547 Vol.-% allein mit Bodenwärmeaustausch und 0,706 Vol.-% mit allen drei untersuchten Termen. Nach gemischten FLADIS-Ergebnissen für Ammoniak blieben die Modelleinstellungen erhalten. Standortalarme und Echtzeit-Digitalzwillinge erfordern eine separate Validierung. [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

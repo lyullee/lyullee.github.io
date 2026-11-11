@@ -14,7 +14,7 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述32个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-11；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述32个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-12；此次简介更新未独立重新运行验证计算。
 
 ## 项目
 
@@ -125,11 +125,12 @@ PSA-Dyna是一维非等温多组分PSA/VPSA动态模型，包含有限体积床�
 
 用于地形和障碍物周围三维风场及拉格朗日气体泄漏扩散的模块化 Python 研究工具，可选择湍流、积分、边界和采集组件。参照 QES v2.3.1，提供实验性液氢平衡物性与浮力/阻力耦合。
 
-- 原 QESx 更名为 PlumeSwift 0.1.0a4，已在 PyPI、GitHub 和 Zenodo 公开。Python 3.11+，模块/CLI 为 `plumeswift`。QES 衍生代码采用 GPL-3.0-only；glibc 衍生数值组件保留 LGPL-2.1-or-later 及上游、第三方声明。加速、热力学、GIS/GPU 和可视化为需兼容环境的可选项。
+- 原 QESx 更名为 PlumeSwift，已在 PyPI、GitHub 和 Zenodo 公开。Python 3.11+，模块/CLI 为 `plumeswift`。QES 衍生代码采用 GPL-3.0-only；glibc 衍生数值组件保留 LGPL-2.1-or-later 及上游、第三方声明。加速、热力学、GIS/GPU 和可视化为需兼容环境的可选项。
 - 包含合成 LH₂ 示例及可选的离线三维浓度视图。FFI 流程从用户提供的官方报告中本地读取实测值；报告和实测传感器记录不随软件分发。
 - [记录证据](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md)：七个 FFI 工况、210 个传感器的 Python 顺序/并行浓度及质量衡算一致。实测浓度 RMSE 为 1.9843 个百分点，实测均值达到或超过 4 vol% 的九个传感器仅捕获两个。本页未重跑计算。上游完整功能移植仍未完成，报告计时的输出工作量也不同。
+- 研究版 0.1.0a5 新增可选的液氢射流、液池蒸发、高密度气云和实测风场流程，以及大气稳定度、围挡尾流和湿氨模块。FFI 默认配置仍为 `legacy`。在存档的 FFI 对比中，基于 210 个实测值的 MAE 分别为 0.709 vol%（默认）、0.547 vol%（仅计地面换热）和 0.706 vol%（启用全部三个试验项）。FLADIS 氨试验结果因工况而异，模型保留默认设置。现场告警及实时数字孪生应用需要另行验证。 [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

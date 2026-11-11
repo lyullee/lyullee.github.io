@@ -14,7 +14,7 @@
 
 プロセス異常監視、人間信頼性、リスクベース検査、バイオメタンTEAと部分環境会計にも研究を拡張しています。
 
-> 英語版メインREADMEをもとにした各言語向けガイドです。32プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-11。今回の更新では検証計算を独立に再実行していません。
+> 英語版メインREADMEをもとにした各言語向けガイドです。32プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-12。今回の更新では検証計算を独立に再実行していません。
 
 ## プロジェクト
 
@@ -125,11 +125,12 @@ API-RP-581リスクベース検査計算を独立作成した非公式Python実�
 
 地形・障害物周辺の三次元風場とラグランジュ型ガス漏洩拡散を組み立てる Python 研究ツールです。乱流・積分・境界・収集を選択でき、QES v2.3.1 を参照した実験的な液体水素平衡物性と浮力・抗力結合を含みます。
 
-- 旧 QESx は PlumeSwift 0.1.0a4 に改名し、PyPI・GitHub・Zenodo で公開済みです。Python 3.11+、モジュール/CLI は `plumeswift`。QES 由来コードは GPL-3.0-only、glibc 由来の数値部品は LGPL-2.1-or-later で、上流・第三者の表示を保持します。加速・熱力学・GIS/GPU・可視化は互換環境を要する任意機能です。
+- 旧 QESx は PlumeSwift に改名し、PyPI・GitHub・Zenodo で公開済みです。Python 3.11+、モジュール/CLI は `plumeswift`。QES 由来コードは GPL-3.0-only、glibc 由来の数値部品は LGPL-2.1-or-later で、上流・第三者の表示を保持します。加速・熱力学・GIS/GPU・可視化は互換環境を要する任意機能です。
 - 同梱の合成 LH₂ 例と任意のオフライン三次元濃度表示を提供します。FFI 手順は利用者が用意した公式報告書から実測値をローカルで読み取り、報告書と実測センサー記録はソフトウェア配布に含みません。
 - [記録された根拠](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md)：FFI の七条件・210 センサーで Python 逐次・並列経路の濃度と質量収支が一致しました。実測濃度 RMSE は 1.9843 パーセントポイントで、実測平均 4 vol% 以上の九センサーのうち二つを捕捉しました。ここでは再実行していません。上流全機能の移植は未完了で、報告された計時の出力処理量も異なります。
+- 研究用アルファ 0.1.0a5 は、液体水素ジェット、液だまりの蒸発、高密度ガス雲、実測風の処理をオプションとして追加し、大気安定度、遮蔽壁後流、湿潤アンモニアのモジュールも備えます。FFI の既定設定は `legacy` です。実測値 210 件を用いた FFI の記録では、MAE は既定で 0.709 vol%、地表熱交換のみで 0.547 vol%、検討した三項すべてで 0.706 vol% でした。FLADIS のアンモニア試験は条件により結果が異なり、モデルの既定値を維持しました。現場警報やリアルタイムのデジタルツインには別途検証が必要です。 [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

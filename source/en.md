@@ -166,11 +166,12 @@ The earlier Java/Spring Boot SAGA implementation, preserved as a separate source
 
 Modular Python research tools for 3D wind fields around terrain/obstacles and Lagrangian gas-release dispersion, with selectable turbulence, integration, boundary and collection components. Includes experimental liquid-hydrogen equilibrium properties and buoyancy/drag coupling, referencing QES v2.3.1.
 
-- Previously QESx; now published as PlumeSwift 0.1.0a4 on PyPI, GitHub and Zenodo. Python 3.11+, module/CLI `plumeswift`. QES-derived code is GPL-3.0-only; glibc-derived numerical components retain LGPL-2.1-or-later, with upstream and third-party notices. Acceleration, thermodynamics, GIS/GPU and visualization are optional and require compatible environments.
+- Previously QESx; now published as PlumeSwift on PyPI, GitHub and Zenodo. Python 3.11+, module/CLI `plumeswift`. QES-derived code is GPL-3.0-only; glibc-derived numerical components retain LGPL-2.1-or-later, with upstream and third-party notices. Acceleration, thermodynamics, GIS/GPU and visualization are optional and require compatible environments.
 - Includes a packaged synthetic LH₂ example and optional offline 3D concentration views. The FFI workflow reads measurements locally from a user-supplied official report; the report and measured sensor records are outside the software distribution.
 - [Recorded evidence](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md): seven FFI conditions and 210 sensors showed agreement among sequential and parallel Python concentration/mass-balance paths. Measured-concentration RMSE was 1.9843 percentage points, with only 2/9 sensors whose measured means were at least 4 vol% captured. These calculations were not rerun here. Complete upstream feature parity remains unfinished, and the reported timings used differing output workloads.
+- Research alpha 0.1.0a5 adds optional LH₂ jet, pool evaporation, dense-cloud and measured-wind workflows, plus modules for atmospheric stability, fence wakes and moist ammonia. The default FFI configuration remains `legacy`. In the archived 210-measurement FFI comparison, MAE was 0.709 vol% for legacy, 0.547 vol% with ground heat alone, and 0.706 vol% with all three tested terms. The FLADIS ammonia trials retained model defaults after mixed results. Site alarms and live digital-twin use require separate validation. [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 
@@ -374,4 +375,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-11 · 32 research projects + profile and website repositories (34 public repositories).</sub>
+<sub>Public-repository review: 2026-11-12 · 32 research projects + profile and website repositories (34 public repositories).</sub>

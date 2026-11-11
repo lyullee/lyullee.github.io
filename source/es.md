@@ -14,7 +14,7 @@ También trabajo en cribado de suministro de amoníaco, separación dinámica PS
 
 Mis herramientas incluyen también monitoreo de procesos, fiabilidad humana, inspección basada en riesgo y TEA/contabilidad ambiental parcial del biometano.
 
-> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 32 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-11; no se repitieron de forma independiente los cálculos de validación para esta actualización.
+> Guía localizada del README principal en inglés: objetivos, funciones y límites de la evidencia de los 32 proyectos. Los detalles técnicos están en la versión inglesa y en cada repositorio. Revisión: 2026-11-12; no se repitieron de forma independiente los cálculos de validación para esta actualización.
 
 ## Proyectos
 
@@ -125,11 +125,12 @@ Versión anterior de SAGA en Java 21/Spring Boot, conservada de forma independie
 
 Herramientas Python modulares de investigación para viento 3D alrededor de terreno/obstáculos y dispersión lagrangiana de fugas, con componentes seleccionables de turbulencia, integración, fronteras y recolección. Referencian QES v2.3.1 e incluyen propiedades de equilibrio experimentales de hidrógeno líquido y acoplamiento flotación/arrastre.
 
-- Antes QESx, ahora PlumeSwift 0.1.0a4, publicado en PyPI, GitHub y Zenodo. Python 3.11+, módulo/CLI `plumeswift`. Código derivado de QES bajo GPL-3.0-only; componentes numéricos derivados de glibc bajo LGPL-2.1-or-later, con avisos originales y de terceros. Aceleración, termodinámica, GIS/GPU y visualización opcionales, sujetos a entornos compatibles.
+- Antes QESx, ahora PlumeSwift, publicado en PyPI, GitHub y Zenodo. Python 3.11+, módulo/CLI `plumeswift`. Código derivado de QES bajo GPL-3.0-only; componentes numéricos derivados de glibc bajo LGPL-2.1-or-later, con avisos originales y de terceros. Aceleración, termodinámica, GIS/GPU y visualización opcionales, sujetos a entornos compatibles.
 - Incluye un ejemplo sintético de LH₂ y vistas 3D de concentración sin conexión opcionales. El flujo FFI lee mediciones localmente desde el informe oficial proporcionado por el usuario; el informe y los registros medidos de sensores quedan fuera de la distribución del software.
 - [Evidencia registrada](https://github.com/lyullee/plumeswift/blob/main/docs/DEVELOPMENT.md) en siete condiciones FFI y 210 sensores, con concentraciones/balances de masa coincidentes entre rutas Python secuenciales y paralelas. RMSE medida de 1,9843 puntos porcentuales, solo 2/9 sensores con media medida de al menos 4 vol% captados. No se repitieron aquí. La paridad completa con el original sigue pendiente y los tiempos reportados usaron cargas de salida diferentes.
+- La versión alfa de investigación 0.1.0a5 añade opciones para chorros de hidrógeno líquido, evaporación de charcos, nubes densas y vientos medidos, y módulos de estabilidad atmosférica, estelas de barreras y amoníaco húmedo. La configuración FFI predeterminada sigue siendo `legacy`. En la comparación archivada de 210 mediciones FFI, el MAE fue de 0,709 vol% con la configuración predeterminada, 0,547 vol% solo con intercambio térmico con el suelo y 0,706 vol% con los tres términos estudiados. Los resultados dispares de FLADIS llevaron a conservar los valores predeterminados. Las alarmas en planta y el gemelo digital en tiempo real requieren validación separada. [Release evidence](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/RELEASE_0.1.0a5.md) · [FLADIS](https://github.com/lyullee/plumeswift/blob/v0.1.0a5/docs/FLADIS_VALIDATION.md)
 
-[PyPI 0.1.0a4](https://pypi.org/project/plumeswift/0.1.0a4/) · [GitHub 0.1.0a4](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a4) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24079156)
+[PyPI 0.1.0a5](https://pypi.org/project/plumeswift/0.1.0a5/) · [GitHub 0.1.0a5](https://github.com/lyullee/plumeswift/releases/tag/v0.1.0a5) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24141108)
 
 ### [slabx](https://github.com/lyullee/slabx)
 

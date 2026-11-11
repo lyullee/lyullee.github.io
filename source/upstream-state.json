@@ -177,10 +177,10 @@
       "name": "plumeswift",
       "description": "Fast 3D gas leak dispersion. Independent Python port of QES v2.3.1.",
       "defaultBranch": "main",
-      "pushedAt": "2026-11-09T11:14:14Z",
+      "pushedAt": "2026-11-11T16:20:49Z",
       "archived": false,
       "readmePath": "README.md",
-      "readmeSha256": "9595052f2382bfb15c7782e9ba82d611435018ddc9d69357b72b286cf4e7c252"
+      "readmeSha256": "d955625d4acad42c4f7c5daba5551262834c46e462ab1f37be45f540406cda48"
     },
     {
       "name": "prism",
