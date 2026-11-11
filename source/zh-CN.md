@@ -14,7 +14,7 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述32个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-09；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述32个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-11；此次简介更新未独立重新运行验证计算。
 
 ## 项目
 
@@ -67,6 +67,8 @@
 
 物理驱动的加氢站数字孪生原型，连接储存、三级压缩机、级联供气、加注与安全逻辑。提供FastAPI、3D监控、82个HAZOP标签、故障演练及SAGA/HyRAM+接口；气体检测标签包含虚拟区域代理。组件评估不等于全回路现场验证，也不是认证控制器。
 
+0.1.3 将网页监控和远程控制界面纳入 Python 软件包，并更新模拟灭火、喷淋可视化、放空流量计量、维修后恢复和 3D 显示重置。GitHub 记录显示，该版本通过了专项软件检查。 [GitHub 0.1.3](https://github.com/lyullee/hydrogen-station-sim/releases/tag/v0.1.3) · [PyPI 0.1.3](https://pypi.org/project/hydrogen-station-sim/0.1.3/)
+
 ### [lh2dt_models](https://github.com/lyullee/lh2dt_models)
 
 用热力学状态及质量、能量流组合液氢储罐、管道、阀门、泵和汽化器的Python库。支持稳态/动态网络、传感器/HART观测及公开基准。验证按组件划定；发行名为lh2dt_models，同时支持lh2dt导入。
@@ -112,6 +114,8 @@ PSA-Dyna是一维非等温多组分PSA/VPSA动态模型，包含有限体积床�
 ### [saga-py](https://github.com/lyullee/saga-py)
 
 面向韩国燃气标准、法规和HAZOP的Python/FastAPI知识助手。支持独立文档对话、韩英操作、证据校验及数字孪生对话/选定传感器接口。基于文档的回答需要合法本地语料及服务密钥，不控制真实设备。
+
+2.0.2 支持与模拟器 0.1.3 直接联动分析，区分当前火焰检测、保留的告警和信号质量。两个版本都将出站网页请求限制为 HTTP(S)，并强化了 XML 解析。SAGA-PY 发布记录报告 205 项软件测试通过、1 项跳过。 [GitHub 2.0.2](https://github.com/lyullee/saga-py/releases/tag/v2.0.2)
 
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 

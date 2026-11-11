@@ -87,6 +87,8 @@ A physics-based hydrogen-refuelling-station digital-twin prototype that connects
 - **Interface and integration:** FastAPI simulation jobs, 3D monitoring, trends and incident exercises; outputs for 82 HAZOP sensor tags; SAGA-PY explanation APIs and a HyRAM+ consequence bridge.
 - **Evidence boundary:** component and public-data evaluations are documented separately. Gas-detector tags include virtual zone proxies. This is a modelling and training prototype, not a certified physical controller or a claim of full-loop field validation.
 
+Version 0.1.3 bundles the web monitor and remote controls in the Python package and updates simulated fire suppression, spray visualization, vent metering, recovery after repair, and 3D display reset. GitHub records a passing run of the focused software checks. [GitHub 0.1.3](https://github.com/lyullee/hydrogen-station-sim/releases/tag/v0.1.3) · [PyPI 0.1.3](https://pypi.org/project/hydrogen-station-sim/0.1.3/)
+
 ### [lh2dt_models](https://github.com/lyullee/lh2dt_models)
 
 Composable, first-principles liquid-hydrogen equipment and process-network models for Python. Explicit thermodynamic states and mass/energy flows let researchers connect replaceable components into steady or dynamic networks.
@@ -147,6 +149,8 @@ A Python/FastAPI assistant for Korean gas standards, law and HAZOP analysis, sup
 - **Capabilities:** document indexing and retrieval, evidence validation, term aliases, and Korean/English operation. Korean regulatory retrieval and English NREL/HIAD libraries use distinct language paths.
 - **Integration:** provides an advisory explanation layer for calculated process and sensor context from the independent hydrogen-station simulator.
 - **Requirements and limits:** grounded answers require a lawful local document corpus and provider credentials. The public release excludes private PDFs and indexes. Outputs support analysis and training; they do not control physical equipment or replace official regulations.
+
+Version 2.0.2 supports direct analysis for simulator 0.1.3 and distinguishes current flame detection, retained alarms, and signal quality. Both releases restrict outbound web requests to HTTP(S) and use hardened XML parsing. The SAGA-PY release reports 205 software tests passed and one skipped. [GitHub 2.0.2](https://github.com/lyullee/saga-py/releases/tag/v2.0.2)
 
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
@@ -370,4 +374,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-09 · 32 research projects + profile and website repositories (34 public repositories).</sub>
+<sub>Public-repository review: 2026-11-11 · 32 research projects + profile and website repositories (34 public repositories).</sub>

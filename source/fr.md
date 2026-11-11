@@ -14,7 +14,7 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 32 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-09 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 32 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-11 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
 
 ## Projets
 
@@ -67,6 +67,8 @@ Modèles physiques Python composables pour la recherche sur la production, le st
 
 Prototype de jumeau numérique physique d’une station hydrogène : stockage, compression à trois étages, cascade, remplissage et logique de sécurité. FastAPI, vue 3D, 82 étiquettes HAZOP, exercices de panne et interfaces SAGA/HyRAM+ ; certains détecteurs sont virtuels. Les évaluations de composants ne constituent ni validation complète sur site ni certification de commande.
 
+La version 0.1.3 inclut la supervision web et la télécommande dans le paquet Python. Elle met à jour la simulation de l’extinction, la visualisation de l’aspersion, la mesure du débit de mise à l’évent, la remise en service après réparation et la réinitialisation de l’affichage 3D. GitHub indique que les vérifications logicielles ciblées ont réussi. [GitHub 0.1.3](https://github.com/lyullee/hydrogen-station-sim/releases/tag/v0.1.3) · [PyPI 0.1.3](https://pypi.org/project/hydrogen-station-sim/0.1.3/)
+
 ### [lh2dt_models](https://github.com/lyullee/lh2dt_models)
 
 Bibliothèque Python de composants LH₂ composables, avec états thermodynamiques et flux de masse/énergie explicites : réservoirs, conduites, vannes, pompes et vaporiseurs. Réseaux stationnaires/dynamiques, observations capteurs/HART et références publiques ; validation propre à chaque composant. Distribution lh2dt_models, import lh2dt également disponible.
@@ -112,6 +114,8 @@ Outil indépendant de présélection des conséquences et de recherche sur les g
 ### [saga-py](https://github.com/lyullee/saga-py)
 
 Assistant Python/FastAPI pour les normes coréennes du gaz, le droit et HAZOP : dialogue documentaire, coréen/anglais, validation des preuves et API de conversation/analyse de capteurs du jumeau. Les réponses documentées nécessitent un corpus local licite et des identifiants fournisseur. Le service ne commande pas les équipements physiques.
+
+La version 2.0.2 prend en charge l’analyse directe pour le simulateur 0.1.3 et distingue la détection de flamme actuelle, les alarmes maintenues et la qualité du signal. Les deux versions limitent les requêtes web sortantes à HTTP(S) et renforcent l’analyse XML. La publication SAGA-PY indique 205 tests logiciels réussis et un ignoré. [GitHub 2.0.2](https://github.com/lyullee/saga-py/releases/tag/v2.0.2)
 
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 

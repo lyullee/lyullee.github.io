@@ -14,7 +14,7 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 32 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-09; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 32 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-11; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
 
 ## Projekte
 
@@ -67,6 +67,8 @@ Zusammensetzbare Python-Physikmodelle zur Erforschung von Wasserstoffproduktion,
 
 Physikalischer digitaler Zwilling einer Wasserstofftankstelle mit Speicherung, dreistufiger Verdichtung, Kaskade, Betankung und Sicherheitslogik. FastAPI, 3D-Ansicht, 82 HAZOP-Tags, Fehlerübungen sowie SAGA/HyRAM+-Anbindung; Detektoren umfassen virtuelle Stellvertreter. Komponentenprüfungen sind keine vollständige Feldvalidierung oder zertifizierte Anlagensteuerung.
 
+Version 0.1.3 enthält die Webüberwachung und Fernbedienung im Python-Paket und aktualisiert die simulierte Brandbekämpfung, die Anzeige der Sprühkühlung, die Messung des Entlüftungsstroms, die Wiederherstellung nach einer Reparatur und das Zurücksetzen der 3D-Anzeige. Die gezielten Softwareprüfungen waren laut GitHub erfolgreich. [GitHub 0.1.3](https://github.com/lyullee/hydrogen-station-sim/releases/tag/v0.1.3) · [PyPI 0.1.3](https://pypi.org/project/hydrogen-station-sim/0.1.3/)
+
 ### [lh2dt_models](https://github.com/lyullee/lh2dt_models)
 
 Python-Bibliothek für kombinierbare LH₂-Komponenten mit expliziten thermodynamischen Zuständen und Massen-/Energieflüssen: Tanks, Rohre, Ventile, Pumpen und Verdampfer. Stationäre/dynamische Netze, Sensor-/HART-Beobachtungen und öffentliche Benchmarks. Validierung gilt komponentenbezogen; lh2dt_models unterstützt auch den Import lh2dt.
@@ -112,6 +114,8 @@ Unabhängiges Toolkit für Folgenscreening und Dichtgasforschung. 23 typisierte 
 ### [saga-py](https://github.com/lyullee/saga-py)
 
 Python/FastAPI-Assistent für koreanische Gasnormen, Recht und HAZOP. Dokumentdialog, Koreanisch/Englisch, Belegprüfung und APIs für Anlagenkonversation und ausgewählte Sensoren. Belegte Antworten benötigen einen rechtmäßig verfügbaren lokalen Korpus und Anbieterzugang; physische Geräte werden nicht gesteuert.
+
+Version 2.0.2 unterstützt die direkte Analyse für Simulator 0.1.3 und unterscheidet aktuelle Flammenerkennung, gespeicherte Alarme und Signalqualität. Beide Versionen beschränken ausgehende Webanfragen auf HTTP(S) und verwenden gehärtete XML-Parser. Laut SAGA-PY-Release wurden 205 Softwaretests bestanden und einer übersprungen. [GitHub 2.0.2](https://github.com/lyullee/saga-py/releases/tag/v2.0.2)
 
 ### [saga-sts](https://github.com/lyullee/saga-sts)
 
