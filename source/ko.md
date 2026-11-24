@@ -14,7 +14,33 @@
 
 최근에는 공정 이상 탐지, 인적 신뢰도, 위험기반검사와 바이오메탄 TEA·부분 환경 회계까지 연구 도구를 확장하고 있습니다.
 
-> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 32개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-12. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+> 이 페이지는 영어 메인 README의 현지화된 프로젝트 안내입니다. 36개 프로젝트의 목적·기능·근거 범위를 요약하며 상세 기술 설명은 영어 메인과 각 저장소에서 확인할 수 있습니다. 검토일: 2026-11-24. 이번 프로필 수정에서 검증 계산을 독립적으로 재실행하지 않았습니다.
+
+## 새 공개 응용 프로그램
+
+### [lh2-process-simulator](https://github.com/lyullee/lh2-process-simulator)
+
+한국어 브라우저 구성요소 편집기와 재사용 LH₂ 설비 물리 API를 제공합니다. 그래프·단위 검사, 결과 추이, CSV와 설계 저장을 지원하며 가상 저장·유입·유출 예제는 균질 탱크의 질량·에너지 수지를 사용합니다.
+
+공개 테스트는 수지 잔차·그래프 계약·입력 변경을 검사합니다. 임의 네트워크에는 추가 풀이가 필요합니다. 소스만 공개하며 저작권을 유보하고 일반 오픈소스 재사용 허가를 부여하지 않습니다. Windows 실행파일 적격성 확인은 SciPy 모듈 정책으로 막혔습니다. 비공개 시설 시나리오와 검증은 이 판에 포함되지 않습니다. [범위와 검사](https://github.com/lyullee/lh2-process-simulator/blob/main/README.md)
+
+### [lpg-fire-simulator](https://github.com/lyullee/lpg-fire-simulator)
+
+화재 노출 시 LPG 탱크 압력·온도·재고와 안전밸브를 비교하는 한국어 브라우저·데스크톱 화면 및 CLI입니다. 고정 조성 포화물성, 균일 평형, 밸브 개방·재폐쇄 이력으로 계산 범위를 정합니다.
+
+탱크·밸브는 가상 입력이며 공개 앱 테스트가 계산과 다운로드를 검사합니다. 탱크 벽 강도 파손·BLEVE 방지 적격성에는 추가 방법이 필요합니다. 소스 공개와 저작권 유보를 적용하며 제조사 도면·내부 보고서·과거 정확도 결과는 제외합니다. [범위와 검사](https://github.com/lyullee/lpg-fire-simulator/blob/main/README.md)
+
+### [pha-core-public](https://github.com/lyullee/pha-core-public)
+
+공통 설비 자료, 정적 FTA·LOPA·제한된 저요구 SIL 계산을 연결하는 로컬 도구입니다. Python CLI·SQLite·한국어 웹 화면을 제공하고 ROBDD 공유사건과 보호계층 중복 공제를 검사하며 PRISM을 선택적으로 연결합니다.
+
+공개 테스트에 참조 계산·의존성·적격성·API·저장 검사가 있습니다. 별도 PRISM 체크아웃이 없으면 통합 시험을 건너뜁니다. 수치 SIL 등급에는 생애주기 검토가 필요합니다. 예제는 합성이며 소스 공개·저작권 유보와 외부 의존성별 라이선스를 유지합니다. [범위와 검사](https://github.com/lyullee/pha-core-public/blob/main/README.md)
+
+### [hydrogen-mlip-md](https://github.com/lyullee/hydrogen-mlip-md)
+
+Hydrogen Lab 0.1.1은 ASE와 MACE 또는 CHGNet으로 Fe·강의 수소 확산, 결함 포획, NEB 이동장벽과 구속 인장응답을 계산합니다. 한국어 브라우저와 CLI가 실행 기록·체크포인트 해시를 공유합니다.
+
+원본 코드는 MIT이며 모델 가중치는 별도 라이선스입니다. 원 저장소는 2026-11-24 WSL/Python 3.12에서 해석·합성 자료 기반 시험 22건 통과를 보고합니다. CHGNet CPU 실행 기록에는 확산계수를 보류한 짧은 MD와 포획 계산이 있습니다. 재료 정량 정확도·MACE/GPU·수렴은 추가 검증이 필요하며 배포 PC의 Windows SciPy 가져오기는 차단됐습니다. [범위와 검사](https://github.com/lyullee/hydrogen-mlip-md/blob/main/docs/VALIDATION.md)
 
 ## 프로젝트
 

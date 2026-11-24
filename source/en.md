@@ -18,18 +18,44 @@ I focus on **traceable scientific computing**: mass and energy accounting, numer
 
 ## Project guide
 
-This profile covers **32 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 34 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
+This profile covers **36 research/software projects**, grouped by purpose. Together with the profile and website repositories, the account has 38 public repositories at the review date. Project descriptions follow their public documentation; their validation results have not been independently rerun for this profile update.
 
 | Area | Projects |
 | --- | --- |
-| Process simulation and risk integration | monitoring-diagnostics-toolkit · plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit |
+| Process simulation and risk integration | monitoring-diagnostics-toolkit · plantdesign-toolkit · rotorvibe · pipeline-safety-toolkit · h2physics · hydrogen-station-sim · lh2dt_models · prism · prism-dynasense · psa-dyna · process-monitoring-toolkit · process-risk-consequence-toolkit · lh2-process-simulator · pha-core-public |
 | Safety knowledge systems | saga-py · saga-sts |
 | Release sources and dispersion | plumeswift · slabx · slabx-lh2 · degadisx · degali · lh2poolx · DynamicLH2PoolX |
-| Fire and storage-tank analysis | pifira · lh2-psv-tno-risk |
+| Fire and storage-tank analysis | pifira · lh2-psv-tno-risk · lpg-fire-simulator |
 | Ammonia supply-system screening | ammonia-supply-risk |
 | Human reliability and risk-based inspection | human-reliability-toolkit · api581-risk-analysis |
 | Bioenergy and sustainability | adm1-tea-lca |
-| Materials and quantum methods | materials-corrosion-toolkit · hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
+| Materials and quantum methods | hydrogen-mlip-md · materials-corrosion-toolkit · hydrogen-local-energetics · qsafety-qae · psa-qae-resource-audit · nbcp-magnetocaloric-quantum-spectral-flow |
+
+## New public applications
+
+### [lh2-process-simulator](https://github.com/lyullee/lh2-process-simulator)
+
+Korean browser component editor and reusable LH₂ equipment physics APIs with graph checks, unit handling, trends, CSV export and design saving. Synthetic storage, imposed inflow and imposed outflow examples use a homogeneous tank mass/energy balance.
+
+Public tests inspect mass/energy residuals, graph contracts and changed inputs. Arbitrary networks require additional solving logic. Source-only publication with all rights reserved and no general open-source reuse licence. Windows frozen-build qualification was blocked by a SciPy module policy. Private facility scenarios and their validation remain outside this edition. [Scope and checks](https://github.com/lyullee/lh2-process-simulator/blob/main/README.md)
+
+### [lpg-fire-simulator](https://github.com/lyullee/lpg-fire-simulator)
+
+Korean browser and desktop interfaces plus CLI for LPG tank pressure, temperature, inventory and relief-valve comparison under fire exposure. Fixed-composition saturation properties, uniform equilibrium and valve opening/reseating hysteresis define the calculation scope.
+
+Synthetic tank/valve inputs and a public application test exercise calculation and downloads. Wall-strength failure and BLEVE-prevention qualification require further methods. Public source retains all rights reserved. Manufacturer drawings, private reports and historical accuracy results are excluded. [Scope and checks](https://github.com/lyullee/lpg-fire-simulator/blob/main/README.md)
+
+### [pha-core-public](https://github.com/lyullee/pha-core-public)
+
+Local equipment-data workbench for static FTA, LOPA and restricted low-demand SIL calculations, with Python CLI, SQLite and a Korean browser interface. ROBDD handles shared events and LOPA checks duplicate protection credit. PRISM integration is optional.
+
+Public tests cover reference calculations, dependency/eligibility checks, APIs and storage. PRISM tests skip without the separate checkout. Numerical SIL bands require lifecycle review. Synthetic examples, source-visible all-rights-reserved publication and separately licensed dependencies define reuse and evidence limits. [Scope and checks](https://github.com/lyullee/pha-core-public/blob/main/README.md)
+
+### [hydrogen-mlip-md](https://github.com/lyullee/hydrogen-mlip-md)
+
+Hydrogen Lab 0.1.1 combines ASE with MACE or CHGNet for local hydrogen diffusion, defect trapping, NEB migration barriers and constrained tensile response in Fe/steels. Korean browser and CLI share execution records and checkpoint hashes.
+
+MIT original code with separately licensed model weights. Upstream reports 22 tests passed in WSL/Python 3.12 on 2026-11-24 using analytical/synthetic fixtures. CHGNet CPU execution checks include a short MD run with diffusion withheld and a trapping run. Quantitative material accuracy, MACE/GPU operation and convergence need further validation. Windows SciPy import was blocked on the publishing PC. [Scope and checks](https://github.com/lyullee/hydrogen-mlip-md/blob/main/docs/VALIDATION.md)
 
 ## Process simulation and risk integration
 
@@ -375,4 +401,4 @@ For research collaboration, hydrogen-safety modelling or scientific-software dis
 
 Consult each repository's licence, citation metadata/DOI, data policy and validation record before reuse. The descriptions here preserve the repositories' stated research boundaries; they do not independently certify safety-related outputs.
 
-<sub>Public-repository review: 2026-11-12 · 32 research projects + profile and website repositories (34 public repositories).</sub>
+<sub>Public-repository review: 2026-11-24 · 36 research projects + profile and website repositories (38 public repositories).</sub>

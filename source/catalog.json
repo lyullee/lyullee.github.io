@@ -1,5 +1,5 @@
 {
-  "reviewDate": "2026-11-12",
+  "reviewDate": "2026-11-24",
   "categories": [
     [
       "monitoring-diagnostics-toolkit",
@@ -13,7 +13,9 @@
       "prism-dynasense",
       "psa-dyna",
       "process-monitoring-toolkit",
-      "process-risk-consequence-toolkit"
+      "process-risk-consequence-toolkit",
+      "lh2-process-simulator",
+      "pha-core-public"
     ],
     [
       "saga-py",
@@ -30,7 +32,8 @@
     ],
     [
       "pifira",
-      "lh2-psv-tno-risk"
+      "lh2-psv-tno-risk",
+      "lpg-fire-simulator"
     ],
     [
       "ammonia-supply-risk"
@@ -40,7 +43,8 @@
       "hydrogen-local-energetics",
       "qsafety-qae",
       "psa-qae-resource-audit",
-      "nbcp-magnetocaloric-quantum-spectral-flow"
+      "nbcp-magnetocaloric-quantum-spectral-flow",
+      "hydrogen-mlip-md"
     ],
     [
       "human-reliability-toolkit",
@@ -82,6 +86,10 @@
     "rotorvibe": "RotorVibe",
     "plantdesign-toolkit": "PlantDesign Toolkit",
     "monitoring-diagnostics-toolkit": "Monitoring Diagnostics Toolkit",
-    "plumeswift": "PlumeSwift"
+    "plumeswift": "PlumeSwift",
+    "lh2-process-simulator": "LH₂ Process Simulator",
+    "pha-core-public": "PHA Core",
+    "lpg-fire-simulator": "LPG Fire Simulator",
+    "hydrogen-mlip-md": "Hydrogen Lab"
   }
 }

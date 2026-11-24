@@ -14,7 +14,33 @@ Mes travaux couvrent aussi la présélection des systèmes d’ammoniac, la sép
 
 Mes outils couvrent désormais aussi la surveillance des procédés, la fiabilité humaine, l’inspection fondée sur le risque et la TEA/comptabilité environnementale partielle du biométhane.
 
-> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 32 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-12 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+> Guide localisé du README principal en anglais : objectifs, fonctions et limites des preuves pour 36 projets. Les détails techniques figurent dans la version anglaise et les dépôts. Revue : 2026-11-24 ; les calculs de validation n’ont pas été réexécutés indépendamment pour cette mise à jour.
+
+## Nouvelles applications publiques
+
+### [lh2-process-simulator](https://github.com/lyullee/lh2-process-simulator)
+
+Éditeur de composants en navigateur coréen et API physiques LH₂ réutilisables, avec contrôle du graphe et des unités, courbes, CSV et sauvegarde. Les exemples synthétiques de stockage et de débits imposés utilisent les bilans du réservoir homogène.
+
+Les tests publics vérifient résidus de bilan, contrats du graphe et changements des entrées. Les réseaux arbitraires nécessitent une résolution supplémentaire. Source seule, tous droits réservés sans licence générale de réutilisation libre. La qualification du binaire Windows a été bloquée par une règle sur SciPy. Les scénarios privés et leur validation restent séparés. [Portée et contrôles](https://github.com/lyullee/lh2-process-simulator/blob/main/README.md)
+
+### [lpg-fire-simulator](https://github.com/lyullee/lpg-fire-simulator)
+
+Interfaces coréennes navigateur et bureau, plus CLI, pour comparer pression, température, inventaire et soupapes de réservoirs GPL exposés au feu. Propriétés de saturation à composition fixe, équilibre uniforme et hystérésis des soupapes.
+
+Entrées synthétiques et test public du calcul et des téléchargements. La rupture mécanique de paroi et la qualification contre le BLEVE exigent des méthodes supplémentaires. Source visible, tous droits réservés. Plans fabricants, rapports internes et résultats historiques de précision exclus. [Portée et contrôles](https://github.com/lyullee/lpg-fire-simulator/blob/main/README.md)
+
+### [pha-core-public](https://github.com/lyullee/pha-core-public)
+
+Atelier local de données équipements, FTA statique, LOPA et calculs SIL restreints à faible sollicitation. CLI Python, SQLite et navigateur coréen, événements partagés ROBDD et contrôle du double crédit de protection. PRISM facultatif.
+
+Tests publics de références, dépendances, admissibilité, API et stockage. Tests PRISM ignorés sans dépôt séparé. Les bandes SIL numériques exigent une revue du cycle de vie. Exemples synthétiques, code visible tous droits réservés et licences propres aux dépendances. [Portée et contrôles](https://github.com/lyullee/pha-core-public/blob/main/README.md)
+
+### [hydrogen-mlip-md](https://github.com/lyullee/hydrogen-mlip-md)
+
+Hydrogen Lab 0.1.1 associe ASE à MACE ou CHGNet pour diffusion de H, piégeage, barrières NEB et traction contrainte dans le fer et les aciers. Navigateur coréen et CLI partagent journaux et empreintes des modèles.
+
+Code original MIT, poids sous licences distinctes. Le dépôt rapporte 22 tests analytiques/synthétiques réussis sous WSL/Python 3.12 le 2026-11-24. Les contrôles CPU CHGNet incluent une courte MD avec coefficient de diffusion retenu et un calcul de piégeage. Précision matériau, MACE/GPU et convergence restent à valider. Import SciPy Windows bloqué sur le PC de publication. [Portée et contrôles](https://github.com/lyullee/hydrogen-mlip-md/blob/main/docs/VALIDATION.md)
 
 ## Projets
 

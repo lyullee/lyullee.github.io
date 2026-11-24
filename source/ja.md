@@ -14,7 +14,33 @@
 
 プロセス異常監視、人間信頼性、リスクベース検査、バイオメタンTEAと部分環境会計にも研究を拡張しています。
 
-> 英語版メインREADMEをもとにした各言語向けガイドです。32プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-12。今回の更新では検証計算を独立に再実行していません。
+> 英語版メインREADMEをもとにした各言語向けガイドです。36プロジェクトの目的・機能・根拠の範囲を要約しています。詳細は英語版と各リポジトリをご参照ください。確認日：2026-11-24。今回の更新では検証計算を独立に再実行していません。
+
+## 新しい公開アプリケーション
+
+### [lh2-process-simulator](https://github.com/lyullee/lh2-process-simulator)
+
+韓国語ブラウザの部品編集と再利用可能な LH₂ 機器物理 API。グラフ・単位検査、時系列、CSV、設計保存に対応し、合成の貯蔵・規定流入・流出例は均質タンクの質量・エネルギー収支を使用します。
+
+公開テストは収支残差、グラフ契約と入力変更を検査します。任意ネットワークには追加の解法が必要です。ソースのみ公開、全権利留保で一般的なオープンソース再利用許可はありません。Windows ビルドの適格性確認は SciPy 制御ポリシーで停止。非公開施設のシナリオと検証は別です。 [範囲と検査](https://github.com/lyullee/lh2-process-simulator/blob/main/README.md)
+
+### [lpg-fire-simulator](https://github.com/lyullee/lpg-fire-simulator)
+
+火災時の LPG タンク圧力・温度・在庫と逃し弁を比較する韓国語ブラウザ・デスクトップ・CLI。固定組成の飽和物性、均一平衡、弁の開閉ヒステリシスを使用します。
+
+タンクと弁は合成入力で、公開アプリテストが計算とダウンロードを検査します。壁強度破損と BLEVE 防止の適格性には追加手法が必要です。ソース公開・全権利留保で、メーカー図面、内部報告、過去の精度結果を除外します。 [範囲と検査](https://github.com/lyullee/lpg-fire-simulator/blob/main/README.md)
+
+### [pha-core-public](https://github.com/lyullee/pha-core-public)
+
+共通機器データと静的 FTA、LOPA、限定的な低頻度要求 SIL 計算を結ぶローカル環境。Python CLI、SQLite、韓国語画面を提供し、ROBDD の共有事象と保護層の重複控除を検査。PRISM は任意です。
+
+公開テストは参照計算、依存・適格性、API、保存を対象とし、別の PRISM がなければ統合試験をスキップします。数値 SIL 区分にはライフサイクル検討が必要。合成例、ソース公開・全権利留保と外部依存の各ライセンスを維持します。 [範囲と検査](https://github.com/lyullee/pha-core-public/blob/main/README.md)
+
+### [hydrogen-mlip-md](https://github.com/lyullee/hydrogen-mlip-md)
+
+Hydrogen Lab 0.1.1 は ASE と MACE または CHGNet で鉄・鋼の水素拡散、欠陥捕獲、NEB 移動障壁と拘束引張応答を計算。韓国語ブラウザと CLI が実行記録とチェックポイントハッシュを共有します。
+
+独自コード MIT、重みは別ライセンス。上流は 2026-11-24 の WSL/Python 3.12 で解析・合成試験 22 件合格を報告。CHGNet CPU 記録は拡散係数を保留した短い MD と捕獲計算です。材料精度、MACE/GPU、収束は追加検証が必要で、公開 PC の Windows SciPy 読込みは遮断されました。 [範囲と検査](https://github.com/lyullee/hydrogen-mlip-md/blob/main/docs/VALIDATION.md)
 
 ## プロジェクト
 

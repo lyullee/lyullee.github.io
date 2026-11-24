@@ -84,6 +84,15 @@
       "readmeSha256": "286303586ca5f5f15ed7ee9d3b4148f25028fa34f7ce1ba0796eff044e53e573"
     },
     {
+      "name": "hydrogen-mlip-md",
+      "description": "Hydrogen Lab: MACE/CHGNet and ASE workflows for hydrogen diffusion, trapping, NEB migration and tensile response.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-24T02:12:41Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "d723bf43c09ec6d922198ece352a98e50ef978b6c449b67821a8a5a3ec037516"
+    },
+    {
       "name": "hydrogen-station-sim",
       "description": "Physics-based hydrogen refueling station digital twin with sensor HAZOP and 3D monitoring.",
       "defaultBranch": "main",
@@ -91,6 +100,15 @@
       "archived": false,
       "readmePath": "README.md",
       "readmeSha256": "52e3279a5cfc5077c8ec3201b7c55e8c843871f381604adbaf1545dbae778318"
+    },
+    {
+      "name": "lh2-process-simulator",
+      "description": "Source-visible LH2 component editor and reusable physics models with synthetic tank scenarios; no facility data.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-24T01:56:49Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "33c3f00090a6fe508efad701041bf15a9bf38de7a723866bb03ea6f2ecb76ed4"
     },
     {
       "name": "lh2-psv-tno-risk",
@@ -120,6 +138,15 @@
       "readmeSha256": "2498d8a10eb74e88abe575beb98a0f0fd48d23d4785f159d4c0ffa3200a8f26f"
     },
     {
+      "name": "lpg-fire-simulator",
+      "description": "Source-visible LPG fire-exposure and pressure-relief comparison app with generic tank and valve examples.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-24T01:56:40Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "69cde9bc02399163d56c879c84129532ffde631958e0d108026410f54f5e779c"
+    },
+    {
       "name": "materials-corrosion-toolkit",
       "description": "Research-alpha Python toolkit for modular materials, corrosion and integrity calculations with explicit contracts, units and validation scope.",
       "defaultBranch": "main",
@@ -145,6 +172,15 @@
       "archived": false,
       "readmePath": "README.md",
       "readmeSha256": "83b9701a0ab0d33480979acaa0b14823ad68a5d138a9ade0448d0d54a24cffbe"
+    },
+    {
+      "name": "pha-core-public",
+      "description": "Source-visible static FTA, LOPA and low-demand SIL workbench with synthetic examples. All rights reserved.",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-24T01:56:32Z",
+      "archived": false,
+      "readmePath": "README.md",
+      "readmeSha256": "021798ef83dfa1a33ceda8c0740b3e474500a72ef45696211b59393a36d200f4"
     },
     {
       "name": "pifira",

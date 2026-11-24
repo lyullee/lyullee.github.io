@@ -14,7 +14,33 @@ Weitere Themen sind Ammoniakversorgung, dynamische PSA/VPSA-Trennung sowie zeita
 
 Hinzugekommen sind Prozessüberwachung, menschliche Zuverlässigkeit, risikobasierte Inspektion sowie Biomethan-TEA und partielle Umweltbilanzierung.
 
-> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 32 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-12; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+> Lokalisierter Leitfaden zum englischen Haupt-README mit Zielen, Funktionen und Evidenzgrenzen aller 36 Projekte. Technische Einzelheiten stehen im englischen Text und in den Repositories. Prüfdatum: 2026-11-24; Validierungsrechnungen wurden für diese Profiländerung nicht unabhängig wiederholt.
+
+## Neue öffentliche Anwendungen
+
+### [lh2-process-simulator](https://github.com/lyullee/lh2-process-simulator)
+
+Koreanischer Browser-Komponenteneditor und wiederverwendbare LH₂-Physik-APIs mit Graph-/Einheitenprüfung, Zeitverläufen, CSV und Speicherung. Synthetische Speicher- und vorgegebene Zu-/Abflussbeispiele nutzen homogene Tankbilanzen.
+
+Öffentliche Tests prüfen Bilanzresiduen, Graphverträge und Eingabeänderungen. Beliebige Netze benötigen zusätzliche Löser. Nur Quellcode mit allen Rechten vorbehalten, ohne allgemeine Open-Source-Nutzungslizenz. Windows-Buildqualifikation durch SciPy-Richtlinie blockiert. Private Anlagenszenarien und Validierung bleiben separat. [Umfang und Prüfungen](https://github.com/lyullee/lh2-process-simulator/blob/main/README.md)
+
+### [lpg-fire-simulator](https://github.com/lyullee/lpg-fire-simulator)
+
+Koreanische Browser-/Desktopoberflächen und CLI für LPG-Tankdruck, Temperatur, Inventar und Entlastungsventilvergleich bei Brand. Feste Sättigungszusammensetzung, homogenes Gleichgewicht und Ventilhysterese begrenzen das Modell.
+
+Synthetische Tank-/Ventileingaben und öffentlicher Anwendungstest für Berechnung und Downloads. Wandversagen und BLEVE-Vermeidung benötigen zusätzliche Methoden. Quellcode sichtbar, alle Rechte vorbehalten. Herstellerzeichnungen, interne Berichte und historische Genauigkeitswerte ausgeschlossen. [Umfang und Prüfungen](https://github.com/lyullee/lpg-fire-simulator/blob/main/README.md)
+
+### [pha-core-public](https://github.com/lyullee/pha-core-public)
+
+Lokale Anlagendaten, statische FTA, LOPA und eingeschränkte SIL-Berechnungen bei niedriger Anforderungsrate. Python-CLI, SQLite und koreanische Weboberfläche. ROBDD berücksichtigt gemeinsame Ereignisse, LOPA prüft doppelte Schutzanrechnung. PRISM optional.
+
+Öffentliche Tests für Referenzrechnungen, Abhängigkeit/Zulässigkeit, API und Speicherung. PRISM-Tests ohne separates Checkout übersprungen. Numerische SIL-Bänder erfordern Lebenszyklusprüfung. Synthetische Beispiele, sichtbarer Quellcode mit allen Rechten vorbehalten und eigene Lizenzen externer Abhängigkeiten. [Umfang und Prüfungen](https://github.com/lyullee/pha-core-public/blob/main/README.md)
+
+### [hydrogen-mlip-md](https://github.com/lyullee/hydrogen-mlip-md)
+
+Hydrogen Lab 0.1.1 kombiniert ASE mit MACE oder CHGNet für H-Diffusion, Defektfallen, NEB-Barrieren und eingeschränkte Zugantwort in Eisen/Stahl. Koreanischer Browser und CLI teilen Laufprotokolle und Checkpoint-Hashes.
+
+Originalcode MIT, Gewichte separat lizenziert. Upstream meldet 22 bestandene analytische/synthetische Tests unter WSL/Python 3.12 am 2026-11-24. CHGNet-CPU-Prüfungen umfassen kurze MD mit zurückgehaltenem Diffusionswert und Fallenberechnung. Materialgenauigkeit, MACE/GPU und Konvergenz benötigen weitere Validierung. Windows-SciPy-Import auf Veröffentlichungs-PC blockiert. [Umfang und Prüfungen](https://github.com/lyullee/hydrogen-mlip-md/blob/main/docs/VALIDATION.md)
 
 ## Projekte
 

@@ -14,7 +14,33 @@
 
 近期工具还扩展到过程异常监测、人因可靠性、风险检验及生物甲烷TEA与部分环境核算。
 
-> 本页是英文主 README 的本地化项目指南，概述32个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-12；此次简介更新未独立重新运行验证计算。
+> 本页是英文主 README 的本地化项目指南，概述36个项目的目标、功能和证据边界。详细技术信息请参阅英文主页和各项目仓库。审查日期：2026-11-24；此次简介更新未独立重新运行验证计算。
+
+## 新增公开应用
+
+### [lh2-process-simulator](https://github.com/lyullee/lh2-process-simulator)
+
+提供韩语浏览器组件编辑器和可复用的 LH₂ 设备物理 API，支持图结构和单位检查、趋势、CSV 及设计保存。合成储存、规定流入和流出示例采用均相罐质量与能量衡算。
+
+公开测试检查衡算残差、图契约和输入变化。任意网络需要额外求解逻辑。仅发布源代码并保留全部权利，未授予通用开源复用许可。Windows 冻结构建的资格检查受 SciPy 模块策略阻断。私有设施场景和验证不属于此版本。 [范围与检查](https://github.com/lyullee/lh2-process-simulator/blob/main/README.md)
+
+### [lpg-fire-simulator](https://github.com/lyullee/lpg-fire-simulator)
+
+韩语浏览器、桌面和 CLI 工具，用于火灾下 LPG 罐压力、温度、库存及泄压阀比较。计算采用固定组分饱和物性、均匀平衡和阀门启闭滞回。
+
+罐和阀参数为合成示例，公开应用测试检查计算与下载。罐壁强度失效和 BLEVE 防护认定需要额外方法。源代码公开但保留全部权利，排除厂家图纸、内部报告和历史精度结果。 [范围与检查](https://github.com/lyullee/lpg-fire-simulator/blob/main/README.md)
+
+### [pha-core-public](https://github.com/lyullee/pha-core-public)
+
+本地设备数据工作台连接静态 FTA、LOPA 和受限低需求 SIL 计算，提供 Python CLI、SQLite 和韩语网页。ROBDD 处理共享事件，LOPA 检查重复保护抵扣，PRISM 为可选集成。
+
+公开测试覆盖参照计算、依赖和适用性、API 与存储。缺少独立 PRISM 工作副本时跳过集成测试。数值 SIL 等级需生命周期审查。采用合成示例，源代码可见且保留全部权利，外部依赖遵循各自许可。 [范围与检查](https://github.com/lyullee/pha-core-public/blob/main/README.md)
+
+### [hydrogen-mlip-md](https://github.com/lyullee/hydrogen-mlip-md)
+
+Hydrogen Lab 0.1.1 结合 ASE 与 MACE 或 CHGNet，计算铁和钢中的氢扩散、缺陷俘获、NEB 迁移势垒及受约束拉伸响应。韩语浏览器与 CLI 共享运行记录和检查点哈希。
+
+原创代码 MIT，模型权重另有许可。上游报告 2026-11-24 在 WSL/Python 3.12 上通过 22 项解析与合成测试。CHGNet CPU 记录包括未报告扩散系数的短 MD 及俘获计算。材料定量精度、MACE/GPU 和收敛仍需验证，发布电脑上的 Windows SciPy 导入受阻。 [范围与检查](https://github.com/lyullee/hydrogen-mlip-md/blob/main/docs/VALIDATION.md)
 
 ## 项目
 
